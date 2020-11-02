@@ -1,0 +1,17 @@
+.HeaderSlider{
+    height: 70vh;
+    width: 70vw;
+    background-color: gray;
+    overflow: hidden;
+    &__Image{
+        max-width: 100%;
+        filter: brightness(0.8);
+        width: 100%;
+    }
+    &__Text{
+        h1{
+            color: red;
+        }
+    }
+   
+}

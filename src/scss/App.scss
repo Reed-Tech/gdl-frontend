@@ -1,0 +1,16 @@
+@import './base/variables';
+@import './base/typography';
+
+
+// Components 
+@import './components/Navbar';
+@import './components/HeaderSlider';
+@import './components/HeaderSocialLinks';
+@import './components/StockInfo';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/slick-carousel/slick/slick.css';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+
+// Pages 
+@import './pages/home';
