@@ -1,37 +1,51 @@
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid $white;
-    padding: .1rem 1.5rem;
-    background-color: rgba(0, 0, 0, 0.15);
-    &_brand{
-        img{
+    border-bottom: 2px solid rgba($color: $white, $alpha: 0.5);
+    padding: 1em clamp(2.5em, 6vw, 6.5em);
+    background-color: rgba($color: black, $alpha: 0.02);
+    transition: padding .3s ;
+    @media screen and (max-width:1220px){
+        padding: .1em 1.5em ;
+    }
+
+    &_brand {
+        img {
             transform: scale(0.8);
         }
     }
-    &_ul{
+
+    &_ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
-        &-li{
+
+        @media screen and (max-width:1220px) {
+            display: none;
+        }
+
+        &-li {
             display: inline-block;
-            a{
+
+            a {
                 padding: 12px 16px;
                 transition: all ease-in-out 0.2s;
                 position: relative;
                 top: 0;
                 text-transform: uppercase;
                 font-weight: 500;
-                font-size: 1em;
+                font-size: clamp(0.875em, 2vw, 1.125em);
                 color: $white;
-                &:hover{
+
+                &:hover {
                     text-decoration: none;
                     position: relative;
                     top: -5px;
                     padding-bottom: 20px;
                 }
-                &:active{
+
+                &:active {
                     text-decoration: none;
                     position: relative;
                     top: -3px;
@@ -39,32 +53,117 @@
                 }
             }
         }
-        
+
     }
-    &_nested{
-        transition: all 3s;
-        &_parent{
+
+
+    // -----------------Nested nav link
+    &_nested {
+        &_parent {
             position: relative;
-            a:hover ~ .navbar_nested_ul{
-                display: inline-block;
+            &-container > a{
+                padding: 20px;
+            }
+            &-container:hover>.navbar_nested_ul {
+                display: flex;
                 left: 0;
-                top: 1.5em;
-            };
+                top: 1em;
+
+                li {
+                    padding: 20px 10px;
+                }
+            }
         }
-        &_ul{
+
+        &_ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: none;
-            // display: flex;
             position: absolute;
             top: 44px;
-            li{
-                a{
+
+            li {
+                padding: 30px;
+
+                a {
                     font-size: 0.9em;
                 }
             }
         }
     }
 
+    // ---------Hamburger Icon style 
+    &_mobile {
+        &-hamburgerMenu {
+            flex: 1;
+            display: none;
+            align-items: center;
+            justify-content: flex-end;
+
+            @media screen and (max-width:1220px) {
+                display: flex;
+            }
+
+            &-icon {
+                width: 2.5rem;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                div {
+                    width: 1.6rem;
+                    height: 3px;
+                    border-radius: 3px;
+                    background-color: #fff;
+                    position: relative;
+                    z-index: 1001;
+                    transition: .5s;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: inherit;
+                        height: inherit;
+                        background-color: #fff;
+                        border-radius: 3px;
+                        transition: .5s;
+                    }
+
+                    &::before {
+                        transform: translateY(-7px);
+                    }
+
+                    &::after {
+                        transform: translateY(7px);
+                    }
+                }
+                &-close{
+                    div {
+                        background-color: transparent;
+                
+                        &::before {
+                            transform: translateY(0) rotate(-45deg)
+                        }
+                
+                        &::after {
+                            transform: translateY(0) rotate(45deg)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // -----------Mobile Style 
+    @media screen and (max-width: 1220px){
+        &_brand{
+            img{
+                transform: scale(0.7);
+            }
+        }
+    }
 }
+

@@ -1,11 +1,10 @@
 .stockInfo {
-    // background-color:orchid;
   .stockInfo_card {
     background-color: rgba(0, 0, 0, 0.24);
     max-width: 200px;
     padding: 8px 16px;
-    border-right: 1px solid rgba(255, 255, 255, 0.449);
-    // margin: 0 18px ;
+    border-right: 2px solid rgba(255, 255, 255, 0.35);
+    border-top: transparent;
   }
 
   .stockInfo_card-header {
@@ -17,6 +16,7 @@
       text-transform: uppercase;
       padding: 0;
       margin: 0;
+      color: $white;
     }
 
     p {
@@ -31,6 +31,8 @@
       font-size: 16px;
       margin: 0;
       font-weight: 700;
+      color: $white;
+
     }
   }
 }

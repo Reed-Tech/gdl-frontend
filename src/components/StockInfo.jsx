@@ -3,11 +3,12 @@ import Slider from 'react-slick'
 
 const data = [
     {
-        name: 'aricot1',
+        name: 'Apple Stocks',
         country: 'ngn',
         amount: '0.65',
         rate: '0',
         color: 'green',
+        id: 'some random ',
     },
     {
         name: 'aricot2',
@@ -90,24 +91,22 @@ const data = [
 
 const sliderSettings = {
     dots: false,
-    // className: 'center',
-    // centerPadding: "60px",
-    accessibility: true,
+    accessibility: false,
     infinite: true,
     speed: 1000,
-    // slidesToShow: 6,
     slidesToScroll: 1,
     variableWidth: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     cssEase: "ease-in-out",
     focusOnSelect: true,
+    arrows: false,
 
 };
 
-const stockCard = (name, country, amount, rate, color) =>
+const stockCard = (name, country, amount, rate, color,key) =>
     (
-        <div className='stockInfo_card'>
+        <div className='stockInfo_card' key={name}>
             <div className='stockInfo_card-header'>
                 <h3><strong>{name}</strong>/{country}</h3>
                 <p style={{ color: color }}><strong>{rate}%</strong></p>
@@ -122,13 +121,8 @@ const stockCard = (name, country, amount, rate, color) =>
 const StockInfo = () => {
     return (
         <div className='stockInfo'>
-        {/* <div> */}
-            {/* {data.map((e) => stockCard(e.name, e.country, e.amount, e.rate, e.color))} */}
-
-
             <Slider {...sliderSettings}>
                 {data.map((e) => stockCard(e.name, e.country, e.amount, e.rate, e.color))}
-
             </Slider>
 
 
