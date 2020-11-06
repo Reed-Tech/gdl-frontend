@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import logo_small from '../images/logo_small.svg'
+import logo_small from '../assets/images/logo_small.svg'
 
 
 

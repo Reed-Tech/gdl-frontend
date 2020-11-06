@@ -1,7 +1,7 @@
 import React from 'react'
-import YoutubeIcon from '../images/Youtube.svg'
-import FacebookIcon from '../images/Facebook.svg'
-import TwitterIcon from '../images/Twitter.svg'
+import YoutubeIcon from '../assets/images/Youtube.svg'
+import FacebookIcon from '../assets/images/Facebook.svg'
+import TwitterIcon from '../assets/images/Twitter.svg'
 
 
 const HeaderSocialLinks = () => {

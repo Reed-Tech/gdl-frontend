@@ -7,10 +7,12 @@
 @import './components/HeaderSlider';
 @import './components/HeaderSocialLinks';
 @import './components/StockInfo';
-@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../../node_modules/slick-carousel/slick/slick.css';
-@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+@import '../../node_modules/slick-carousel/slick/slick.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // Pages 
 @import './pages/home';
+@import './pages/corporateInformation';
+

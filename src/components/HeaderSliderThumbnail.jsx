@@ -7,12 +7,9 @@ const HeaderSliderThumbnail = () => {
             <div className='headerSliderThumbnail_container'>
                 <div className='headerSliderThumbnail_card'>
                     <p>Architecture</p>
-                    <img src="" alt="architecture"/>
-
+                    <img src="" alt="architecture" />
                 </div>
-
             </div>
-            
         </div>
     )
 }

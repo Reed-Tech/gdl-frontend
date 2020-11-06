@@ -1,12 +1,16 @@
 .navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgba($color: $white, $alpha: 0.5);
     padding: 1em clamp(2.5em, 6vw, 6.5em);
     background-color: rgba($color: black, $alpha: 0.02);
-    transition: padding .3s ;
-    @media screen and (max-width:1220px){
-        padding: .1em 1.5em ;
+    transition: padding .3s;
+    z-index: 900;
+
+    @media screen and (max-width:1220px) {
+        padding: .1em 1.5em;
     }
 
     &_brand {
@@ -61,9 +65,11 @@
     &_nested {
         &_parent {
             position: relative;
-            &-container > a{
+
+            &-container>a {
                 padding: 20px;
             }
+
             &-container:hover>.navbar_nested_ul {
                 display: flex;
                 left: 0;
@@ -140,14 +146,15 @@
                         transform: translateY(7px);
                     }
                 }
-                &-close{
+
+                &-close {
                     div {
                         background-color: transparent;
-                
+
                         &::before {
                             transform: translateY(0) rotate(-45deg)
                         }
-                
+
                         &::after {
                             transform: translateY(0) rotate(45deg)
                         }
@@ -158,12 +165,11 @@
     }
 
     // -----------Mobile Style 
-    @media screen and (max-width: 1220px){
-        &_brand{
-            img{
+    @media screen and (max-width: 1220px) {
+        &_brand {
+            img {
                 transform: scale(0.7);
             }
         }
     }
 }
-

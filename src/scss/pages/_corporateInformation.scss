@@ -1,0 +1,8 @@
+.corporateInformation{
+    height: 100vh;
+    background: url(../../assets/images/landing2.png) rgba($color: #000000, $alpha: 0.4);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: clamp(5em, 11vh, 8em);
+}

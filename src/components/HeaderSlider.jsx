@@ -1,41 +1,65 @@
 import React from 'react'
 import Slider from "react-slick"
-import image1 from '../images/Picture 1.png'
-import image2 from '../images/section - human.png'
+import Landing from '../assets/images/landing.png'
+import Landing2 from '../assets/images/landing2.png'
 
 
-const sliderSettings = {
-    dots: true,
-    accessibility: true,
-    infinite: true,
-    speed: 1000,
-    slidesToScroll: 1,
-    variableWidth: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "ease-in-out",
-    focusOnSelect: true,
-    arrows: false,
 
-};
 
-const HeaderSlider = () => {
+const HeaderSlider = (props) => {
+
+    const sliderSettings = {
+        dots: true,
+        dotsClass: "headerSlider_container-dots",
+        accessibility: true,
+        infinite: true,
+        speed: 900,
+        slidesToScroll: 1,
+        variableWidth: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        cssEase: "ease-in-out",
+        focusOnSelect: false,
+        arrows: false,
+        fade: true,
+        pauseOnHover: false,
+        pauseOnDotsHover: true,
+        lazyLoad: 'progressive',
+    };
+
+    const slideData = [
+        {
+            image: Landing,
+            id: 1,
+            h3: 'Your financial goals are our priority.',
+            h1: 'SECURE YOUR FUTURE',
+            h4: 'We are committed to building your wealth with different investment options, all tailored to suit YOU.'
+        },
+        {
+            image: Landing2,
+            id: '2vmms',
+            h3: 'Your financial goals are our priority.',
+            h1: 'WE BUILD FUTURES',
+            h4: `We are committed to building your wealth with different investment options, all tailored to suit YOU.`
+        },
+
+    ]
+
     return (
-        // <div className='headerSlider' style={{display:'block', background:`blue`}}>
-        // <div className='headerSlider' style={{display:'block', background:`url(${image1})`}}>
-        <div className='headerSlider'  style ={ { backgroundImage: `url('https://i.ytimg.com/vi/MC-mszipMKY/mqdefault.jpg')` } }>
-            <Slider {...sliderSettings}>
-                <div className='headerSlider_container'>
-                    <div className='headerSlider_text'>
-                        <h3>Your financial goals are our priority </h3>
-                        <h1>SECURE YOUR FUTURE</h1>
-                        <h4>We are committed to building your wealth with different investment options, all tailored to suit <strong>YOU.</strong> </h4>
-                    </div>
-                </div>
+        <div className='headerSlider'  >
+            <Slider {...sliderSettings}  >
+                {slideData.map((slides) =>
+                    <section id={slides.id}>
+                        <div className='headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
+                            <div className='headerSlider_container-text'>
+                                <h3>{slides.h3}</h3>
+                                <h1>{slides.h1}</h1>
+                                <h4>{slides.h4}</h4>
+                            </div>
+                        </div>
+                    </section>
+                )}
             </Slider>
-
-
-
         </div >
     )
 }
