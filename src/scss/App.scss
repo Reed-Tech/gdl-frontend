@@ -1,12 +1,17 @@
 @import './base/variables';
 @import './base/typography';
+@import './base/mixin';
 
 
 // Components 
-@import './components/Navbar';
-@import './components/HeaderSlider';
-@import './components/HeaderSocialLinks';
-@import './components/StockInfo';
+@import './components/navbar';
+@import './components/headerSlider';
+@import './components/headerSocialLinks';
+@import './components/stockInfo';
+@import './components/card';
+@import './components/pageSlider';
+@import './components/cardImage';
+@import './components/footerNav';
 
 @import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 @import '../../node_modules/slick-carousel/slick/slick.css';
@@ -14,5 +19,15 @@
 
 // Pages 
 @import './pages/home';
-@import './pages/corporateInformation';
+@import './pages/whoWeAre';
+@import './pages/whatWeDo';
+@import './pages/whyUs';
+@import './pages/advert';
+@import './pages/creatingWealth';
 
+
+@import './pages/assetManagement';
+@import './pages/corporateInformation';
+@import './pages/boardOfDirectors';
+@import './pages/managementTeam';
+@import './pages/financeAndLeasing';

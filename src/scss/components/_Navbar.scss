@@ -3,13 +3,13 @@
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 2px solid rgba($color: $white, $alpha: 0.5);
+    border-bottom: 1px solid rgba($color: $white, $alpha: 0.5);
     padding: 1em clamp(2.5em, 6vw, 6.5em);
     background-color: rgba($color: black, $alpha: 0.02);
     transition: padding .3s;
     z-index: 900;
 
-    @media screen and (max-width:1220px) {
+    @media screen and (max-width:1020px) {
         padding: .1em 1.5em;
     }
 
@@ -25,7 +25,7 @@
         padding: 0;
         display: flex;
 
-        @media screen and (max-width:1220px) {
+        @media screen and (max-width:1020px) {
             display: none;
         }
 
@@ -33,13 +33,13 @@
             display: inline-block;
 
             a {
-                padding: 12px 16px;
+                padding: .825em 1em;
                 transition: all ease-in-out 0.2s;
                 position: relative;
                 top: 0;
                 text-transform: uppercase;
                 font-weight: 500;
-                font-size: clamp(0.875em, 2vw, 1.125em);
+                font-size: clamp(0.875em, 1vw, 1.125em);
                 color: $white;
 
                 &:hover {
@@ -107,7 +107,7 @@
             align-items: center;
             justify-content: flex-end;
 
-            @media screen and (max-width:1220px) {
+            @media screen and (max-width:1020px) {
                 display: flex;
             }
 
@@ -165,7 +165,7 @@
     }
 
     // -----------Mobile Style 
-    @media screen and (max-width: 1220px) {
+    @media screen and (max-width: 1020px) {
         &_brand {
             img {
                 transform: scale(0.7);

@@ -4,9 +4,9 @@ import FacebookIcon from '../assets/images/Facebook.svg'
 import TwitterIcon from '../assets/images/Twitter.svg'
 
 
-const HeaderSocialLinks = () => {
+const HeaderSocialLinks = (props) => {
     return (
-            <ul className='HeaderSocialLinks'>
+            <ul className={props.customStyle? props.customStyle : 'HeaderSocialLinks'}>
                 <li><a href="facebook"><img src={FacebookIcon} alt="Facebook Link"/></a></li>
                 <li><a href="twitter"><img src={TwitterIcon} alt="Twitter Link"/></a></li>
                 <li><a href="youtube"><img src={YoutubeIcon} alt="Youtube Link"/></a></li>

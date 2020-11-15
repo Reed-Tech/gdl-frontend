@@ -1,0 +1,29 @@
+.assetManagement {
+    @include headerFontStyle;
+
+    &_cardImage {
+        transition: all ease-in-out .3s;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            cursor: pointer;
+
+            h3 {
+                transform: scale(1);
+
+            }
+        }
+
+        background-blend-mode: overlay;
+
+        h3 {
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            transform: scale(0.85);
+            transition: all 0.3s ;
+        }
+    }
+}

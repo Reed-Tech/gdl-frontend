@@ -1,0 +1,41 @@
+.advert {
+    background-color: rgba($color: black, $alpha: 0.5);
+    background-blend-mode: overlay;
+    padding-top: 128px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8em;
+
+
+    &_video {
+        display: block;
+        margin: 0 auto;
+
+        video {
+            width: 100%;
+        }
+    }
+
+    &_text {
+        color: white;
+
+        h1 {
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            // margin: .85em 0;
+            padding: 0;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            margin: 2em auto 0 auto;
+            display: block;
+
+        }
+    }
+}

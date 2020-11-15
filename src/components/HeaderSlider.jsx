@@ -3,8 +3,25 @@ import Slider from "react-slick"
 import Landing from '../assets/images/landing.png'
 import Landing2 from '../assets/images/landing2.png'
 
+// _______________________________________________________________________________________
+const slideData = [
+    {
+        image: Landing,
+        id: 1,
+        h3: 'Your financial goals are our priority.',
+        h1: 'SECURE YOUR FUTURE',
+        h4: 'We are committed to building your wealth with different investment options, all tailored to suit YOU.'
+    },
+    {
+        image: Landing2,
+        id: '2vms',
+        h3: 'Your financial goals are our priority.',
+        h1: 'WE BUILD FUTURES',
+        h4: `We are committed to building your wealth with different investment options, all tailored to suit YOU.`
+    },
 
-
+]
+// _______________________________________________________________________________________
 
 const HeaderSlider = (props) => {
 
@@ -27,38 +44,23 @@ const HeaderSlider = (props) => {
         lazyLoad: 'progressive',
     };
 
-    const slideData = [
-        {
-            image: Landing,
-            id: 1,
-            h3: 'Your financial goals are our priority.',
-            h1: 'SECURE YOUR FUTURE',
-            h4: 'We are committed to building your wealth with different investment options, all tailored to suit YOU.'
-        },
-        {
-            image: Landing2,
-            id: '2vmms',
-            h3: 'Your financial goals are our priority.',
-            h1: 'WE BUILD FUTURES',
-            h4: `We are committed to building your wealth with different investment options, all tailored to suit YOU.`
-        },
 
-    ]
+    const renderSlideData = (
+        slideData.map((slides) => <section key={slides.h1}>
+            <div className='headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
+                <div className='headerSlider_container-text'>
+                    <h3>{slides.h3}</h3>
+                    <h1>{slides.h1}</h1>
+                    <h4>{slides.h4}</h4>
+                </div>
+            </div>
+        </section>)
+    )
 
     return (
         <div className='headerSlider'  >
             <Slider {...sliderSettings}  >
-                {slideData.map((slides) =>
-                    <section id={slides.id}>
-                        <div className='headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
-                            <div className='headerSlider_container-text'>
-                                <h3>{slides.h3}</h3>
-                                <h1>{slides.h1}</h1>
-                                <h4>{slides.h4}</h4>
-                            </div>
-                        </div>
-                    </section>
-                )}
+                {renderSlideData}
             </Slider>
         </div >
     )

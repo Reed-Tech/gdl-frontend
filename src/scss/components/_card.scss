@@ -1,0 +1,26 @@
+.customCard {
+    padding: 50px 30px;
+    background-color: rgba($color: black, $alpha: .65);
+    display: inline-block;
+    height: fit-content;
+    color: white;
+
+    h3 {
+        font-size: 24px;
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 2em;
+
+        li {
+            padding: .5rem 0;
+        }
+    }
+
+    &_text-spacing {
+        p {
+            line-height: 2em;
+        }
+    }
+}

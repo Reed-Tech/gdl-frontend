@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 
+// _______________________________________________________________________________________
 const data = [
     {
         name: 'Apple Stocks',
@@ -88,6 +89,7 @@ const data = [
         color: 'green',
     },
 ]
+// _______________________________________________________________________________________
 
 const sliderSettings = {
     dots: false,

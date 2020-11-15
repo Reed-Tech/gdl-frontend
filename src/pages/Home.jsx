@@ -1,21 +1,28 @@
 import React from 'react'
+import FooterNav from '../components/FooterNav'
 import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
-import CorporateInformation from './CorporateInformation'
+import Advert from './Advert'
+import CreatingWealth from './CreatingWealth'
+import WhatWeDo from './WhatWeDo'
+import WhoWeAre from './WhoWeAre'
 
-const Home = () => {
+const Home = (props) => {
     return (
-        <div  className='home'>
+        <div className='home' id='HOME'>
             <div className='home_landingPage' id='landingPage'>
-                <Navbar />
-                <HeaderSocialLinks/>
+                <Navbar history={props.history} />
+                <HeaderSocialLinks />
                 <StockInfo />
                 <HeaderSlider />
             </div>
-            <CorporateInformation/>
-
+            <WhoWeAre />
+            <WhatWeDo />
+            <Advert />
+            <CreatingWealth />
+            {/* <FooterNav /> */}
         </div>
     )
 }

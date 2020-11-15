@@ -13,5 +13,4 @@ const HeaderSliderThumbnail = () => {
         </div>
     )
 }
-
 export default HeaderSliderThumbnail

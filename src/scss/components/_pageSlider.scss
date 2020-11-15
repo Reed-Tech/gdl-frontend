@@ -1,0 +1,66 @@
+.pageSlider {
+    background-color: rgba(0, 128, 0, 0.102);
+
+    &-dots-right {
+        float: right;
+    }
+
+    &-dots {
+        padding: 0;
+        color: white;
+        background-color: rgba($color: black, $alpha: 0.6);
+        margin: 0;
+        width: fit-content;
+        margin-top: 2.5em;
+
+        li {
+            list-style: none;
+            display: inline-block;
+
+            p {
+                margin: 0 3px;
+                padding: 0;
+                font-size: 14px;
+                cursor: pointer;
+                padding: .85em;
+                display: block;
+            }
+
+            &:hover>p {
+                position: relative;
+                top: -1.5px;
+                // border-bottom: 1.5px solid white;
+
+            }
+
+            button {
+                border: none;
+                background: rgba($color: $white, $alpha: .6);
+                color: transparent;
+                cursor: pointer;
+                display: block;
+                height: 0.65em;
+                width: 0.65em;
+                border-radius: 100px;
+
+                &:hover {
+                    background: $white;
+                    outline: 0;
+                }
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+
+            &.slick-active {
+                p {
+                    span {
+
+                        border-bottom: 1.5px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
