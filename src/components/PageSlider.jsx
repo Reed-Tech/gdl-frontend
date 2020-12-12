@@ -1,10 +1,18 @@
 import React from 'react'
 import Slider from 'react-slick'
 
+
+
 const PageSlider = (props) => {
+
     const sliderSettings = {
         dots: true,
-        fade: true,
+        accessibility: false,
+        // adaptiveHeight: true,
+        draggable: false,
+        infinite: false,
+        pauseOnHover: false,
+        fade: false,
         slidesToScroll: 1,
         variableWidth: false,
         cssEase: "ease-in-out",
@@ -17,11 +25,17 @@ const PageSlider = (props) => {
                 <p><span>{props.navLinks[i]}</span></p>
             );
         },
+        // afterChange: function (index) {
+        //     dispatch({type: t.WHAT_WE_DO_MODAL_POSITION, index})
+        // }
+        afterChange: props.afterChange
     }
 
 
+
+
     return (
-        <Slider {...sliderSettings}>
+        <Slider  {...sliderSettings} >
             {props.children}
         </Slider>
     )

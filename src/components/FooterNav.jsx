@@ -12,7 +12,7 @@ const FooterNav = () => {
                 <NavLink to='/'>Career</NavLink>
             </nav>
             <div>
-                <HeaderSocialLinks customStyle='footerNav_socialLinks' />
+                <HeaderSocialLinks customClass='footerNav_socialLinks' />
                 {/* <p>1, Afolabi Lesi street, Ilupeju, Lagos.</p> */}
             </div>
 
@@ -20,5 +20,4 @@ const FooterNav = () => {
         </div>
     )
 }
-
 export default FooterNav

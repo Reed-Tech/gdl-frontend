@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterNav from '../components/FooterNav'
+// import FooterNav from '../components/FooterNav'
 import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'

@@ -5,9 +5,8 @@ import logo_small from '../assets/images/logo_small.svg'
 
 
 const Navbar = (props) => {
-    const [toggle, setToggle] = React.useState(false)
+    const [NavToggle, setNavToggle] = React.useState(false)
     const goToHome = () => window.scrollTo(0, 0)
-
     return (
         <nav className='navbar'>
             <NavLink onClick={goToHome} className='navbar_brand' to='/'>
@@ -30,7 +29,7 @@ const Navbar = (props) => {
                         </ul>
                     </div>
                 </li>
-                <li className='navbar_ul-li'><NavLink to='#'>Contact</NavLink></li>
+                <li className='navbar_ul-li'><NavLink to='/contact-us'>Contact</NavLink></li>
             </ul>
             <ul className='navbar_ul'>
                 <li className='navbar_ul-li'><NavLink to='#'>Open an account</NavLink></li>
@@ -39,7 +38,7 @@ const Navbar = (props) => {
 
             {/* Mobile Menu */}
             <div className='navbar_mobile-hamburgerMenu'>
-                <div onClick={() => setToggle(!toggle)} className={`navbar_mobile-hamburgerMenu-icon ${toggle ? 'navbar_mobile-hamburgerMenu-icon-close' : ''} `}>
+                <div onClick={() => setNavToggle(!NavToggle)} className={`navbar_mobile-hamburgerMenu-icon ${NavToggle ? 'navbar_mobile-hamburgerMenu-icon-close' : ''} `}>
                     <div></div>
                 </div>
             </div>

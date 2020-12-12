@@ -6,7 +6,7 @@ import TwitterIcon from '../assets/images/Twitter.svg'
 
 const HeaderSocialLinks = (props) => {
     return (
-            <ul className={props.customStyle? props.customStyle : 'HeaderSocialLinks'}>
+            <ul className={props.customClass? props.customClass : 'HeaderSocialLinks'}>
                 <li><a href="facebook"><img src={FacebookIcon} alt="Facebook Link"/></a></li>
                 <li><a href="twitter"><img src={TwitterIcon} alt="Twitter Link"/></a></li>
                 <li><a href="youtube"><img src={YoutubeIcon} alt="Youtube Link"/></a></li>

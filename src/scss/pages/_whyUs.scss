@@ -1,3 +1,5 @@
 .whyUs{
     @include headerFontStyle;
+    display: flex;
+    flex-direction: column;
 }
