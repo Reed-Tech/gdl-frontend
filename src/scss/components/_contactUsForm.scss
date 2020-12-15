@@ -1,0 +1,35 @@
+.contactUsForm {
+    background-color: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 3px 8px rgba(black, .16);
+    width: fit-content;
+    padding: clamp(1em, 4vw, 10em);
+
+    p {
+        text-align: center;
+    }
+
+    input {
+        display: block;
+    }
+
+    textarea {
+        display: block;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &_firstName {
+        @media screen and (max-width: 575px) {
+            margin-bottom: 1em;
+
+        }
+    }
+}
+
+// .contactUsForm_firstName{
+//     margin-bottom: 1em;
+
+// }
