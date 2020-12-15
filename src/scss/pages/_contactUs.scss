@@ -65,6 +65,9 @@
         background-position: center;
         background-size: cover;
         transition: all .3s;
+        display: flex;
+        justify-content: center;
+        padding:2em .5em;
         @media screen and (max-width: 1020px){
             margin: 4em 0,
         }

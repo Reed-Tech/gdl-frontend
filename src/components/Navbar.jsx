@@ -14,8 +14,8 @@ const Navbar = (props) => {
             </NavLink>
             <ul className='navbar_ul'>
                 <li className='navbar_ul-li mr-lg-5 mr-md-0'><NavLink onClick={goToHome} to='./'>Home</NavLink></li>
-                <li className='navbar_ul-li'><a href='#whoWeAre'>Who we are</a></li>
-                <li className='navbar_ul-li'><a href='#whatWeDo'>What we do</a></li>
+                <li className='navbar_ul-li'><a href='/#whoWeAre'>Who we are</a></li>
+                <li className='navbar_ul-li'><a href='/#whatWeDo'>What we do</a></li>
             </ul>
             <ul className='navbar_ul'>
                 <li className='navbar_ul-li navbar_nested_parent'>
