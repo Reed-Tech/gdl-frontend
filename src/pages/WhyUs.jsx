@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import Card from '../components/Card'
 
 const WhyUs = () => {
@@ -13,7 +14,7 @@ const WhyUs = () => {
 
             <Card className='text-center align-self-center mt-3' >
                 <p>For further inquiries or clarifications </p>
-                <button>Contact Us</button>
+                <Button variant='light'>Contact Us</Button>
             </Card>
         </section>
     )

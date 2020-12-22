@@ -14,7 +14,12 @@
 
         video {
             width: 100%;
+            &:focus{
+                outline: transparent;
+
+            }
         }
+
     }
 
     &_text {

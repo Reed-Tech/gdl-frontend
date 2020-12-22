@@ -1,0 +1,21 @@
+.events {
+    min-height: 50vh;
+    padding: clamp(10px, 5vw, 8vw);
+
+    &_eventList {
+       
+        ul {
+            margin: 0;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li{
+                padding: clamp(10px, 5vw, 1em) 12px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgba(65, 65, 65, 0.111);
+                }
+            }
+        }
+    }
+}

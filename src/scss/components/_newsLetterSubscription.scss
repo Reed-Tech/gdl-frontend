@@ -1,0 +1,42 @@
+.newsLetterSubscription{
+    margin: clamp(1em, 4vw, 5vw);
+    padding: clamp(10px, 5vw, 8vw) 0;
+
+    &_outdoor{
+        &-image{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            border-radius: 6px;
+        }
+        &-images{
+            gap: 12px;
+        }
+        &-imagesGrid{
+            min-height: clamp(64px, 1vw, 5vw);
+            min-width: 52px;
+            width: 100%;
+            border-radius: 2px;
+            padding: 0;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            max-width: 24%;
+        }
+    }
+
+    &_subscription{
+        // background-color: red;
+
+        &-illustration{
+            background: url('../../assets/images/mailIllustration.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+        }
+
+
+    }
+}

@@ -1,0 +1,11 @@
+.career{
+    overflow-x:hidden ;
+    header{
+        height: 100vh;
+    }
+
+    &_strandedText {
+        padding: clamp(3em, 8vw, 10vw) clamp(10px, 5vw, 8vw);
+text-align: center;
+    }
+}

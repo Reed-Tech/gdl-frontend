@@ -13,7 +13,7 @@ const Navbar = (props) => {
                 <img src={logo_small} alt="GDL" />
             </NavLink>
             <ul className='navbar_ul'>
-                <li className='navbar_ul-li mr-lg-5 mr-md-0'><NavLink onClick={goToHome} to='./'>Home</NavLink></li>
+                <li className='navbar_ul-li mr-lg-5 mr-md-0'><NavLink onClick={goToHome} to='./#home'>Home</NavLink></li>
                 <li className='navbar_ul-li'><a href='/#whoWeAre'>Who we are</a></li>
                 <li className='navbar_ul-li'><a href='/#whatWeDo'>What we do</a></li>
             </ul>
@@ -22,10 +22,10 @@ const Navbar = (props) => {
                     <div className="navbar_nested_parent-container">
                         <NavLink to='#'>Resources</NavLink>
                         <ul className='navbar_nested_ul'>
-                            <li> <NavLink to='#' >Blog</NavLink>  </li>
-                            <li> <NavLink to='#' >Media</NavLink>  </li>
-                            <li> <NavLink to='#' >Career</NavLink>  </li>
-                            <li> <NavLink to='#' >Research</NavLink>  </li>
+                            <li> <NavLink to='/blog' >Blog</NavLink>  </li>
+                            <li> <NavLink to='/media' >Media</NavLink>  </li>
+                            <li> <NavLink to='/career' >Career</NavLink>  </li>
+                            <li> <NavLink to='/research' >Research</NavLink>  </li>
                         </ul>
                     </div>
                 </li>

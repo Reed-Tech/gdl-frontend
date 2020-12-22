@@ -18,9 +18,8 @@ const assetManagementCards = [
 
 const AssetsManagement = (props) => {
 
-    const { state, dispatch } = React.useContext(Store)
+    const {  dispatch } = React.useContext(Store)
     React.useEffect(() => dispatch({ type: t.ASSET_MANAGEMENT, payload: assetManagementCards.map(e => e.id) }), [dispatch])
-    console.log(state)
     return (
         <section className='assetManagement'>
             <h1>ASSET MANAGEMENT</h1>

@@ -1,5 +1,10 @@
 .stockInfo {
+  width: 100%;
   z-index: 2;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
   .stockInfo_card {
     background-color: rgba(0, 0, 0, 0.24);
     max-width: 200px;

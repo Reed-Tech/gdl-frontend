@@ -1,5 +1,5 @@
 import React from 'react'
-// import FooterNav from '../components/FooterNav'
+import FooterNav from '../components/FooterNav'
 import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
@@ -11,7 +11,7 @@ import WhoWeAre from './WhoWeAre'
 
 const Home = (props) => {
     return (
-        <div className='home' id='HOME'>
+        <div className='home' id='home'>
             <div className='home_landingPage' id='landingPage'>
                 <Navbar history={props.history} />
                 <HeaderSocialLinks />
@@ -22,7 +22,7 @@ const Home = (props) => {
             <WhatWeDo />
             <Advert />
             <CreatingWealth />
-            {/* <FooterNav /> */}
+            <FooterNav history={props.history}/>
         </div>
     )
 }

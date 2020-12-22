@@ -16,6 +16,22 @@
 @import './components/contactUsForm';
 @import './components/footerMap';
 @import './components/footer';
+@import './components/videos';
+@import './components/banner';
+@import './components/imagesCarousel';
+@import './components/events';
+@import './components/ourMission';
+@import './components/newsLetterSubscription';
+@import './components/footerCareer';
+@import './components/bannerBlog';
+@import './components/searchBlog';
+@import './components/careerContent';
+@import './components/careerSlider';
+@import './components/careerCard';
+@import './components/bannerCareer';
+@import './components/blogSlider';
+@import './components/blogCard';
+
 
 @import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 @import '../../node_modules/slick-carousel/slick/slick.css';
@@ -29,6 +45,11 @@
 @import './pages/advert';
 @import './pages/creatingWealth';
 @import './pages/contactUs';
+@import './pages/blog';
+@import './pages/media';
+@import './pages/career';
+@import './pages/research';
+
 
 
 @import './pages/assetManagement';

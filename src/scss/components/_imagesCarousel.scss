@@ -1,0 +1,75 @@
+.imagesCarousel {
+    min-height: 60vh;
+    width: 100%;
+    padding: 5vw clamp(10px, 4vw, 5vw);
+    overflow-x: hidden;
+
+    .slide {
+        width: 100vw;
+        margin-left: -4vw;
+    }
+
+
+    h1 {
+        color: #6C2121;
+        text-align: center;
+        font-weight: 900;
+        font-size: clamp(1.25em, 3vw, 2.5em);
+    }
+
+    &_nav {
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+            color: #6C2121;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &_body {
+        min-height: 60vh;
+        padding: clamp(2vw, 10vw, 10vw);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+
+        div {
+            margin-bottom: 5vh;
+        }
+
+        h1 {
+            color: white;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: clamp(1em, 3vw, 1.5em);
+
+        }
+
+        a {
+            color: white;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            svg {
+                transform: scale(0.8);
+            }
+
+        }
+
+
+    }
+}

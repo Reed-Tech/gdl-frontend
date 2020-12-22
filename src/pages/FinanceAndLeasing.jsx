@@ -15,8 +15,7 @@ const financeAndLeasingCards = [
 
 const FinanceAndLeasing = (props) => {
 
-    const { state, dispatch } = useContext(Store)
-    console.log(state);
+    const { dispatch } = useContext(Store)
 
     useEffect(() => dispatch({ type: t.FINANCE_AND_LEASING, nav: financeAndLeasingCards.map(e => e.id) }), [dispatch])
 
@@ -43,7 +42,7 @@ const FinanceAndLeasing = (props) => {
 
 
                         {financeAndLeasingCards.map((e) =>
-                            <CardImage key={e.id} image={e.image} className='col-4 assetManagement_cardImage' id={e.id} onClick={()=>dispatch({type:t.ASSET_MANAGEMENT_ACTIVE, payload:e.id})}>
+                            <CardImage key={e.id} image={e.image} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e.id })}>
                                 {e.text}
                             </CardImage>
                         )}

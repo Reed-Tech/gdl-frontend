@@ -3,6 +3,7 @@ import { Store, type as t } from '../context/store'
 import Card from '../components/Card'
 
 import Slider from 'react-slick'
+import { Button } from "react-bootstrap"
 
 const WhatWeDoModal = (props) => {
 
@@ -54,7 +55,7 @@ const WhatWeDoModal = (props) => {
         ]
 
     }
-    
+
 
     // ------------------- WHAT WE DO MODAL SUB-PAGES  ----------------------------
     //  Asset Management id form state must equal constant name 
@@ -92,7 +93,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Funds?</p>
-                    <button>Click Here</button>
+                    <Button variant='light'>Click Here</Button>
                 </div>
             )
         },
@@ -126,7 +127,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Start Investing Smartly.</p>
-                    <button>Open an Account Here.</button>
+                    <Button variant='light'>Open an Account Here.</Button>
                 </div>
             )
         },
@@ -157,7 +158,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in making money from shares?</p>
-                    <button>Click Here</button>
+                    <Button variant='light'>Click Here</Button>
                 </div>
             )
         },
@@ -194,7 +195,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Take our hand as we light up your way to prosperity.</p>
-                    <button>Reach Out To US Now</button>
+                    <Button variant='light'>Reach Out To US Now</Button>
                 </div>
             )
         },
@@ -234,7 +235,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Safeguard your Legacy today. </p>
-                    <button>Sign Up For ETP Here</button>
+                    <Button variant='light'>Sign Up For ETP Here</Button>
                 </div>
             )
         },
@@ -271,7 +272,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>For further inquiries or clarifications </p>
-                    <button>Contact Us</button>
+                    <Button variant='light'>Contact Us</Button>
                 </div>
             )
         },
@@ -307,7 +308,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Fund? </p>
-                    <button>Click Here</button>
+                    <Button variant='light'>Click Here</Button>
                 </div>
             )
         },
@@ -332,7 +333,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested? Contact our team of seasoned experts to get started </p>
-                    <button>Contact Us</button>
+                    <Button variant='light'>Contact Us</Button>
                 </div>
             )
         },
@@ -360,7 +361,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Ready to invest for the Future?</p>
-                    <button>Fill Form</button>
+                    <Button variant='light'>Fill Form</Button>
                 </div>
             )
         },
@@ -385,7 +386,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Fill Form Now to invest in the GDL dollar note now. </p>
-                    <button>Fill Form</button>
+                    <Button variant='light'>Fill Form</Button>
                 </div>
             )
         },
@@ -423,7 +424,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Fund? </p>
-                    <button>Click Here</button>
+                    <Button variant='light'>Click Here</Button>
                 </div>
             )
         },

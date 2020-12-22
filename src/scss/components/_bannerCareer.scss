@@ -1,0 +1,21 @@
+.bannerCareer {
+    padding: clamp(3em, 8vw, 10vw) clamp(10px, 5vw, 8vw);
+    background-image: url(../../assets/images/BannerCareer.png);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+        font-weight: 600;
+        margin: 0;
+        text-align: center;
+        color: white;
+
+        span {
+            font-size: 0.7em;
+            font-weight: normal;
+        }
+
+    }
+
+   
+}

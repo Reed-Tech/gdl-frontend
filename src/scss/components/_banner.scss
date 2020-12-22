@@ -1,0 +1,24 @@
+.banner{
+    min-height: 200px;
+    padding: 2em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: clamp(3em, 5vw, 8vw) 0;
+    h3{
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+        letter-spacing: 12px;
+        margin-bottom: 0;
+    }
+    p{
+        color: white;
+        font-size: 1em;
+        max-width: 35vw;
+        margin-bottom: 0
+    };
+}
