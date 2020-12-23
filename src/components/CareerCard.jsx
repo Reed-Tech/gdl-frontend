@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import bg1 from '../assets/images/CareerCard1.png'
+// import bg1 from '../assets/images/CareerCard1.png'
 
 const CareerCard = (props) => {
     return (

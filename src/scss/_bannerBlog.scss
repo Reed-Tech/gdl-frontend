@@ -1,5 +1,5 @@
 .bannerBlog {
-    background-image: url('../../assets/images/BannerBlog.png');
+    background-image: url('../assets/images/BannerBlog.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,7 +21,7 @@
         overflow: hidden;
 
         div {
-            background-image: url(../../assets/images/BannerImage.png);
+            background-image: url(../assets/images/BannerImage.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;

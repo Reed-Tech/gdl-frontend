@@ -1,110 +1,55 @@
 @import './base/variables';
-
 @import './base/typography';
-
 @import './base/mixin';
 
 
 
-// Components 
-
-@import './components/navbar';
-
-@import './components/headerSlider';
-
-@import './components/headerSocialLinks';
-
-@import './components/stockInfo';
-
-@import './components/card';
-
-@import './components/pageSlider';
-
-@import './components/cardImage';
-
-@import './components/footerNav';
-
-@import './components/whatWeDoModal';
-
-@import './components/contactUsForm';
-
-@import './components/footerMap';
-
-@import './components/footer';
-
-@import './components/videos';
-
-@import './components/banner';
-
-@import './components/imagesCarousel';
-
-@import './components/events';
-
-@import './components/ourMission';
-
-@import './components/newsLetterSubscription';
-
-@import './components/footerCareer';
-
-@import './components/bannerBlog';
-
-@import './components/searchBlog';
-
-@import './components/careerContent';
-
-@import './components/careerSlider';
-
-@import './components/careerCard';
-
-@import './components/bannerCareer';
-
-@import './components/blogSlider';
-
-@import './components/blogCard';
-
+@import './navbar';
+@import './headerSlider';
+@import './headerSocialLinks';
+@import './stockInfo';
+@import './card';
+@import './pageSlider';
+@import './cardImage';
+@import './footerNav';
+@import './whatWeDoModal';
+@import './contactUsForm';
+@import './footerMap';
+@import './footer';
+@import './videos';
+@import './banner';
+@import './imagesCarousel';
+@import './events';
+@import './ourMission';
+@import './newsLetterSubscription';
+@import './footerCareer';
+@import './bannerBlog';
+@import './searchBlog';
+@import './careerContent';
+@import './careerSlider';
+@import './careerCard';
+@import './blogSlider';
+@import './blogCard';
+@import './bannercareer';
 
 
 @import '../../node_modules/slick-carousel/slick/slick-theme.scss';
-
 @import '../../node_modules/slick-carousel/slick/slick.css';
-
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-
-// Pages 
-
-@import './pages/home';
-
-@import './pages/whoWeAre';
-
-@import './pages/whatWeDo';
-
-@import './pages/whyUs';
-
-@import './pages/advert';
-
-@import './pages/creatingWealth';
-
-@import './pages/contactUs';
-
-@import './pages/blog';
-
-@import './pages/media';
-
-@import './pages/career';
-
-@import './pages/research';
-
-
-
-
-@import './pages/assetManagement';
-
-@import './pages/corporateInformation';
-
-@import './pages/boardOfDirectors';
-
-@import './pages/managementTeam';
-
-@import './pages/financeAndLeasing';
-
+@import './home';
+@import './whoWeAre';
+@import './whatWeDo';
+@import './whyUs';
+@import './advert';
+@import './creatingWealth';
+@import './contactUs';
+@import './blog';
+@import './media';
+@import './career';
+@import './research';
+@import './assetManagement';
+@import './corporateInformation';
+@import './boardOfDirectors';
+@import './managementTeam';
+@import './financeAndLeasing';
