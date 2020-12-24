@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../components/Card'
 import CardImage from '../components/CardImage'
 import ProductBackground1 from '../assets/images/assetManagement1.png'
-import ProductBackground2 from '../assets/images/assetManagement2.png'
+import ProductBackground2 from '../assets/images/AssetManagementCard2.png'
 import { Store, type as t } from '../context/store'
 
 const assetManagementCards = [
