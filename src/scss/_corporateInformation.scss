@@ -1,3 +1,26 @@
 .corporateInformation {
     @include headerFontStyle;
+
+    @media screen and (max-width:1023px) {
+        display: none;
+
+    }
+
+    &_mobile {
+        @media screen and (min-width:1023px) {
+            display: none;
+        }
+        height: 100%;
+
+        h1 {
+            color: white;
+        }
+
+        &-container {
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+        }
+    }
 }

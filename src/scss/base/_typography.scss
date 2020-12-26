@@ -80,10 +80,41 @@ mark,
 audio,
 video {
     font-family: $font-family;
-};
+}
 
-html, body{
-    font-size: 16px;
+;
+
+html,
+body {
+    font-size: 14px;
     scroll-behavior: smooth;
-  
+    scroll-snap-type: y mandatory
+}
+
+
+html{
+    // overflow-y: hidden;
+}
+
+
+.customScroll_thumb {
+    border-radius: 100px;
+    width: 2px;
+    margin: 0 auto;
+    background-color: #82828294;
+    height: 100%;
+    padding: 0;
+}
+
+.customScroll_track {
+    width: 8px;
+    background-color: transparent;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    border-radius: 100px;
+    right: 0;
+    // visibility: hidden;
+
+
 }

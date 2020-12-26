@@ -55,7 +55,10 @@
 
     .slick-track {
         display: flex;
-        gap: 16px;
+
+        div {
+            margin: 0 .4em;
+        }
     }
 
     .slick-dots {
@@ -72,14 +75,8 @@
         bottom: 0;
         left: 0;
         overflow-x: hidden;
-        padding: 6em 2em 2em 2em;
+        padding: 8em 2em 2em 2em;
         z-index: 1;
-
-
-        // @media screen and (max-width:1020px) {
-        //     height: calc(100vh - 4.125em);
-        // }
-
     }
 
     &_close {
@@ -141,4 +138,3 @@
         text-align: center;
     }
 }
-

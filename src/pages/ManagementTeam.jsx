@@ -86,7 +86,7 @@ const ManagementTeam = (props) => {
             <h1>MANAGEMENT TEAM</h1>
             <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
                 <div className='row d-flex managementTeam_container'>
-                    <Card className='col-lg-6 managementTeam_card'>
+                    <Card maxHeight='calc(100vh - 20em)' className='col-lg-6 managementTeam_card'>
                         {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
                         {/* <p>
                             Dr Denloye retired in December 2006 as the Group Managing Director of Telnet Nigeria Limited, a leading ICT company that she co-founded in 1986.
@@ -115,7 +115,7 @@ const ManagementTeam = (props) => {
 
 
 
-        </section>
+        </section >
     )
 }
 

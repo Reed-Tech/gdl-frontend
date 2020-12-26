@@ -2,8 +2,12 @@
     background-color: rgba(0, 128, 0, 0.102);
 
     &-dots-right {
-        float: right;
+        right: 0;
     }
+
+    
+
+    
 
     &-dots {
         padding: 0;
@@ -12,6 +16,9 @@
         margin: 0;
         width: fit-content;
         margin-top: 2.5em;
+        position: absolute;
+        bottom: 0;
+        
 
         li {
             list-style: none;
@@ -63,4 +70,8 @@
             }
         }
     }
+}
+
+.slick-slider{
+    position: static !important;
 }

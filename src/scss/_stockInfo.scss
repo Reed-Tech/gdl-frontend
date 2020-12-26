@@ -15,7 +15,6 @@
 
   .stockInfo_card-header {
     display: flex;
-    gap: 48px;
 
     h3 {
       font-size: 10px;
@@ -23,6 +22,7 @@
       padding: 0;
       margin: 0;
       color: $white;
+      margin-right: 32px;
     }
 
     p {

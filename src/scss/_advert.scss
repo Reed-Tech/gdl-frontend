@@ -1,12 +1,27 @@
 .advert {
     background-color: rgba($color: black, $alpha: 0.5);
     background-blend-mode: overlay;
-    padding-top: 128px;
-    min-height: 100vh;
+    padding: 128px 0;
+    min-height: 20vh;
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 8em;
 
+
+    &_container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+
+        @media screen and (max-width:1023px) {
+            display: none;
+
+        }
+    }
 
     &_video {
         display: block;
@@ -14,7 +29,8 @@
 
         video {
             width: 100%;
-            &:focus{
+
+            &:focus {
                 outline: transparent;
 
             }
@@ -24,12 +40,12 @@
 
     &_text {
         color: white;
+        margin: 0 2em;
 
         h1 {
             text-align: center;
             font-weight: 700;
             text-transform: uppercase;
-            // margin: .85em 0;
             padding: 0;
         }
 
@@ -42,5 +58,24 @@
             display: block;
 
         }
+    }
+
+
+    /* Because i have to write for mobile view too... FML 😌 */
+
+
+    &_mobile {
+        @media screen and (min-width:1023px) {
+            display: none;
+        }
+
+        &-text {
+            color: white;
+            padding: 3em 2em;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
     }
 }

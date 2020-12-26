@@ -1,5 +1,4 @@
 import React from 'react'
-import FooterNav from '../components/FooterNav'
 import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
@@ -21,8 +20,7 @@ const Home = (props) => {
             <WhoWeAre />
             <WhatWeDo />
             <Advert />
-            <CreatingWealth />
-            <FooterNav history={props.history}/>
+            <CreatingWealth history={props.history}/>
         </div>
     )
 }

@@ -1,8 +1,11 @@
 import React from 'react'
 
+
+
+
 const Card = (props) => {
     return (
-        <div className={`customCard ${props.className}`} style={{ minWidth: props.width }}>
+        <div className={`customCard ${props.className}`} style={{ maxWidth: props.width, maxHeight: props.maxHeight }}>
             {props.children}
         </div>
     )

@@ -8,6 +8,8 @@ import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
 
+
+
 const ContactUs = () => {
 
     return (
@@ -26,6 +28,7 @@ const ContactUs = () => {
             <div className='contactUs_form'>
                 <ContactUsForm />
             </div>
+            
             <Footer />
             <FooterMap />
             <FooterNav />

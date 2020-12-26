@@ -8,7 +8,7 @@ const PageSlider = (props) => {
     const sliderSettings = {
         dots: true,
         accessibility: false,
-        // adaptiveHeight: true,
+        adaptiveHeight: true,
         draggable: false,
         infinite: false,
         pauseOnHover: false,

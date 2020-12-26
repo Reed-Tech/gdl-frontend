@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../components/Card'
 import BackgroundImage from '../assets/images/crwealth.png'
 import Slider from 'react-slick'
+import FooterNav from '../components/FooterNav'
 
 const sliderData = [
     {
@@ -36,7 +37,7 @@ const sliderData = [
     }
 ]
 
-const CreatingWealth = () => {
+const CreatingWealth = (props) => {
     const parentSliderSettings = {
         infinite: false,
         slidesToShow: 1,
@@ -55,26 +56,30 @@ const CreatingWealth = () => {
     ))
 
     return (
-        <div className='creatingWealth d-lg-flex justify-content-lg-between' style={{ backgroundImage: `url('${BackgroundImage}')` }}>
-            <div className='col-lg-6 col-sm-12 creatingWealth_text'>
-                <h1 className='mb-5'>CREATING  WEALTH AND TRANSFORMING SOCIETY</h1>
-                <Card className='mb-3'>
-                    <p>
-                        At GDL we see the socio-economic challenges facing Nigeria as an opportunity to provide platforms for creating private sector led frameworks that will help to address some of the major concerns of the average Nigerian household in a sustainable way, using mainly, in-country resources.
+        <div className='creatingWealth justify-content-lg-between' style={{ backgroundImage: `url('${BackgroundImage}')` }}>
+            <h1 className='d-sm-block mb-4 mt-4 d-lg-none'>CREATING WEALTH AND TRANSFORMING SOCIETY</h1>
+            <div className='creatingWealth_container d-block d-lg-flex justify-content-lg-between'>
+                <div className='col-lg-6 col-sm-12 creatingWealth_text'>
+                    <h1 className='mb-5'>CREATING  WEALTH AND TRANSFORMING SOCIETY</h1>
+                    <Card maxHeight='calc(100vh - 20em)'>
+                        <p>
+                            At GDL we see the socio-economic challenges facing Nigeria as an opportunity to provide platforms for creating private sector led frameworks that will help to address some of the major concerns of the average Nigerian household in a sustainable way, using mainly, in-country resources.
                     </p>
-                    <p>
-                        We are passionate about Nigeria and her potentials. We see our business as a vehicle of delivering key social dividends to Nigerians while at the same time achieving significant economic returns for our stakeholders and investors.
+                        <p>
+                            We are passionate about Nigeria and her potentials. We see our business as a vehicle of delivering key social dividends to Nigerians while at the same time achieving significant economic returns for our stakeholders and investors.
                     </p>
-                </Card>
-            </div>
-            <div className='col-lg-4 col-md-12 creatingWealth_slide mt-lg-0 mt-md-3'>
-                <Card className='creatingWealth_slide-card'>
-                    <Slider {...parentSliderSettings}>
-                        {renderSliderData}
-                    </Slider>
+                    </Card>
+                </div>
+                <div className='col-lg-4 col-md-12 creatingWealth_slide'>
+                    <Card maxHeight='calc(100vh - 20em)' className='creatingWealth_slide-card'>
+                        <Slider {...parentSliderSettings}>
+                            {renderSliderData}
+                        </Slider>
 
-                </Card>
+                    </Card>
+                </div>
             </div>
+            <FooterNav history={props.history} />
         </div>
     )
 }

@@ -8,6 +8,8 @@ import Christiana from '../assets/images/de784d755551f57dfc92a03d54efad0e.png'
 import Farouk from '../assets/images/add55e6563af7e1d76c4e8bb7ebc3ed6.png'
 import Lanre from '../assets/images/548de7423306da262d7f182c28c511d6.png'
 import Oyekemi from '../assets/images/cf635ca96661303335c62f862c1611f4.png'
+import { Scrollbars } from 'react-custom-scrollbars';
+
 
 const error = {
     about: 'Please complete the About section in the form.',
@@ -34,7 +36,7 @@ const boardOfDirectorsData = {
     },
     'Christiana Bamidele': {
         id: 'Christiana Bamidele',
-        image:Christiana,
+        image: Christiana,
         name: 'Christiana Bamidele George',
         text: ['Christiana Bamidele George graduated from Ahmadu Bello University, Zaria, where she graduated with a Bachelor of Science degree (B.Sc.) in Accountancy. She worked in First Bank Nigeria Plc in 1985 and later established the Strong Tower Mission, a Christian charity organization aimed at caring for the underprivileged in the society. Further to this, she established the Little Saints Orphanage which is a sister outreach of the Strong Tower Mission. The strong Tower Mission has since been a formidable tool in assisting the poor, indigent and disadvantaged in the society. Strong Tower Centre is perhaps the foremost charity organization in Nigeria.']
     },
@@ -72,6 +74,8 @@ const BoardOfDirectors = () => {
     let NavItems = state.boardOfDirectorsNav.map((e) => <li className={`${e === state.boardOfDirectorsActive ? 'active' : ''}`} onClick={() => dispatch({ type: t.BOARD_OF_DIRECTORS, nav: navText.map((e) => e), active: e })} key={e}>{e}</li>)
 
 
+    const scrollThumbY = () => <div className='customScroll_thumb' ></div>
+    const scrollTrackY = () => <div className='customScroll_track'></div>
 
 
     return (
@@ -79,21 +83,17 @@ const BoardOfDirectors = () => {
             <h1>BOARD OF DIRECTORS</h1>
             <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
                 <div className='row d-flex boardOfDirectors_container'>
-                    <Card className='col-lg-6 boardOfDirectors_card'>
-                        {state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].text ? boardOfDirectorsData[state.boardOfDirectorsActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
-                        {/* <p>
-                            Dr Denloye retired in December 2006 as the Group Managing Director of Telnet Nigeria Limited, a leading ICT company that she co-founded in 1986.
-                        </p>
-                        <p>
-                            She holds a PhD in Electronic Engineering from the University of Hull, UK. She is a registered Engineer (Council for the Regulation of Engineering in Nigeria), a Fellow of the Nigerian Society of Engineers, and a Fellow of the Nigerian Academy of Engineering.
-                        </p>
-                        <p>
-                            Though her professional career has been in ICT, her competence and experience founding and running a successful business provided her with broad expertise in strategy formulation, policy making and conformance and executive supervision, enabling her to add value across other industry sectors. This has led to appointments to serve on the Corporate and Advisory boards of both profit and not-for profit organisations. These include Ecobank Nigeria, Enterprises Development Centre (Pan Atlantic University) and the Lagos Business School Alumni Association. Current Board membership include GDL Asset Management Ltd on which she serves as Chairperson, Leap Africa, CDNet Ltd and most recently, the IE Fund.
-                        </p>
-                        <p>
-                            Dr Denloye is an alumna of the Lagos Business School, the Cranfield School of Management (Business Leaders Programme) and also of the Haggai Institute and RCCG’s International Bible Institute and Leadership Training School.
-                        </p> */}
-                    </Card>
+                    <Scrollbars
+                        renderThumbVertical={scrollThumbY}
+                        renderTrackVertical={scrollTrackY}
+                        style={{ height: 'calc(100vh - 20em)' }}
+                        className='col-6'
+                        autoHide
+                    >
+                        <Card className='boardOfDirectors_card'>
+                            {state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].text ? boardOfDirectorsData[state.boardOfDirectorsActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
+                        </Card>
+                    </Scrollbars>
                     <div className='col-lg-4 boardOfDirectors_image' style={{ backgroundImage: `url(${state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].image ? boardOfDirectorsData[state.boardOfDirectorsActive].image : error.image})` }}>
                         {/* <img src={Dr} alt="Dr"/> */}
                     </div>

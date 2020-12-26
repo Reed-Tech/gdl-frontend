@@ -24,7 +24,7 @@ const FinanceAndLeasing = (props) => {
         <section className='financeAndLeasing'>
             <h1>FINANCE AND LEASING</h1>
             <div className=' d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0' style={{ gap: '1em' }}>
-                <Card className='col-lg-6'>
+                <Card  className='col-lg-6'>
                     <p>
                         Money lasts longer when properly managed and knowing how to manage assets to yield maximum profit is an exceptional skill that only a few possess.
                         That is why we built a skillful team of wealth managers who provide discretionary and non-discretionary investment management to all our customers.
@@ -36,7 +36,7 @@ const FinanceAndLeasing = (props) => {
                         Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
                     </p>
                 </Card>
-                <Card className='col-lg-6 mt-sm-3 mt-lg-0 '>
+                <Card  className='col-lg-6 mt-sm-3 mt-lg-0 '>
                     <h3 className='text-center mb-3'>PRODUCTS</h3>
                     <div className=' row d-flex justify-content-center align-content-center' style={{ gap: '16px 12px' }} >
 

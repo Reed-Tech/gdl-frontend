@@ -4,6 +4,7 @@ import CardImage from '../components/CardImage'
 import ProductBackground1 from '../assets/images/assetManagement1.png'
 import ProductBackground2 from '../assets/images/AssetManagementCard2.png'
 import { Store, type as t } from '../context/store'
+import { Scrollbars } from 'react-custom-scrollbars'
 
 const assetManagementCards = [
     // ID Text used for  Nav Links Text  .... i don't have strength please😐 
@@ -17,36 +18,56 @@ const assetManagementCards = [
 
 
 const AssetsManagement = (props) => {
+    const scrollThumbY = () => <div className='customScroll_thumb' ></div>
+    const scrollTrackY = () => <div className='customScroll_track'></div>
 
-    const {  dispatch } = React.useContext(Store)
+
+    const { dispatch } = React.useContext(Store)
     React.useEffect(() => dispatch({ type: t.ASSET_MANAGEMENT, payload: assetManagementCards.map(e => e.id) }), [dispatch])
     return (
-        <section className='assetManagement'>
-            <h1>ASSET MANAGEMENT</h1>
-            <div className=' d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0' style={{ gap: '1em' }}>
-                <Card className='col-lg-6'>
-                    <p>
-                        Money lasts longer when properly managed and knowing how to manage assets to yield maximum profit is an exceptional skill that only a few possess.
-                        That is why we built a skillful team of wealth managers who provide discretionary and non-discretionary investment management to all our customers.
+        <section >
+            <div className='assetManagement'>
+                <h1>ASSET MANAGEMENT</h1>
+                <div className=' d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0' style={{ gap: '1em' }}>
+                    <Card className='col-lg-6' maxHeight='calc(100vh - 20em)'>
+                        <p>
+                            Money lasts longer when properly managed and knowing how to manage assets to yield maximum profit is an exceptional skill that only a few possess.
+                            That is why we built a skillful team of wealth managers who provide discretionary and non-discretionary investment management to all our customers.
                         </p>
-                    <p>
-                        Your money will be put in diverse assets which will in turn gather interest, all for your benefit.
+                        <p>
+                            Your money will be put in diverse assets which will in turn gather interest, all for your benefit.
                     </p>
-                    <p>
-                        Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
+                        <p>
+                            Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
                     </p>
-                </Card>
-                <Card className='col-lg-6 mt-sm-3 mt-lg-0 '>
-                    <h3 className='text-center mb-3'>PRODUCTS</h3>
-                    <div className=' row d-flex justify-content-center align-content-center' style={{ gap: '16px 12px' }} >
-                        {assetManagementCards.map((e) =>
-                            <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e.id })                            }>
-                                {e.text}
-                            </CardImage>
-                        )}
-                    </div>
-                </Card>
+                    </Card>
+                    <Scrollbars
+                        renderThumbVertical={scrollThumbY}
+                        renderTrackVertical={scrollTrackY}
+                        style={{ height: 'calc(100vh - 20em)' }}
+                        autoHide
+                        className='col-6'
+                    >
+                        <Card width='678px' className='mt-sm-3 mt-lg-0' >
+                            <h3 className='text-center mb-3'>PRODUCTS</h3>
+                            <div className=' row d-flex justify-content-center align-content-center' style={{ gap: '16px 12px' }} >
+                                {assetManagementCards.map((e) =>
+                                    <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e.id })}>
+                                        {e.text}
+                                    </CardImage>
+                                )}
+                            </div>
+                        </Card>
+                    </Scrollbars>
+                </div>
             </div>
+
+
+            {/* Because i have to write for mobile view too... FML 😌 */}
+            <div className='assetManagement_mobile'>
+                <h1>WHAT WE DO</h1>
+            </div>
+
 
         </section>
     )
