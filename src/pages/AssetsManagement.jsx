@@ -4,8 +4,9 @@ import CardImage from '../components/CardImage'
 import ProductBackground1 from '../assets/images/assetManagement1.png'
 import ProductBackground2 from '../assets/images/AssetManagementCard2.png'
 import { Store, type as t } from '../context/store'
-import { Scrollbars } from 'react-custom-scrollbars'
-import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
+
+
+
 const assetManagementCards = [
     // ID Text used for  Nav Links Text  .... i don't have strength please😐 
     { id: 'Money Market Fund', text: <h3>MONEY<br />MARKET<br />FUND</h3>, image: ProductBackground1 },
@@ -52,14 +53,6 @@ const AssetsManagement = (props) => {
 
                 </div>
             </div>
-
-
-            {/* Because i have to write for mobile view too... FML 😌 */}
-            <div className='assetManagement_mobile'>
-                <h1>WHAT WE DO</h1>
-            </div>
-
-
         </section>
     )
 }

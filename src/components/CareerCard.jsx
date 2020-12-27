@@ -36,7 +36,7 @@ const CareerCard = (props) => {
 
                         </ul>
                     </div>
-                    <Button onClick={() => console.log(props.link)} variant='outline-light' className='rounded-pill'>LEARN MORE</Button>
+                    <Button variant='outline-light' className='rounded-pill'>LEARN MORE</Button>
                 </div>
             </main>
 

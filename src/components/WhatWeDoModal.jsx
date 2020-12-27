@@ -20,7 +20,6 @@ const WhatWeDoModal = (props) => {
 
     // disableBodyScroll(state.showModal)
 
-    console.log(state.financeAndLeasing)
 
     const settings = {
         dots: true,

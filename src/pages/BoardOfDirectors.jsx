@@ -8,7 +8,6 @@ import Christiana from '../assets/images/de784d755551f57dfc92a03d54efad0e.png'
 import Farouk from '../assets/images/add55e6563af7e1d76c4e8bb7ebc3ed6.png'
 import Lanre from '../assets/images/548de7423306da262d7f182c28c511d6.png'
 import Oyekemi from '../assets/images/cf635ca96661303335c62f862c1611f4.png'
-import { Scrollbars } from 'react-custom-scrollbars';
 
 
 const error = {
@@ -95,12 +94,6 @@ const BoardOfDirectors = () => {
 
                 </div>
             </div>
-            {/* Because i have to write for mobile view too... FML 😌 */}
-            <div className="boardOfDirectors_mobile">
-                <h1>Mobile BOD</h1>
-            </div>
-
-
         </section>
     )
 }

@@ -1,11 +1,8 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import Card from '../components/Card'
-import { Scrollbars } from 'react-custom-scrollbars'
 
 const WhyUs = () => {
-    const scrollThumbY = () => <div className='customScroll_thumb' ></div>
-    const scrollTrackY = () => <div className='customScroll_track'></div>
 
     return (
         <section className='whyUs ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>

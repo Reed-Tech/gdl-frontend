@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import Card from '../components/Card'
 import CardImage from '../components/CardImage'
 import ProductBackground1 from '../assets/images/assetManagement1.png'
@@ -51,12 +51,6 @@ const FinanceAndLeasing = (props) => {
                     </Card>
                 </div>
             </div>
-
-            {/* Because i have to write for mobile view too... FML 😌 */}
-            <div className="financeAndLeasing_mobile">
-                <h1>FAL</h1>
-            </div>
-
 
         </section>
     )

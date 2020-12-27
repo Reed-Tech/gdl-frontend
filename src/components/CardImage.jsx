@@ -7,7 +7,6 @@ const CardImage = (props) => {
 
     function openModal(id) {
         dispatch({ type: t.MODAL_OPEN })
-        props.onClick ? props.onClick() : console.log('okay')
     }
 
     return (
