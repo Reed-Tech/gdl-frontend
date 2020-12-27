@@ -1,4 +1,4 @@
-#whoWeAre {
+#who-we-are {
      position: relative;
      background: url(../assets/images/landing2.png) rgba($color: #000000, $alpha: 0.4);
      background-blend-mode: overlay;
@@ -9,9 +9,7 @@
      scroll-snap-align: start;
 
      @media screen and (max-width:1023px) {
-          .pageSlider-dots {
-               display: none !important;
-          }
+          display: none;
      }
 
 }

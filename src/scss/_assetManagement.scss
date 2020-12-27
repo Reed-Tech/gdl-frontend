@@ -1,9 +1,18 @@
 .assetManagement {
     @include headerFontStyle;
 
+    &_web {
+        @media screen and (max-width:1023px) {
+            display: none;
+
+        }
+
+    }
+
     &_cardImage {
         transition: all ease-in-out .3s;
         background-color: rgba(0, 0, 0, 0.3) !important;
+        margin: 0.5em;
 
         &:hover {
             background-color: rgba(0, 0, 0, 0.6) !important;
@@ -37,6 +46,7 @@
         @media screen and (min-width:1023px) {
             display: none;
         }
+
         height: 100%;
 
         h1 {

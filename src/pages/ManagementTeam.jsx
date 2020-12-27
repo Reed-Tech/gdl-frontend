@@ -83,34 +83,28 @@ const ManagementTeam = (props) => {
 
     return (
         <section className='managementTeam'>
-            <h1>MANAGEMENT TEAM</h1>
-            <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
-                <div className='row d-flex managementTeam_container'>
-                    <Card maxHeight='calc(100vh - 20em)' className='col-lg-6 managementTeam_card'>
-                        {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
-                        {/* <p>
-                            Dr Denloye retired in December 2006 as the Group Managing Director of Telnet Nigeria Limited, a leading ICT company that she co-founded in 1986.
-                        </p>
-                        <p>
-                            She holds a PhD in Electronic Engineering from the University of Hull, UK. She is a registered Engineer (Council for the Regulation of Engineering in Nigeria), a Fellow of the Nigerian Society of Engineers, and a Fellow of the Nigerian Academy of Engineering.
-                        </p>
-                        <p>
-                            Though her professional career has been in ICT, her competence and experience founding and running a successful business provided her with broad expertise in strategy formulation, policy making and conformance and executive supervision, enabling her to add value across other industry sectors. This has led to appointments to serve on the Corporate and Advisory boards of both profit and not-for profit organisations. These include Ecobank Nigeria, Enterprises Development Centre (Pan Atlantic University) and the Lagos Business School Alumni Association. Current Board membership include GDL Asset Management Ltd on which she serves as Chairperson, Leap Africa, CDNet Ltd and most recently, the IE Fund.
-                        </p>
-                        <p>
-                            Dr Denloye is an alumna of the Lagos Business School, the Cranfield School of Management (Business Leaders Programme) and also of the Haggai Institute and RCCG’s International Bible Institute and Leadership Training School.
-                        </p> */}
-                    </Card>
-                    <div className='col-lg-4 managementTeam_image' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : error.image})` }}>
-                        {/* <img src={Dr} alt="Dr"/> */}
+            <div className="managementTeamWeb">
+                <h1>MANAGEMENT TEAM</h1>
+                <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
+                    <div className='row d-flex managementTeam_container'>
+                        <Card maxHeight='calc(100vh - 20em)' className='managementTeam_card col-6'>
+                            {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
+                        </Card>
+                        <div className='col-lg-4 managementTeam_image' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : error.image})` }}>
+                        </div>
+                        <div className='col-lg-2'>
+                            <ul>
+                                {NavItems}
+                            </ul>
+                        </div>
                     </div>
-                    <div className='col-lg-2'>
-                        <ul>
-                            {NavItems}
-                        </ul>
-                    </div>
-                </div>
 
+                </div>
+            </div>
+
+            {/* Because i have to write for mobile view too... FML 😌 */}
+            <div className="managementTeam_mobile">
+                <h1>MT</h1>
             </div>
 
 

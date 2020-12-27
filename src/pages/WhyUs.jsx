@@ -5,18 +5,13 @@ import { Scrollbars } from 'react-custom-scrollbars'
 
 const WhyUs = () => {
     const scrollThumbY = () => <div className='customScroll_thumb' ></div>
-    const scrollTrackY = () => <div  className='customScroll_track'></div>
+    const scrollTrackY = () => <div className='customScroll_track'></div>
 
     return (
         <section className='whyUs ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
-            <h1>WHY US/VALUE PROPOSITION</h1>
-            <div>
-                <Scrollbars
-                    renderThumbVertical={scrollThumbY}
-                    renderTrackVertical={scrollTrackY}
-                    autoHeight
-                    style={{ height: 'calc(100vh - 20em)' }} >
-                        
+            <div className='whyUs_web'>
+                <h1>WHY US/VALUE PROPOSITION</h1>
+                <div style={{ height: 'calc(100vh - 20em)' }}>
                     <Card height='45vh' className='text-center'>
                         <p>We believe that the traditional models of solving societal problems in a developing country like Nigeria has failed with not enough resources channelled towards improving the living conditions of Nigerians. We have observed that even where these resources are deployed, they are fraught with myriads of challenges, principally because our public service models are not strategically designed as service oriented agencies but as a means of distributing the revenue of a nation amongst a meagre few. Non-Governmental Organizations (NGOs) have done a bit in this regard but even they, are limited by the funds available to them from Donor Agencies and the struggle to attract these funds in the first place. We believe that commercial entities can play a significant role here.</p>
                         <br />
@@ -27,7 +22,11 @@ const WhyUs = () => {
                         <p>For further inquiries or clarifications </p>
                         <Button variant='light'>Contact Us</Button>
                     </Card>
-                </Scrollbars>
+                </div>
+            </div>
+            {/* Because i have to write for mobile view too... FML 😌 */}
+            <div className="whyUs_mobile">
+                <h1>Why us</h1>
             </div>
         </section>
     )

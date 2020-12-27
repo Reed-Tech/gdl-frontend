@@ -16,7 +16,7 @@ const WhatWeDo = (props) => {
     }
 
     return (
-        <div id='whatWeDo'>
+        <div id='what-we-do'>
             <WhatWeDoModal {...props} />
             <PageSlider afterChange={afterChange} navLinks={pages}>
                 <AssetsManagement {...props} />

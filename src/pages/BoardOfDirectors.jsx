@@ -74,37 +74,32 @@ const BoardOfDirectors = () => {
     let NavItems = state.boardOfDirectorsNav.map((e) => <li className={`${e === state.boardOfDirectorsActive ? 'active' : ''}`} onClick={() => dispatch({ type: t.BOARD_OF_DIRECTORS, nav: navText.map((e) => e), active: e })} key={e}>{e}</li>)
 
 
-    const scrollThumbY = () => <div className='customScroll_thumb' ></div>
-    const scrollTrackY = () => <div className='customScroll_track'></div>
-
-
     return (
         <section className='boardOfDirectors'>
-            <h1>BOARD OF DIRECTORS</h1>
-            <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
-                <div className='row d-flex boardOfDirectors_container'>
-                    <Scrollbars
-                        renderThumbVertical={scrollThumbY}
-                        renderTrackVertical={scrollTrackY}
-                        style={{ height: 'calc(100vh - 20em)' }}
-                        className='col-6'
-                        autoHide
-                    >
-                        <Card className='boardOfDirectors_card'>
+            <div className='boardOfDirectors_web'>
+                <h1>BOARD OF DIRECTORS</h1>
+                <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
+                    <div className='row boardOfDirectors_container'>
+
+                        <Card className='boardOfDirectors_card col-6' maxHeight='calc(100vh - 20em)'>
                             {state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].text ? boardOfDirectorsData[state.boardOfDirectorsActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
                         </Card>
-                    </Scrollbars>
-                    <div className='col-lg-4 boardOfDirectors_image' style={{ backgroundImage: `url(${state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].image ? boardOfDirectorsData[state.boardOfDirectorsActive].image : error.image})` }}>
-                        {/* <img src={Dr} alt="Dr"/> */}
+                        <div className='col-lg-4 boardOfDirectors_image' style={{ backgroundImage: `url(${state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].image ? boardOfDirectorsData[state.boardOfDirectorsActive].image : error.image})` }}>
+                        </div>
+                        <div className='col-lg-2'>
+                            <ul>
+                                {NavItems}
+                            </ul>
+                        </div>
                     </div>
-                    <div className='col-lg-2'>
-                        <ul>
-                            {NavItems}
-                        </ul>
-                    </div>
-                </div>
 
+                </div>
             </div>
+            {/* Because i have to write for mobile view too... FML 😌 */}
+            <div className="boardOfDirectors_mobile">
+                <h1>Mobile BOD</h1>
+            </div>
+
 
         </section>
     )

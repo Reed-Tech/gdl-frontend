@@ -9,14 +9,13 @@ const WhoWeAre = (props) => {
     const pages = ['CORPORATE INFORMATION', 'BOARD OF DIRECTORS', 'MANAGEMENT TEAM', 'WHY US/VALUE PROPOSITION']
 
     return (
-        <div id='whoWeAre'>
+        <div id='who-we-are'>
             <PageSlider navLinks={pages} navRight>
-                <CorporateInformation/>
-                <BoardOfDirectors/>
-                <ManagementTeam/>
-                <WhyUs/>
+                <CorporateInformation />
+                <BoardOfDirectors />
+                <ManagementTeam />
+                <WhyUs />
             </PageSlider>
-
         </div>
     )
 }
