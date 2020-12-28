@@ -4,13 +4,15 @@ const initialState = {
   count: 1,
   showModal: false,
   assetManagement: [],
-  assetManagementActive: '',
-  financeAndLeasing: '',
-  whatWeDoModalPosition: '0',
+  assetManagementActive: "",
+  financeAndLeasing: "",
+  whatWeDoModalPosition: "0",
   boardOfDirectorsNav: [],
-  boardOfDirectorsActive:'',
-  managementTeamNav:[],
-  managementTeamActive:''
+  boardOfDirectorsActive: "",
+  managementTeamNav: [],
+  managementTeamActive: "",
+  WWAMobile: "CORPORATE INFORMATION",
+  WWDMobile: 'ASSET MANAGEMENT'
 };
 
 export const Store = createContext(initialState);
@@ -23,11 +25,13 @@ export const type = {
   MODAL_OPEN: "MODAL_OPEN",
   ASSET_MANAGEMENT: "ASSET_MANAGEMENT",
   ASSET_MANAGEMENT_ACTIVE: "ASSET_MANAGEMENT_ACTIVE",
-  FINANCE_AND_LEASING: 'FINANCE_AND_LEASING',
-  FINANCE_AND_LEASING_ACTIVE: 'FINANCE_AND_LEASING_ACTIVE',
-  WHAT_WE_DO_MODAL_POSITION: 'WHAT_WE_DO_MODAL_POSITION',
-  BOARD_OF_DIRECTORS: 'BOARD_OF_DIRECTORS',
-  MANAGEMENT_TEAM: 'MANAGEMENT_TEAM',
+  FINANCE_AND_LEASING: "FINANCE_AND_LEASING",
+  FINANCE_AND_LEASING_ACTIVE: "FINANCE_AND_LEASING_ACTIVE",
+  WHAT_WE_DO_MODAL_POSITION: "WHAT_WE_DO_MODAL_POSITION",
+  BOARD_OF_DIRECTORS: "BOARD_OF_DIRECTORS",
+  MANAGEMENT_TEAM: "MANAGEMENT_TEAM",
+  WWA_MOBILE: "WWA_MOBILE",
+  WWD_MOBILE: 'wwd_MOBILE',
 };
 
 // ----------REDUCER--------------
@@ -55,35 +59,45 @@ function reducer(state, action) {
     case type.ASSET_MANAGEMENT:
       return {
         ...state,
-        assetManagement: action.payload
+        assetManagement: action.payload,
       };
     case type.ASSET_MANAGEMENT_ACTIVE:
       return {
         ...state,
-        assetManagementActive: action.payload
-      }
+        assetManagementActive: action.payload,
+      };
     case type.FINANCE_AND_LEASING:
-      return{
+      return {
         ...state,
-        financeAndLeasing: action.nav
-      }
+        financeAndLeasing: action.nav,
+      };
     case type.WHAT_WE_DO_MODAL_POSITION:
-      return{
+      return {
         ...state,
         whatWeDoModalPosition: action.index,
-      }
+      };
     case type.BOARD_OF_DIRECTORS:
-      return{
+      return {
         ...state,
-        boardOfDirectorsNav:action.nav,
-        boardOfDirectorsActive:action.active,
-      }
+        boardOfDirectorsNav: action.nav,
+        boardOfDirectorsActive: action.active,
+      };
     case type.MANAGEMENT_TEAM:
-      return{
+      return {
         ...state,
-        managementTeamNav:action.nav,
-        managementTeamActive:action.active,
-      }
+        managementTeamNav: action.nav,
+        managementTeamActive: action.active,
+      };
+    case type.WWA_MOBILE:
+      return {
+        ...state,
+        WWAMobile: action.payload,
+      };
+    case type.WWD_MOBILE:
+      return {
+        ...state,
+        WWDMobile: action.payload,
+      };
 
     default:
       return {

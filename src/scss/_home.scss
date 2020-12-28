@@ -22,14 +22,73 @@
 }
 
 .__mobileOnly {
+
+    @media screen and (min-width:1023px) {
+        display: none;
+    }
+
+    padding-top: 6em;
+
+}
+
+
+.WWA_container {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-color: rgba($color: #000000, $alpha: 0.4);
-    @media screen and (min-width:1023px) {
-        display: none;
+    background-image: url(../assets/images/landing2.png);
+    background-attachment: fixed;
+
+}
+
+.WWD_container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    background-image: url(../assets/images/landing3.png);
+    background-attachment: fixed;
+}
+
+#who-we-are-mobile,
+#what-we-do-mobile {
+    display: flex;
+    flex-direction: column;
+
+    header {
+        h1 {
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+        }
     }
-    padding-top: 6em;
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        span {
+            margin: 6px;
+            font-size: 10px;
+            min-width: 156px;
+            background-color: rgba($color: black, $alpha: .65);
+            color: white;
+            border-radius: 10px;
+            padding: 6px 4px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .navActive {
+            border: 1px solid white;
+        }
+    }
+
 
 }

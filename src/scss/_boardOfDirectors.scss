@@ -63,14 +63,29 @@
             }
         }
     }
+}
 
+.boardOfDirectorsMobile {
+    display: flex;
+    flex-direction: column;
 
-
-    &_mobile {
-        @media screen and (min-width:1023px) {
-            display: none !important;
-
-
+    header {
+        h1 {
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
         }
     }
+
+    main {
+        margin: 1em 1.2em;
+        background-color: red;
+        height: calc(100vh - 16em);
+    }
+
+    footer {
+        background-color: green;
+    }
+
 }

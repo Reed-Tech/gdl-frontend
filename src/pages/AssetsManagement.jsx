@@ -18,6 +18,42 @@ const assetManagementCards = [
 ]
 
 
+
+export const AssetManagementMobile = (props) => {
+    const { dispatch } = React.useContext(Store)
+
+
+    return (
+        <div>
+            <Card>
+                <p>
+                    Money lasts longer when properly managed and knowing how to manage assets to yield maximum profit is an exceptional skill that only a few possess.
+                    That is why we built a skillful team of wealth managers who provide discretionary and non-discretionary investment management to all our customers.
+                        </p>
+                <p>
+                    Your money will be put in diverse assets which will in turn gather interest, all for your benefit.
+                    </p>
+                <p>
+                    Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
+                    </p>
+            </Card>
+            <br />
+            <Card>
+                <h3 className='text-center mb-3'>PRODUCTS</h3>
+                <div className=' row d-flex justify-content-center align-content-center'>
+                    {assetManagementCards.map((e) =>
+                        <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e.id })}>
+                            {e.text}
+                        </CardImage>
+                    )}
+                </div>
+            </Card>
+
+        </div>
+    )
+}
+
+
 const AssetsManagement = (props) => {
 
 

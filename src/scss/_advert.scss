@@ -17,10 +17,10 @@
         display: flex;
 
 
-        @media screen and (max-width:1023px) {
-            display: none;
+        // @media screen and (max-width:1023px) {
+        //     display: none;
 
-        }
+        // }
     }
 
     &_video {
@@ -65,6 +65,7 @@
 
 
     &_mobile {
+        display: none;
         @media screen and (min-width:1023px) {
             display: none;
         }
