@@ -99,6 +99,10 @@ const CareerSlider = () => {
 
     const settings = {
         slides: 1,
+        adaptiveHeight: true,
+        variableWidth: false,
+        cssEase: "ease-in-out",
+        arrows: false,
         dots: true,
         center: true,
         slidesToShow: 3,

@@ -8,9 +8,16 @@ import Blog from "./pages/Blog";
 import Media from "./pages/Media";
 import Career from "./pages/Career";
 import Research from "./pages/Research";
-import 'overlayscrollbars/css/OverlayScrollbars.css';
+import "overlayscrollbars/css/OverlayScrollbars.css";
 
 const App = () => {
+  React.useEffect(() => {
+    document.documentElement.style.setProperty(
+      "--vh",
+      `${window.innerHeight / 100}px`
+    );
+    console.log('are you there')
+  }, []);
   return (
     <Provider>
       <BrowserRouter>
