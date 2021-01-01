@@ -24,6 +24,7 @@ const Home = (props) => {
 
     const { state, dispatch } = React.useContext(Store)
 
+    console.log(state);
 
     function handleWWANav(page) {
         dispatch({ type: t.WWA_MOBILE, payload: page }, [])
