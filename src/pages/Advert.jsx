@@ -18,20 +18,6 @@ const Advert = (props) => {
                     <Button variant='light'>Action</Button>
                 </div>
             </div>
-
-
-            {/* Because i have to write for mobile view too... FML 😌 */}
-            {/* <div className='advert_mobile'>
-              
-                <div className='advert_mobile-text'>
-                    <h1>Advert</h1>
-                    <p>My Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-                    <Button variant='light'>Action</Button>
-                </div>
-
-            </div> */}
-
-
         </section>
     )
 }

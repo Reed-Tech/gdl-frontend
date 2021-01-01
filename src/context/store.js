@@ -12,7 +12,10 @@ const initialState = {
   managementTeamNav: [],
   managementTeamActive: "",
   WWAMobile: "CORPORATE INFORMATION",
-  WWDMobile: 'ASSET MANAGEMENT'
+  WWDMobile: "ASSET MANAGEMENT",
+  WWAMobileModal: "",
+  WWDMobileModal: "",
+  WWDMobileModalNav: "",
 };
 
 export const Store = createContext(initialState);
@@ -31,7 +34,10 @@ export const type = {
   BOARD_OF_DIRECTORS: "BOARD_OF_DIRECTORS",
   MANAGEMENT_TEAM: "MANAGEMENT_TEAM",
   WWA_MOBILE: "WWA_MOBILE",
-  WWD_MOBILE: 'wwd_MOBILE',
+  WWD_MOBILE: "wwd_MOBILE",
+  WWA_MOBILE_MODAL: "WWA_MOBILE_MODAL",
+  WWD_MOBILE_MODAL: "WWD_MOBILE_MODAL",
+  WWD_MOBILE_MODAL_NAV: "WWD_MOBILE_MODAL_NAV",
 };
 
 // ----------REDUCER--------------
@@ -97,6 +103,21 @@ function reducer(state, action) {
       return {
         ...state,
         WWDMobile: action.payload,
+      };
+    case type.WWA_MOBILE_MODAL:
+      return {
+        ...state,
+        WWAMobileModal: action.payload,
+      };
+    case type.WWD_MOBILE_MODAL:
+      return {
+        ...state,
+        WWDMobileModal: action.payload,
+      };
+    case type.WWD_MOBILE_MODAL_NAV:
+      return {
+        ...state,
+        WWDMobileModalNav: action.payload,
       };
 
     default:

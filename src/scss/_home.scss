@@ -92,3 +92,47 @@
 
 
 }
+
+.wwa_modal {
+    position: absolute;
+    height: 100vh;
+    background: green;
+    top: 100vh;
+    width: 100%;
+    z-index: 2;
+    display: none;
+
+    &-opened {
+        display: fled;
+        flex-direction: column;
+
+        div {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.wwd_modal {
+    background-image: url(../assets/images/landing3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    top: 200vh;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    scroll-snap-align: 'start';
+
+    &-opened {
+        display: fled;
+        flex-direction: column;
+
+        div {
+            margin-bottom: 1em;
+        }
+    }
+}

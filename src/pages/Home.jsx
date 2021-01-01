@@ -13,6 +13,8 @@ import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 import { WhyUsMobile } from '../pages/WhyUs'
 import { AssetManagementMobile } from '../pages/AssetsManagement'
 import { FinanceAndLeasingMobile } from '../pages/FinanceAndLeasing'
+import { boardOfDirectorsMobile } from '../pages/BoardOfDirectors'
+import { FaChevronLeft } from 'react-icons/fa'
 
 
 
@@ -21,12 +23,54 @@ import { FinanceAndLeasingMobile } from '../pages/FinanceAndLeasing'
 const Home = (props) => {
 
     const { state, dispatch } = React.useContext(Store)
+
+    console.log(state);
+
     function handleWWANav(page) {
         dispatch({ type: t.WWA_MOBILE, payload: page }, [])
     }
     function handleWWDNav(page) {
         dispatch({ type: t.WWD_MOBILE, payload: page }, [])
     }
+
+    function handleWWAModal(e) {
+        console.log(state.WWAMobileModal)
+        dispatch({ type: t.WWA_MOBILE_MODAL, payload: e })
+    }
+
+    // function handleWWDModal(e) {
+    //     console.log(state.WWDMobileModal)
+    //     dispatch({ type: t.WWA_MOBILE_MODAL, payload: e })
+    // }
+
+    function handleWWDMobileModalNav(e) {
+        console.log(e);
+        dispatch({ type: t.WWD_MOBILE_MODAL_NAV, payload: e })
+    }
+
+    function closeMobileModal(e) {
+        console.log(e)
+        if (e === 'WWA') dispatch({ type: t.WWA_MOBILE_MODAL, payload: '' })
+        else if (e === 'WWD') dispatch({ type: t.WWD_MOBILE_MODAL, payload: '' })
+        else console.log('argument cant be blank')
+
+    }
+
+    const financeLeasingNavLinks = (<>
+        <span className={state?.WWDMobileModalNav === 'HIGH YIELD NOTE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('HIGH YIELD NOTE')}>HIGH YIELD NOTE</span>
+        <span className={state?.WWDMobileModalNav === 'TREASURY BILL' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('TREASURY BILL')}>TREASURY BILL</span>
+        <span className={state?.WWDMobileModalNav === 'LONG TERM NOTE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('LONG TERM NOTE')}>LONG TERM NOTE</span>
+        <span className={state?.WWDMobileModalNav === 'DOLLAR NOTE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('DOLLAR NOTE')}>DOLLAR NOTE</span>
+        <span className={state?.WWDMobileModalNav === 'GDL FINANCE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('GDL FINANCE')}>GDL FINANCE</span>
+    </>)
+    const assetManagementNavLinks = (<>
+        <span className={state?.WWDMobileModalNav === 'MONEY MARKET FUND' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('MONEY MARKET FUND')}>MONEY MARKET FUND</span>
+        <span className={state?.WWDMobileModalNav === 'SMART INVESTMENT ACCOUNT' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('SMART INVESTMENT ACCOUNT')}>SMART INVESTMENT ACCOUNT</span>
+        <span className={state?.WWDMobileModalNav === 'STOCKBROKING' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('STOCKBROKING')}>STOCKBROKING</span>
+        <span className={state?.WWDMobileModalNav === 'RESEARCH' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('RESEARCH')}>RESEARCH</span>
+        <span className={state?.WWDMobileModalNav === 'FINANCIAL ADVISORY' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('FINANCIAL ADVISORY')}>FINANCIAL ADVISORY</span>
+        <span className={state?.WWDMobileModalNav === 'ENTERPRISE TRANSGENERATIONAL PROGRAM' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('ETP')}>ETP</span>
+    </>)
 
 
     return (
@@ -38,7 +82,10 @@ const Home = (props) => {
                 <HeaderSlider />
             </div>
             <WhoWeAre />
-            <div className='WWA_container __mobileOnly' style={{ scrollSnapAlign: 'start', height: '100vh' }}>
+            <div className={`__mobileOnly wwa_modal px-4 ${state.WWAMobileModal === 'BOARD OF DIRECTORS' ? 'd-block' : state.WWAMobileModal === 'MANAGEMENT TEAM' ? 'd-block' : ''}`}>
+                <span onClick={() => closeMobileModal('WWA')}><FaChevronLeft size={18} color='white' /></span>
+            </div>
+            <div className={`WWA_container __mobileOnly`} style={{ scrollSnapAlign: 'start', height: '100vh' }}>
                 <div id='who-we-are-mobile' >
                     <header>
                         <h1>{state.WWAMobile}</h1>
@@ -47,7 +94,7 @@ const Home = (props) => {
                         {/* {corporateInformationMobile} */}
                         {/* {WhyUsMobile} */}
                         {state.WWAMobile === 'CORPORATE INFORMATION' ? corporateInformationMobile :
-                            state.WWAMobile === 'BOARD OF DIRECTORS' ? 'BOARD OF DIRECTORS' :
+                            state.WWAMobile === 'BOARD OF DIRECTORS' ? boardOfDirectorsMobile() :
                                 state.WWAMobile === 'MANAGEMENT TEAM' ? 'MANAGEMENT TEAM' :
                                     state.WWAMobile === 'WHY US/VALUE PROPOSITION' ? WhyUsMobile : 'Select a valid option'
 
@@ -55,26 +102,43 @@ const Home = (props) => {
                     </OverlayScrollbarsComponent>
                     <footer>
                         <span className={state?.WWAMobile === 'CORPORATE INFORMATION' ? 'navActive' : ''} onClick={() => handleWWANav('CORPORATE INFORMATION')}>CORPORATE INFORMATION</span>
-                        <span className={state?.WWAMobile === 'BOARD OF DIRECTORS' ? 'navActive' : ''} onClick={() => handleWWANav('BOARD OF DIRECTORS')}>BOARD OF DIRECTORS</span>
-                        <span className={state?.WWAMobile === 'MANAGEMENT TEAM' ? 'navActive' : ''} onClick={() => handleWWANav('MANAGEMENT TEAM')}>MANAGEMENT TEAM</span>
+                        <span className={state?.WWAMobile === 'BOARD OF DIRECTORS' ? 'navActive' : ''} onClick={() => handleWWAModal('BOARD OF DIRECTORS')}>BOARD OF DIRECTORS</span>
+                        <span className={state?.WWAMobile === 'MANAGEMENT TEAM' ? 'navActive' : ''} onClick={() => handleWWAModal('MANAGEMENT TEAM')}>MANAGEMENT TEAM</span>
                         <span className={state?.WWAMobile === 'WHY US/VALUE PROPOSITION' ? 'navActive' : ''} onClick={() => handleWWANav('WHY US/VALUE PROPOSITION')}>WHY US/VALUE PROPOSITION</span>
                     </footer>
                 </div>
             </div>
 
             <WhatWeDo />
+            {/* _______________________________Mobile modal WWD___________________________________ */}
+            <div className={`__mobileOnly px-4 wwd_modal ${state.WWDMobileModal === 'opened' ? 'd-block' : ''}`}>
+                <div id='what-we-do-mobile'>
+                    <header>
+                        <span className='position-absolute mt-n1' onClick={() => closeMobileModal('WWD')}><FaChevronLeft size={18} color='white' /></span>
+                        <h1>{state.WWDMobileModalNav}</h1>
+                    </header>
+                    <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 21em)', margin: '1em 1.2em' }}>
+                        {state.WWDMobile === 'ASSET MANAGEMENT' ? AssetManagementMobile() :
+                            state.WWDMobile === 'FINANCE AND LEASING' ? FinanceAndLeasingMobile() : 'select a valid option'
+                        }
+                    </OverlayScrollbarsComponent>
+                    <footer>
+                        {state.WWDMobile === "FINANCE AND LEASING" ? financeLeasingNavLinks : assetManagementNavLinks}
+
+                    </footer>
+                </div>
+
+
+            </div>
+            {/* Mobile view WWD */}
             <div className='WWD_container __mobileOnly' style={{ minHeight: '100vh', scrollSnapAlign: 'start' }}>
                 <div id='what-we-do-mobile'>
                     <header>
                         <h1>{state.WWDMobile}</h1>
                     </header>
                     <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
-                        {/* {corporateInformationMobile} */}
-                        {/* {WhyUsMobile} */}
-
                         {state.WWDMobile === 'ASSET MANAGEMENT' ? AssetManagementMobile() :
                             state.WWDMobile === 'FINANCE AND LEASING' ? FinanceAndLeasingMobile() : 'select a valid option'
-
                         }
                     </OverlayScrollbarsComponent>
                     <footer>

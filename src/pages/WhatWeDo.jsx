@@ -10,10 +10,12 @@ import { Store, type as t } from '../context/store'
 
 const WhatWeDo = (props) => {
     const pages = ['ASSET MANAGEMENT', 'FINANCE AND LEASING',]
-    const {  dispatch } = React.useContext(Store)
+    const { dispatch } = React.useContext(Store)
     const afterChange = function (index) {
         dispatch({ type: t.WHAT_WE_DO_MODAL_POSITION, index })
     }
+
+
 
     return (
         <div id='what-we-do'>

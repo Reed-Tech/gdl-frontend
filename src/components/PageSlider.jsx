@@ -29,6 +29,7 @@ const PageSlider = (props) => {
         //     dispatch({type: t.WHAT_WE_DO_MODAL_POSITION, index})
         // }
         afterChange: props.afterChange
+        // afterChange: (i) => console.log(i)
     }
 
 

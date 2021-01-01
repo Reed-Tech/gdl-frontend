@@ -13,13 +13,6 @@ const WhatWeDoModal = (props) => {
         dispatch({ type: t.MODAL_CLOSE })
     }
 
-    // function disableBodyScroll(condition) {
-    //     const body = document.getElementsByTagName('BODY')[0]
-    //     body.style.overflowY = `${condition ? 'hidden' : 'auto'}`
-    // }
-
-    // disableBodyScroll(state.showModal)
-
 
     const settings = {
         dots: true,

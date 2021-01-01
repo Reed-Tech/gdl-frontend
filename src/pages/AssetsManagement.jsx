@@ -12,15 +12,26 @@ const assetManagementCards = [
     { id: 'Money Market Fund', text: <h3>MONEY<br />MARKET<br />FUND</h3>, image: ProductBackground1 },
     { id: 'Smart Investment Account', text: <h3>SMART<br />INVESTMENT<br />ACCOUNT</h3>, image: ProductBackground1 },
     { id: 'Stockbroking', text: <h3>STOCKBROKING</h3>, image: ProductBackground1 },
-    { id: 'Financial Advisory', text: <h3>Financial Advisory</h3>, image: ProductBackground2 },
-    { id: 'Enterprise Transgenerational Program', text: <h3>ETR</h3>, image: ProductBackground2 },
     { id: 'Research', text: <h3>Research</h3>, image: ProductBackground2 },
+    { id: 'Financial Advisory', text: <h3>Financial Advisory</h3>, image: ProductBackground2 },
+    { id: 'Enterprise Transgenerational Program', text: <h3>ETP</h3>, image: ProductBackground2 },
 ]
 
 
 
 export const AssetManagementMobile = (props) => {
-    const { dispatch } = React.useContext(Store)
+    const {  dispatch } = React.useContext(Store)
+
+
+
+    const handleMobileModal = (e) => {
+        console.log('asset management modal')
+        dispatch({ type: t.WWD_MOBILE_MODAL, payload: 'opened' })
+        dispatch({ type: t.WWD_MOBILE_MODAL_NAV, payload: e })
+
+    }
+
+
 
 
     return (
@@ -42,7 +53,7 @@ export const AssetManagementMobile = (props) => {
                 <h3 className='text-center mb-3'>PRODUCTS</h3>
                 <div className=' row d-flex justify-content-center align-content-center'>
                     {assetManagementCards.map((e) =>
-                        <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e.id })}>
+                        <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={()=>handleMobileModal(e.id.toLocaleUpperCase())}>
                             {e.text}
                         </CardImage>
                     )}
@@ -57,8 +68,15 @@ export const AssetManagementMobile = (props) => {
 const AssetsManagement = (props) => {
 
 
-    const { dispatch } = React.useContext(Store)
+    const { state, dispatch } = React.useContext(Store)
     React.useEffect(() => dispatch({ type: t.ASSET_MANAGEMENT, payload: assetManagementCards.map(e => e.id) }), [dispatch])
+
+    const cardImageHandler = (e) => {
+        dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })
+        state.whatWeDoModalPosition === 0 ? dispatch({ type: t.ASSET_MANAGEMENT, payload: assetManagementCards.map(e => e.id) }) :
+            console.log('Bug Found');
+    }
+
     return (
         <section >
             <div className='assetManagement'>
@@ -80,7 +98,7 @@ const AssetsManagement = (props) => {
                         <h3 className='text-center mb-3'>PRODUCTS</h3>
                         <div className=' row d-flex justify-content-center align-content-center'>
                             {assetManagementCards.map((e) =>
-                                <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e.id })}>
+                                <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => cardImageHandler(e.id)}>
                                     {e.text}
                                 </CardImage>
                             )}

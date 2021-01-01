@@ -10,20 +10,20 @@ import Lanre from '../assets/images/548de7423306da262d7f182c28c511d6.png'
 import Oyekemi from '../assets/images/cf635ca96661303335c62f862c1611f4.png'
 
 
-export const boardOfDirectorsMobile = (
-    <div className="boardOfDirectorsMobile">
-        <header>
-            <h1>BOARD OF DIRECTORS</h1>
-        </header>
-        <main>
-            Body Goes here
-        </main>
-        <footer>
-            footer here
-        </footer>
-    </div>
-)
+export function boardOfDirectorsMobile(props) {
 
+    return (
+        <div className="boardOfDirectorsMobile">
+            <main>
+                Body Goes here
+        </main>
+            <footer>
+                footer here
+        </footer>
+        </div>
+    )
+
+}
 const error = {
     about: 'Please complete the About section in the form.',
     image: Avatar

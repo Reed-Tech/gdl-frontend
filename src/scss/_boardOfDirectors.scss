@@ -66,8 +66,11 @@
 }
 
 .boardOfDirectorsMobile {
-    display: flex;
     flex-direction: column;
+    display: flex;
+    // position: fixed;
+    // height: 100vh;
+    // z-index: 9999999;
 
     header {
         h1 {
@@ -82,10 +85,9 @@
         margin: 1em 1.2em;
         background-color: red;
         height: calc(100vh - 16em);
+        height: calc(-webkit-fill-available -16em);
     }
 
-    footer {
-        background-color: green;
-    }
+   
 
 }

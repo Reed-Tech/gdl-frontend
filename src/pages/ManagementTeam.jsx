@@ -11,6 +11,7 @@ import Henry from '../assets/images/Henry.png'
 import Ofonama from '../assets/images/Ofonama.png'
 import Perpetual from '../assets/images/Perpetual.png'
 import Oluyemi from '../assets/images/Oluyemi.png'
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 
 const error = {
     about: 'Please complete the About section in the form.',
@@ -88,7 +89,9 @@ const ManagementTeam = (props) => {
                 <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
                     <div className='row d-flex managementTeam_container'>
                         <Card maxHeight='calc(100vh - 20em)' className='managementTeam_card col-6'>
-                            {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
+                            <OverlayScrollbarsComponent>
+                                {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
+                            </OverlayScrollbarsComponent>
                         </Card>
                         <div className='col-lg-4 managementTeam_image' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : error.image})` }}>
                         </div>
@@ -100,11 +103,6 @@ const ManagementTeam = (props) => {
                     </div>
 
                 </div>
-            </div>
-
-            {/* Because i have to write for mobile view too... FML 😌 */}
-            <div className="managementTeam_mobile">
-                <h1>MT</h1>
             </div>
 
 
