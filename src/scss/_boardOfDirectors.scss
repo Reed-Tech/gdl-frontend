@@ -85,8 +85,10 @@
         margin: 1em 1.2em;
         background-color: red;
         height: calc(100vh - 16em);
+        min-height: calc(vh(100) - 16em);
+
     }
 
-   
+
 
 }
