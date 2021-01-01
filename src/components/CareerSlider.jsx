@@ -103,6 +103,11 @@ const CareerSlider = () => {
         center: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        adaptiveHeight: true,
+        variableWidth: false,
+        cssEase: "ease-in-out",
+        arrows: false,
+
         responsive: [
             {
                 breakpoint: 1200,
