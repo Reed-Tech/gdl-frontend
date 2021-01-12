@@ -94,7 +94,7 @@ const AssetsManagement = (props) => {
                             Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
                     </p>
                     </Card>
-                    <Card scrollable col='col-6' maxWidth='655px' className='ml-2' maxHeight='clac(100vh - 20em)'>
+                    <Card scrollable maxWidth='655px' className='ml-2' maxHeight='clac(100vh - 20em)'>
                         <h3 className='text-center mb-3'>PRODUCTS</h3>
                         <div className=' row d-flex justify-content-center align-content-center'>
                             {assetManagementCards.map((e) =>

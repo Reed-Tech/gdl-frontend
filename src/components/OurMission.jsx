@@ -28,8 +28,8 @@ const OurMission = (props) => {
                 </div>
             </div>
             <div className="col-lg-7 col-sm-12 ourMission_createAccount">
-                <h1>Create your Account Now</h1>
-                <div className='ourMission_createAccount-cards'>
+                <h1 className='text-sm-left mt-5 mt-lg-0 text-lg-center'>Create your Account Now</h1>
+                <div className='ourMission_createAccount-cards justify-content-lg-center justify-content-sm-start'>
                     {cardData.map((e) =>
                         <CardImage key={e.name} width='180px' image={e.image}>
                             <h3>{e.name}</h3>

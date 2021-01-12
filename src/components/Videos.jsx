@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import VideoClip from '../assets/videos/Advert.mp4'
 import {  Carousel, Modal } from 'react-bootstrap'
 import TestBG from '../assets/images/ContactUsBG.png'
@@ -20,7 +20,7 @@ const Videos = () => {
         <div className='videos'>
             <h1>VIDEOS</h1>
             <div className='videos_nav'>
-                <Link to='#'>Latest Uploads</Link>
+                {/* <Link to='#'>Latest Uploads</Link> */}
             </div>
             <div className='videos_player'>
                 <Carousel slide={false} nextIcon={null} prevIcon={null} >

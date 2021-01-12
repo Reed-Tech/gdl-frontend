@@ -70,9 +70,7 @@
     &_open {
         height: calc(100vh - clamp(6em, 6vw, 6.5em));
         height: 100vh;
-        
-        min-height: -webkit-fill-available;
-
+        // min-height: -webkit-fill-available;
         width: 100%;
         opacity: 1;
         bottom: 0;

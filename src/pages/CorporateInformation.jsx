@@ -66,7 +66,7 @@ const CorporateInformation = (props) => {
                 <h1>CORPORATE INFORMATION</h1>
                 <div className='d-flex justify-content-between mx-5 '>
 
-                    <Card className='col-3' align='left' maxHeight='calc(100vh - 20em)'>
+                    <Card scroll className='col-3' align='left' maxHeight='calc(100vh - 20em)'>
                         <h3>Vision</h3>
                         <p>A leading diversified financial institution creating wealth and transforming society</p>
                         <br />
@@ -96,7 +96,7 @@ const CorporateInformation = (props) => {
                         <p> We have a strong sense of ownership and accountability, and are creative, self-driven and highly motivated. We are committed to continuous learning, working within a fair, pleasant and engaging work environment in which rewards are based on merit and performance.</p>
                     </Card>
 
-                    <Card className='text-center col-3' maxHeight='calc(100vh - 20em)'>
+                    <Card scroll className='text-center col-3 removeListStyle' maxHeight='calc(100vh - 20em)'>
                         <h3>NORMS</h3>
                         <ul className='p-0'>
                             <li>Ownership and Accountability</li>

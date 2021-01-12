@@ -55,7 +55,8 @@
 }
 
 #who-we-are-mobile,
-#what-we-do-mobile {
+#what-we-do-mobile,
+.wwa_modal {
     display: flex;
     flex-direction: column;
 
@@ -99,13 +100,21 @@
     min-height: vh(100);
     height: 100vh;
     background: green;
-    top: vh(100);
+    top: 100vh;
     width: 100%;
     z-index: 2;
     display: none;
 
     &-opened {
-        display: fled;
+        display: flex;
+
+        header {
+
+            h1 {
+                width: 100%;
+            }
+        }
+
         flex-direction: column;
 
         div {

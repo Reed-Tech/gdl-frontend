@@ -10,7 +10,7 @@ import { FaPaperPlane } from 'react-icons/fa';
 const NewsLetterSubscription = () => {
     return (
         <div className='newsLetterSubscription d-flex flex-wrap'>
-            <div className="col-lg-6 col-sm-12 d-flex flex-wrap newsLetterSubscription_outdoor">
+            <div className="col-lg-6 d-none d-lg-flex flex-wrap newsLetterSubscription_outdoor">
                 <div className='col-5 newsLetterSubscription_outdoor-image' style={{ backgroundImage: `url(${BGFull})` }}>
                 </div>
                 <div className='col-7'>
@@ -27,10 +27,10 @@ const NewsLetterSubscription = () => {
 
 
             <div className="col-lg-6 col-sm-12 mt-5 mt-lg-0 d-flex flex-wrap newsLetterSubscription_subscription">
-                <div className='col-6'>
-                    <div className='newsLetterSubscription_subscription-illustration '></div>
+                <div className='col-6 d-none d-md-block mt-5 mt-lg-0'>
+                    <div className='newsLetterSubscription_subscription-illustration'></div>
                 </div>
-                <div className='col-6'>
+                <div className='col-md-6 col-sm-12 mt-sm-5'>
                     <div>
                         <h3>Subscribe</h3>
                         <p>Subscribe to our newsletter to be the first to receive updates on our products and promotions</p>

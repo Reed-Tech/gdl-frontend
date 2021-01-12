@@ -6,7 +6,7 @@ import StockInfo from '../components/StockInfo'
 import CareerBG from '../assets/images/Career.png'
 import CareerContent from '../components/CareerContent'
 import BannerCareer from '../components/BannerCareer'
-import Banner from '../components/Banner'
+// import Banner from '../components/Banner'
 import NewsLetterSubscription from '../components/NewsLetterSubscription'
 import FooterCareer from '../components/FooterCareer'
 import FooterNav from '../components/FooterNav'
@@ -53,7 +53,7 @@ const Career = () => {
                 </p>
             </div>
             <CareerSlider />
-            <Banner />
+            {/* <Banner /> */}
             <NewsLetterSubscription />
             <FooterCareer />
             <FooterNav />

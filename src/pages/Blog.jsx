@@ -7,7 +7,7 @@ import NewsLetterSubscription from '../components/NewsLetterSubscription'
 import OurMission from '../components/OurMission'
 import StockInfo from '../components/StockInfo'
 import MediaBG from '../assets/images/mediaBg.png'
-import SearchBlog from '../components/SearchBlog'
+// import SearchBlog from '../components/SearchBlog'
 import BannerBlog from '../components/BannerBlog'
 import BlogSlider from '../components/BlogSlider'
 
@@ -54,9 +54,8 @@ const Blog = () => {
                 </HeaderSlider>
                 <StockInfo />
             </header>
-            <SearchBlog />
+            {/* <SearchBlog /> */}
             <BlogSlider/>
-            {/* <h1>Blog Posts here</h1> */}
             <BannerBlog />
             <OurMission
                 header='Why Us'

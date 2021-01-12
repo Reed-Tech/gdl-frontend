@@ -88,7 +88,7 @@ const ManagementTeam = (props) => {
                 <h1>MANAGEMENT TEAM</h1>
                 <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
                     <div className='row d-flex managementTeam_container'>
-                        <Card maxHeight='calc(100vh - 20em)' className='managementTeam_card col-6'>
+                        <Card scroll maxHeight='calc(100vh - 20em)' className='managementTeam_card col-6'>
                             <OverlayScrollbarsComponent>
                                 {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
                             </OverlayScrollbarsComponent>

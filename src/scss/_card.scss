@@ -55,3 +55,12 @@
     }
 
 }
+
+.removeListStyle{
+    ul{
+        list-style-type: none;
+        li{
+            padding: .4em 0;
+        }
+    }
+}

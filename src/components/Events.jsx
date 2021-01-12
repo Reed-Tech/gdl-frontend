@@ -56,7 +56,7 @@ const IMAGES = [
 const Events = () => {
     return (
         <section className='events d-flex flex-wrap'>
-            <dvi className="col-lg-3 col-12 events_eventList">
+            <div className="col-lg-3 col-12 events_eventList">
                 <h1>Events</h1>
                 <ul>
                     <li>20 years anniversary</li>
@@ -64,8 +64,9 @@ const Events = () => {
                     <li>Our Time in London</li>
                     <li>20 years anniversary</li>
                     <li>20 years anniversary</li>
+                    <li>20 years anniversary</li>
                 </ul>
-            </dvi>
+            </div>
             <div className="col-lg-9 col-12 mt-5 mt-lg-0">
                 <Gallery images={IMAGES} />
             </div>

@@ -71,7 +71,7 @@ const FinanceAndLeasing = (props) => {
                     </Card>
 
                 >
-                    <Card scrollable col='col-6' className=' mt-sm-3 mt-lg-0 ml-2'>
+                    <Card scrollable className=' mt-sm-3 mt-lg-0 ml-2'>
                         <h3 className='text-center mb-3'>PRODUCTS</h3>
                         <div className=' row d-flex justify-content-center align-content-center' >
 

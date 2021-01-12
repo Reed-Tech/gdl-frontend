@@ -1,6 +1,8 @@
 .assetManagement {
     @include headerFontStyle;
 
+    padding-right: 20px;
+
     &_web {
         @media screen and (max-width:1023px) {
             display: none;

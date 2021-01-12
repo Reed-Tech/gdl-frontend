@@ -1,3 +1,8 @@
-.blogSlider{
-    background-color: antiquewhite;
+.blogSlider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5vw clamp(10px, 4vw, 5vw);
+    margin: 0 auto;
+    justify-content: center;
 }

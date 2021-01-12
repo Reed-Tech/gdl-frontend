@@ -5,18 +5,18 @@
     justify-content: space-between;
     h1{
         font-size: clamp(1.2em, 4vw, 1.825em);
+        
     }
-    &_mission{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    // &_mission{
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
     &_createAccount{
         max-width: fit-content;
         &-cards{
             display: flex;
             flex-wrap: wrap;
-            // justify-content: center;
             max-width: 540px;
             h3{
                 color: white;
@@ -24,6 +24,7 @@
                 max-width: 80%;
                 font-weight: 800;
                 transform: scale(0.9);
+            
             }
         }
     }

@@ -15,7 +15,7 @@ const ImagesCarousel = () => {
         <div className='imagesCarousel'>
             <h1>IMAGES</h1>
             <div className="imagesCarousel_nav">
-                <Link to='#'>Latest Uploads</Link>
+                {/* <Link to='#'>Latest Uploads</Link> */}
             </div>
             <Carousel slide={true} fade nextIcon={null} prevIcon={null}>
                 {ImagesList.map((e) =>

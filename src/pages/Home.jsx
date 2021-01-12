@@ -38,10 +38,7 @@ const Home = (props) => {
         dispatch({ type: t.WWA_MOBILE_MODAL, payload: e })
     }
 
-    // function handleWWDModal(e) {
-    //     console.log(state.WWDMobileModal)
-    //     dispatch({ type: t.WWA_MOBILE_MODAL, payload: e })
-    // }
+
 
     function handleWWDMobileModalNav(e) {
         console.log(e);
@@ -83,7 +80,18 @@ const Home = (props) => {
             </div>
             <WhoWeAre />
             <div className={`__mobileOnly wwa_modal px-4 ${state.WWAMobileModal === 'BOARD OF DIRECTORS' ? 'd-block' : state.WWAMobileModal === 'MANAGEMENT TEAM' ? 'd-block' : ''}`}>
-                <span onClick={() => closeMobileModal('WWA')}><FaChevronLeft size={18} color='white' /></span>
+                <header>
+                    <span onClick={() => closeMobileModal('WWA')}><FaChevronLeft size={18} color='white' /></span>
+                    <h1>{state.boardOfDirectorsActive}</h1>
+                </header>
+                <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
+                    <h1>Hello World </h1>
+                </OverlayScrollbarsComponent>
+                <footer>
+                    {state.boardOfDirectorsNav.map((e) =>
+                        <span className={state?.boardOfDirectorsActive === 'CORPORATE INFORMATION' ? 'navActive' : ''} onClick={() => handleWWANav('CORPORATE INFORMATION')}>CORPORATE INFORMATION</span>
+                    )}
+                </footer>
             </div>
             <div className={`WWA_container __mobileOnly`} style={{ scrollSnapAlign: 'start', height: '100vh' }}>
                 <div id='who-we-are-mobile' >
@@ -118,19 +126,26 @@ const Home = (props) => {
                         <h1>{state.WWDMobileModalNav}</h1>
                     </header>
                     <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 21em)', margin: '1em 1.2em' }}>
-                        {state.WWDMobile === 'ASSET MANAGEMENT' ? AssetManagementMobile() :
+                        {/* {state.WWDMobile === 'ASSET MANAGEMENT' ? AssetManagementMobile() :
                             state.WWDMobile === 'FINANCE AND LEASING' ? FinanceAndLeasingMobile() : 'select a valid option'
-                        }
+                        } */}
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
+                        <h1>Works well Now </h1>
                     </OverlayScrollbarsComponent>
                     <footer>
                         {state.WWDMobile === "FINANCE AND LEASING" ? financeLeasingNavLinks : assetManagementNavLinks}
-
                     </footer>
                 </div>
-
-
             </div>
-            {/* Mobile view WWD */}
             <div className='WWD_container __mobileOnly' style={{ minHeight: '100vh', scrollSnapAlign: 'start' }}>
                 <div id='what-we-do-mobile'>
                     <header>
@@ -147,8 +162,6 @@ const Home = (props) => {
                     </footer>
                 </div>
             </div>
-
-
             <Advert />
             <CreatingWealth history={props.history} />
         </div>

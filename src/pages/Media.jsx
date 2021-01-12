@@ -12,6 +12,7 @@ import NewsLetterSubscription from '../components/NewsLetterSubscription'
 import Banner from '../components/Banner'
 import Events from '../components/Events'
 import FooterCareer from '../components/FooterCareer'
+import BlogSlider from '../components/BlogSlider'
 
 
 // _______________________________________________________________________________________
@@ -58,9 +59,7 @@ const Media = () => {
                 <StockInfo />
             </header>
             <Videos />
-            <div>
-                <h1 style={{ margin: '3em' }}>Blog post components here</h1>
-            </div>
+            <BlogSlider />
             <Banner />
             <ImagesCarousel />
             <Events />

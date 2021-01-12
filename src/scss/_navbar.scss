@@ -8,6 +8,14 @@
     background-color: rgba($color: black, $alpha: 0.02);
     transition: padding .3s;
     z-index: 1000;
+    color: white;
+    transition: background-color .3s .1s ease-in-out;
+
+    &_white {
+        color: black;
+        background-color: #fff;
+        padding: .2em clamp(2.5em, 6vw, 6.5em);
+    }
 
     @media screen and (max-width:1023px) {
         padding: .1em 1.5em;
@@ -40,7 +48,7 @@
                 text-transform: uppercase;
                 font-weight: 500;
                 font-size: clamp(0.875em, 1vw, 1.125em);
-                color: $white;
+                color: inherit;
 
                 &:hover {
                     text-decoration: none;
@@ -189,7 +197,7 @@
         transition: all .3s;
         transition-timing-function: ease-in-out;
         padding-top: 4.5em;
-        color: black;
+        color: inherit;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -213,7 +221,7 @@
             }
 
             a {
-                color: black;
+                color: inherit;
                 font-weight: 500;
 
             }
@@ -245,4 +253,38 @@
     }
 
 
+}
+
+
+
+.navbar_onScroll {
+
+    color: white;
+    background-color: $primary-color;
+    border-bottom: 0px solid rgba($color: white, $alpha: 0.5);
+
+
+    .navbar_mobile {
+        &-hamburgerMenu {
+            &-icon {
+                div {
+                    background-color: black;
+
+                    &::before,
+                    &::after {
+                        background-color: rgb(0, 0, 0);
+                    }
+
+                }
+
+                &-close {
+                    div {
+                        background-color: transparent;
+
+                    }
+                }
+            }
+        }
+
+    }
 }

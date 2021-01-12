@@ -5,7 +5,17 @@ import { FaCaretDown } from 'react-icons/fa'
 import { Store, type as t } from '../context/store'
 
 
+
+
 const Navbar = (props) => {
+
+    React.useEffect(() => (
+        window.onscroll = () => {
+            const navbar = document.getElementById('navbar');
+            window.scrollY > 20 ? navbar.classList.add('navbar_onScroll') : navbar.classList.remove('navbar_onScroll');
+        }
+    ), [])
+
     const [NavToggle, setNavToggle] = React.useState(false)
     const [dropDown, setDropdown] = React.useState('')
     const goToHome = () => window.scrollTo(0, 0)
@@ -31,7 +41,7 @@ const Navbar = (props) => {
 
     return (
         <>
-            <nav className='navbar'>
+            <nav id='navbar' className='navbar'>
                 <NavLink onClick={goToHome} className='navbar_brand' to='/'>
                     <img src={logo_small} alt="GDL" />
                 </NavLink>
@@ -45,14 +55,14 @@ const Navbar = (props) => {
                         <div className="navbar_nested_parent-container">
                             <NavLink to='#'>Resources</NavLink>
                             <ul className='navbar_nested_ul'>
-                                <li> <NavLink to='/blog' >Blog</NavLink>  </li>
-                                <li> <NavLink to='/media' >Media</NavLink>  </li>
-                                <li> <NavLink to='/career' >Career</NavLink>  </li>
-                                <li> <NavLink to='/research' >Research</NavLink>  </li>
+                                <li> <NavLink to='/blog' onClick={goToHome} >Blog</NavLink>  </li>
+                                <li> <NavLink to='/media' onClick={goToHome} >Media</NavLink>  </li>
+                                <li> <NavLink to='/career' onClick={goToHome}>Career</NavLink>  </li>
+                                <li> <NavLink to='/research' onClick={goToHome} >Research</NavLink>  </li>
                             </ul>
                         </div>
                     </li>
-                    <li className='navbar_ul-li'><NavLink to='/contact-us'>Contact</NavLink></li>
+                    <li className='navbar_ul-li'><NavLink to='/contact-us' onClick={goToHome}>Contact</NavLink></li>
                 </ul>
                 <ul className='navbar_ul'>
                     <li className='navbar_ul-li'><NavLink to='#'>Open an account</NavLink></li>
