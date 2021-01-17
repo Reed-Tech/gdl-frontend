@@ -6,7 +6,6 @@ const CardImage = (props) => {
     const { dispatch } = useContext(Store)
     function openModal(id) {
         dispatch({ type: t.MODAL_OPEN })
-        // typeof (props.onClick) === 'function' ? props.onClick() : console.log('bad - not function');
         props.onClick()
 
     }
@@ -22,6 +21,7 @@ const CardImage = (props) => {
 
 CardImage.propTypes = {
     className: PropTypes.string,
+    onClick: PropTypes.func.isRequired
 }
 
 export default CardImage

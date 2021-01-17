@@ -8,7 +8,8 @@ import Blog from "./pages/Blog";
 import Media from "./pages/Media";
 import Career from "./pages/Career";
 import Research from "./pages/Research";
-import 'overlayscrollbars/css/OverlayScrollbars.css';
+import "overlayscrollbars/css/OverlayScrollbars.css";
+import "./scss/base/_myTheme.css";
 
 const App = () => {
   return (

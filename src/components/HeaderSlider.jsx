@@ -25,6 +25,7 @@ const slideData = [
 
 const HeaderSlider = (props) => {
 
+
     const sliderSettings = {
         dots: true,
         dotsClass: "headerSlider_container-dots",

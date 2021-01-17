@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import ContactUsForm from '../components/ContactUsForm'
 import Footer from '../components/Footer'
 import FooterNav from '../components/FooterNav'
@@ -19,7 +18,7 @@ const ContactUs = () => {
                 <div className='contactUs_blur' />
                 <Navbar />
                 <div className='contactUs_text'>
-                    <Link to='#'>BACK TO CAREER</Link>
+                    {/* <Link to='#'>BACK TO CAREER</Link> */}
                     <h1>Contact Us</h1>
                     <p>How can we assist you?</p>
                 </div>

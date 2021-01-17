@@ -9,12 +9,12 @@ import IAF from '../assets/images/IAF.png'
 
 
 const cardData = [
-    { name: 'GDL STOCKBROKING FORM', image: StockBG, link: '/#', },
-    { name: 'GDL SIA FORM', image: SiaBG, link: '/#', },
-    { name: 'MMF APPLICATION FORM', image: MMF, link: '/#', },
-    { name: 'SMART SAVE ACCOUNT FORM', image: SmartSavingImg, link: '/#', },
-    { name: 'CORPORATE ACCOUNT FORM', image: CAF, link: '/#', },
-    { name: 'INDIVIDUAL ACCOUNT FORM', image: IAF, link: '/#', },
+    { name: 'GDL STOCKBROKING FORM', image: StockBG, link: 'stock broking link', },
+    { name: 'GDL SIA FORM', image: SiaBG, link: 'sia form link', },
+    { name: 'MMF APPLICATION FORM', image: MMF, link: 'application form link', },
+    { name: 'SMART SAVE ACCOUNT FORM', image: SmartSavingImg, link: 'smart account link', },
+    { name: 'CORPORATE ACCOUNT FORM', image: CAF, link: 'corporate account link', },
+    { name: 'INDIVIDUAL ACCOUNT FORM', image: IAF, link: 'individual account link', },
 ]
 
 const OurMission = (props) => {
@@ -31,7 +31,7 @@ const OurMission = (props) => {
                 <h1 className='text-sm-left mt-5 mt-lg-0 text-lg-center'>Create your Account Now</h1>
                 <div className='ourMission_createAccount-cards justify-content-lg-center justify-content-sm-start'>
                     {cardData.map((e) =>
-                        <CardImage key={e.name} width='180px' image={e.image}>
+                        <CardImage onClick={()=> console.log(e.link)} key={e.name} width='180px' image={e.image}>
                             <h3>{e.name}</h3>
                         </CardImage>
                     )}

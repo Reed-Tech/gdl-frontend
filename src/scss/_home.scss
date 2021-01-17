@@ -61,11 +61,15 @@
     flex-direction: column;
 
     header {
+
+
         h1 {
             color: white;
             font-weight: 600;
             font-size: 14px;
             text-align: center;
+            width: 90%;
+            margin: 0 auto;
         }
     }
 
@@ -96,24 +100,47 @@
 }
 
 .wwa_modal {
+    background-image: url(../assets/images/RNFetchBlobTmp_9zxcwm9jxruwkdp4t5enr7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba($color: #000000, $alpha: 0.4);
     position: absolute;
     min-height: vh(100);
     height: 100vh;
-    background: green;
     top: 100vh;
     width: 100%;
-    z-index: 2;
+    z-index: 4;
     display: none;
+
+    header {
+
+        div {
+            width: fit-content;
+            display: inline-block;
+            position: absolute;
+        }
+    }
+
+    &-image {
+        height: 11.2em;
+        width: 11.2em;
+        border-radius: 999px;
+        margin: 0 auto;
+        // background-position: 0 center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    footer {
+        margin: 0 -20px;
+    }
 
     &-opened {
         display: flex;
 
-        header {
 
-            h1 {
-                width: 100%;
-            }
-        }
 
         flex-direction: column;
 
@@ -136,7 +163,8 @@
     width: 100%;
     z-index: 2;
     display: none;
-    scroll-snap-align: 'start';
+
+
 
     &-opened {
         display: fled;
@@ -145,5 +173,9 @@
         div {
             margin-bottom: 1em;
         }
+    }
+
+    footer {
+        margin: 0 -20px;
     }
 }

@@ -7,6 +7,8 @@ import ResearchBG from '../assets/images/mediaBg.png'
 import OurMission from '../components/OurMission'
 import NewsLetterSubscription from '../components/NewsLetterSubscription'
 import FooterNav from '../components/FooterNav'
+import BlogSlider from '../components/BlogSlider'
+
 
 
 const slideData = [
@@ -35,7 +37,7 @@ const Research = () => {
         </section>))
     return (
         <section className='research'>
-            <header style={{height:'100vh'}}>
+            <header style={{ height: '100vh' }}>
                 <Navbar />
                 <HeaderSocialLinks />
                 <HeaderSlider>
@@ -43,10 +45,10 @@ const Research = () => {
                 </HeaderSlider>
                 <StockInfo />
             </header>
-                <h1>Blog Posts </h1>
-                <OurMission />
-                <NewsLetterSubscription />
-                <FooterNav />
+            <BlogSlider />
+            <OurMission />
+            <NewsLetterSubscription />
+            <FooterNav />
         </section>
     )
 }

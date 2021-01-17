@@ -66,7 +66,7 @@ const Navbar = (props) => {
                 </ul>
                 <ul className='navbar_ul'>
                     <li className='navbar_ul-li'><NavLink to='#'>Open an account</NavLink></li>
-                    {/* <li className='navbar_ul-li'><NavLink to='#'>Login</NavLink></li> */}
+                    <li className='navbar_ul-li'><a href='https://clientportal.gdl.com.ng/'>Login</a></li>
                 </ul>
 
                 {/* Mobile Menu */}
@@ -110,6 +110,7 @@ const Navbar = (props) => {
                 </div>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./contact-us'>CONTACT</NavLink></li>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./#home'>OPEN AN ACCOUNT</NavLink></li>
+                <li className='navbar_mcontainer-navItem'><a  href='https://clientportal.gdl.com.ng/'>Login</a></li>
 
             </div>
         </>

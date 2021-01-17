@@ -39,6 +39,8 @@ const NewsLetterSubscription = () => {
                         <InputGroup className="col-12 p-0">
                             <FormControl
                                 placeholder="email"
+                                type='email'
+                                required
                             />
                             <InputGroup.Append>
                                 <Button variant="primary"><FaPaperPlane /></Button>

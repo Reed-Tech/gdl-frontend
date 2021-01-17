@@ -32,7 +32,9 @@ export const type = {
   FINANCE_AND_LEASING_ACTIVE: "FINANCE_AND_LEASING_ACTIVE",
   WHAT_WE_DO_MODAL_POSITION: "WHAT_WE_DO_MODAL_POSITION",
   BOARD_OF_DIRECTORS: "BOARD_OF_DIRECTORS",
+  BOARD_OF_DIRECTORS_MOBILE: "BOARD_OF_DIRECTORS_MOBILE",
   MANAGEMENT_TEAM: "MANAGEMENT_TEAM",
+  MANAGEMENT_TEAM_MOBILE: "MANAGEMENT_TEAM_MOBILE",
   WWA_MOBILE: "WWA_MOBILE",
   WWD_MOBILE: "wwd_MOBILE",
   WWA_MOBILE_MODAL: "WWA_MOBILE_MODAL",
@@ -88,10 +90,20 @@ function reducer(state, action) {
         boardOfDirectorsNav: action.nav,
         boardOfDirectorsActive: action.active,
       };
+    case type.BOARD_OF_DIRECTORS_MOBILE:
+      return {
+        ...state,
+        boardOfDirectorsActive: action.active,
+      };
     case type.MANAGEMENT_TEAM:
       return {
         ...state,
         managementTeamNav: action.nav,
+        managementTeamActive: action.active,
+      };
+    case type.MANAGEMENT_TEAM_MOBILE:
+      return {
+        ...state,
         managementTeamActive: action.active,
       };
     case type.WWA_MOBILE:

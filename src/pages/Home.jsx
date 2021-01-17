@@ -15,16 +15,29 @@ import { AssetManagementMobile } from '../pages/AssetsManagement'
 import { FinanceAndLeasingMobile } from '../pages/FinanceAndLeasing'
 import { boardOfDirectorsMobile } from '../pages/BoardOfDirectors'
 import { FaChevronLeft } from 'react-icons/fa'
-
-
+import $ from 'jquery'
+import Card from '../components/Card'
+import { boardOfDirectorsData } from '../pages/BoardOfDirectors'
+import { managementTeamData } from '../pages/ManagementTeam'
+import { whatWeDoCardTexts } from '../components/WhatWeDoModal'
 
 
 
 const Home = (props) => {
-
     const { state, dispatch } = React.useContext(Store)
-
     console.log(state);
+
+    React.useEffect(() => {
+        let webWidth = 1023
+        $(window).on('resize', () => {
+            if (window.innerWidth >= webWidth) {
+                dispatch({ type: t.WWA_MOBILE_MODAL, payload: '' })
+                dispatch({ type: t.WWD_MOBILE_MODAL, payload: 'closed' })
+            }
+        })
+    }, [dispatch])
+
+
 
     function handleWWANav(page) {
         dispatch({ type: t.WWA_MOBILE, payload: page }, [])
@@ -34,24 +47,71 @@ const Home = (props) => {
     }
 
     function handleWWAModal(e) {
-        console.log(state.WWAMobileModal)
         dispatch({ type: t.WWA_MOBILE_MODAL, payload: e })
     }
 
-
+    function boardOfDirectorsMobileHandler(e) {
+        dispatch({ type: t.BOARD_OF_DIRECTORS_MOBILE, active: e })
+    }
+    function managementTeamMobileHandler(e) {
+        dispatch({ type: t.MANAGEMENT_TEAM_MOBILE, active: e })
+    }
 
     function handleWWDMobileModalNav(e) {
-        console.log(e);
         dispatch({ type: t.WWD_MOBILE_MODAL_NAV, payload: e })
     }
 
     function closeMobileModal(e) {
-        console.log(e)
         if (e === 'WWA') dispatch({ type: t.WWA_MOBILE_MODAL, payload: '' })
         else if (e === 'WWD') dispatch({ type: t.WWD_MOBILE_MODAL, payload: '' })
         else console.log('argument cant be blank')
 
     }
+
+    function boardOfDirectorsMobileContent() {
+        return (
+            <OverlayScrollbarsComponent style={{ height: `calc(100vh - ${state.WWAMobileModal === "BOARD OF DIRECTORS" ? '17em' : '19.7em'})`, margin: '1em 1.2em' }}>
+                <div className='wwa_modal-image' style={{ backgroundImage: `url(${state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].image ? boardOfDirectorsData[state.boardOfDirectorsActive].image : null})`, marginBottom: '1.8em' }}></div>
+                <Card scroll className='boardOfDirectors_card' height='calc(100vh - 30em)'>
+                    {state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].text ? boardOfDirectorsData[state.boardOfDirectorsActive].text.map((e) => <p key={e}>{e}</p>) : null}
+                </Card>
+            </OverlayScrollbarsComponent>
+        )
+    }
+
+    function managementTeamMobileContent() {
+        return (
+            <OverlayScrollbarsComponent style={{ height: `calc(100vh - ${state.WWAMobileModal === "MANAGEMENT TEAM" ? '17em' : '19.7em'})`, margin: '1em 1.2em' }}>
+                <div className='wwa_modal-image' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : null})`, marginBottom: '1.8em' }}></div>
+                <Card scroll className='boardOfDirectors_card' height='calc(100vh - 30em)'>
+                    {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : null}
+                    {/* {state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].text ? managementTeamData[state.boardOfDirectorsActive].text.map((e) => <p key={e}>{e}</p>) : null} */}
+                </Card>
+            </OverlayScrollbarsComponent>
+        )
+    }
+
+    function assetManagementMobileContent() {
+        return (
+            whatWeDoCardTexts[state.WWDMobileModalNav]?.map(e =>
+                <Card className='mb-3' key={e}>
+                    {e}
+                </Card>
+            )
+        )
+    }
+
+    function FinanceAndLeasingMobileContent() {
+        return (
+            whatWeDoCardTexts[state.WWDMobileModalNav]?.map(e =>
+                <Card className='mb-3' key={e}>
+                    {e}
+                </Card>
+            )
+        )
+    }
+
+
 
     const financeLeasingNavLinks = (<>
         <span className={state?.WWDMobileModalNav === 'HIGH YIELD NOTE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('HIGH YIELD NOTE')}>HIGH YIELD NOTE</span>
@@ -66,8 +126,20 @@ const Home = (props) => {
         <span className={state?.WWDMobileModalNav === 'STOCKBROKING' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('STOCKBROKING')}>STOCKBROKING</span>
         <span className={state?.WWDMobileModalNav === 'RESEARCH' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('RESEARCH')}>RESEARCH</span>
         <span className={state?.WWDMobileModalNav === 'FINANCIAL ADVISORY' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('FINANCIAL ADVISORY')}>FINANCIAL ADVISORY</span>
-        <span className={state?.WWDMobileModalNav === 'ENTERPRISE TRANSGENERATIONAL PROGRAM' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('ETP')}>ETP</span>
+        <span className={state?.WWDMobileModalNav === 'ENTERPRISE TRANSGENERATIONAL PROGRAM' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('ENTERPRISE TRANSGENERATIONAL PROGRAM')}>ETP</span>
     </>)
+
+    const boardOfDirectorsMobileNav = (
+        state.boardOfDirectorsNav.map((e) =>
+            <span key={e} className={state?.boardOfDirectorsActive === e ? 'navActive' : ''} onClick={() => boardOfDirectorsMobileHandler(e)}>{e}</span>
+        )
+    )
+
+    const managementTeamMobileNav = (
+        state.managementTeamNav.map((e) =>
+            <span key={e} className={state?.managementTeamActive === e ? 'navActive' : ''} onClick={() => managementTeamMobileHandler(e)}>{e}</span>
+        )
+    )
 
 
     return (
@@ -79,28 +151,27 @@ const Home = (props) => {
                 <HeaderSlider />
             </div>
             <WhoWeAre />
+            {/* who we are mobile ----------------------------- */}
+
+
             <div className={`__mobileOnly wwa_modal px-4 ${state.WWAMobileModal === 'BOARD OF DIRECTORS' ? 'd-block' : state.WWAMobileModal === 'MANAGEMENT TEAM' ? 'd-block' : ''}`}>
                 <header>
-                    <span onClick={() => closeMobileModal('WWA')}><FaChevronLeft size={18} color='white' /></span>
-                    <h1>{state.boardOfDirectorsActive}</h1>
+                    <div><span onClick={() => closeMobileModal('WWA')}><FaChevronLeft size={18} color='white' /></span></div>
+                    <h1>{state.WWAMobileModal === 'MANAGEMENT TEAM' ? state.managementTeamActive : state.boardOfDirectorsActive}</h1>
                 </header>
-                <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
-                    <h1>Hello World </h1>
-                </OverlayScrollbarsComponent>
+                {state.WWAMobileModal === 'MANAGEMENT TEAM' ? managementTeamMobileContent() : boardOfDirectorsMobileContent()}
                 <footer>
-                    {state.boardOfDirectorsNav.map((e) =>
-                        <span className={state?.boardOfDirectorsActive === 'CORPORATE INFORMATION' ? 'navActive' : ''} onClick={() => handleWWANav('CORPORATE INFORMATION')}>CORPORATE INFORMATION</span>
-                    )}
+                    {state.WWAMobileModal === 'BOARD OF DIRECTORS' ? boardOfDirectorsMobileNav : managementTeamMobileNav}
                 </footer>
             </div>
+
+
             <div className={`WWA_container __mobileOnly`} style={{ scrollSnapAlign: 'start', height: '100vh' }}>
                 <div id='who-we-are-mobile' >
                     <header>
                         <h1>{state.WWAMobile}</h1>
                     </header>
                     <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
-                        {/* {corporateInformationMobile} */}
-                        {/* {WhyUsMobile} */}
                         {state.WWAMobile === 'CORPORATE INFORMATION' ? corporateInformationMobile :
                             state.WWAMobile === 'BOARD OF DIRECTORS' ? boardOfDirectorsMobile() :
                                 state.WWAMobile === 'MANAGEMENT TEAM' ? 'MANAGEMENT TEAM' :
@@ -116,7 +187,6 @@ const Home = (props) => {
                     </footer>
                 </div>
             </div>
-
             <WhatWeDo />
             {/* _______________________________Mobile modal WWD___________________________________ */}
             <div className={`__mobileOnly px-4 wwd_modal ${state.WWDMobileModal === 'opened' ? 'd-block' : ''}`}>
@@ -125,21 +195,8 @@ const Home = (props) => {
                         <span className='position-absolute mt-n1' onClick={() => closeMobileModal('WWD')}><FaChevronLeft size={18} color='white' /></span>
                         <h1>{state.WWDMobileModalNav}</h1>
                     </header>
-                    <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 21em)', margin: '1em 1.2em' }}>
-                        {/* {state.WWDMobile === 'ASSET MANAGEMENT' ? AssetManagementMobile() :
-                            state.WWDMobile === 'FINANCE AND LEASING' ? FinanceAndLeasingMobile() : 'select a valid option'
-                        } */}
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
-                        <h1>Works well Now </h1>
+                    <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 18.5em)', margin: '1em 1.2em' }}>
+                        {state.WWDMobile === 'ASSET MANAGEMENT' ? assetManagementMobileContent() : FinanceAndLeasingMobileContent()}
                     </OverlayScrollbarsComponent>
                     <footer>
                         {state.WWDMobile === "FINANCE AND LEASING" ? financeLeasingNavLinks : assetManagementNavLinks}

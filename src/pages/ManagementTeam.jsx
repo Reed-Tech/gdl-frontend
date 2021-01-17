@@ -18,7 +18,7 @@ const error = {
     image: Avatar
 }
 
-const managementTeamData = {
+export const managementTeamData = {
     'Kolawole Ayeye': {
         id: 'Kolawole Ayeye',
         name: 'Kolawole Ayeye',

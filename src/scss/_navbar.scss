@@ -267,16 +267,22 @@
     .navbar_mobile {
         &-hamburgerMenu {
             &-icon {
-                div {
-                    background-color: black;
+                &-close {
+                    div {
+                        background-color: transparent;
 
-                    &::before,
-                    &::after {
-                        background-color: rgb(0, 0, 0);
+                        &::before {
+                            transform: translateY(0) rotate(-45deg);
+                            background-color: white;
+                        }
+
+                        &::after {
+                            transform: translateY(0) rotate(45deg);
+                            background-color: white;
+
+                        }
                     }
-
                 }
-
                 &-close {
                     div {
                         background-color: transparent;

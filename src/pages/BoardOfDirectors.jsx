@@ -29,7 +29,7 @@ const error = {
     image: Avatar
 }
 
-const boardOfDirectorsData = {
+export const boardOfDirectorsData = {
     'Dr Nadu Denloye': {
         id: 'Dr Nadu Denloye',
         name: 'Dr Nadu Denloye',

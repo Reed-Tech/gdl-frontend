@@ -25,7 +25,7 @@ export const AssetManagementMobile = (props) => {
 
 
     const handleMobileModal = (e) => {
-        console.log('asset management modal')
+        // console.log('asset management modal')
         dispatch({ type: t.WWD_MOBILE_MODAL, payload: 'opened' })
         dispatch({ type: t.WWD_MOBILE_MODAL_NAV, payload: e })
 
