@@ -10,6 +10,7 @@ import Career from "./pages/Career";
 import Research from "./pages/Research";
 import "overlayscrollbars/css/OverlayScrollbars.css";
 import "./scss/base/_myTheme.css";
+import CareerCareer from "./pages/CareerCareer";
 
 const App = () => {
   return (
@@ -21,8 +22,7 @@ const App = () => {
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/media" component={Media} />
           <Route exact path="/career" component={Career} />
-          <Route exact path="/career/accountant" component={Career} />
-          <Route exact path="/career:id" component={Career} />
+          <Route exact path="/career/:careerPath" component={CareerCareer} />
           <Route exact path="/research" component={Research} />
         </Switch>
       </BrowserRouter>

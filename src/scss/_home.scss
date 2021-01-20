@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     scroll-snap-align: start;
+    // overflow: hidden;
 
 
     &_landingPage {
@@ -38,8 +39,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-    background-image: url(../assets/images/landing2.png);
+    // background-color: rgba($color: #000000, $alpha: 0.4);
+    background-image: url(../assets/images/landing08.JPEG);
     background-attachment: fixed;
 
 }
@@ -49,8 +50,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-    background-image: url(../assets/images/landing3.png);
+    // background-color: rgba($color: #000000, $alpha: 0.4);
+    background-image: url(../assets/images/landing3.JPEG);
     background-attachment: fixed;
 }
 
@@ -82,7 +83,7 @@
             margin: 6px;
             font-size: 10px;
             min-width: 156px;
-            background-color: rgba($color: black, $alpha: .65);
+            background-color: $primary-background-color;
             color: white;
             border-radius: 10px;
             padding: 6px 4px;
@@ -100,19 +101,21 @@
 }
 
 .wwa_modal {
-    background-image: url(../assets/images/RNFetchBlobTmp_9zxcwm9jxruwkdp4t5enr7.png);
+    background-image: url(../assets/images/landing08.JPEG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: overlay;
     background-color: rgba($color: #000000, $alpha: 0.4);
-    position: absolute;
-    min-height: vh(100);
+    position: fixed;
+    margin-top: 66.19px;
     height: 100vh;
-    top: 100vh;
+    min-height: -webkit-fill-available;
+    // top: 100vh;
     width: 100%;
-    z-index: 4;
+    z-index: 9999;
     display: none;
+    padding-top: 2em;
 
     header {
 
@@ -151,18 +154,23 @@
 }
 
 .wwd_modal {
-    background-image: url(../assets/images/landing3.png);
+    background-image: url(../assets/images/landing3.JPEG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: overlay;
-    background-color: rgba($color: #000000, $alpha: 0.4);
-    top: 200vh;
+    // background-color: rgba($color: #000000, $alpha: 0.4);
     position: absolute;
     height: 100vh;
     width: 100%;
     z-index: 2;
     display: none;
+    position: fixed;
+    margin-top: 66.19px;
+    min-height: -webkit-fill-available;
+    z-index: 9999;
+    padding-top: 2em;
+
 
 
 

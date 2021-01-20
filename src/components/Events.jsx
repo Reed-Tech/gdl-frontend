@@ -12,43 +12,43 @@ const IMAGES = [
     {
         src: GridImg1,
         thumbnail: GridImg1,
-        thumbnailWidth: 450,
-        thumbnailHeight: 454,
+        // thumbnailWidth: 450,
+        // thumbnailHeight: 454,
         caption: "After Rain (Jeshu John - designerspics.com)"
     },
     {
         src: GridImg2,
         thumbnail: GridImg2,
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 174,
         caption: "After Rain (Jeshu John - designerspics.com)"
     },
     {
         src: GridImg3,
         thumbnail: GridImg3,
-        thumbnailWidth: 320,
-        thumbnailHeight: 474,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 474,
         caption: "After Rain (Jeshu John - designerspics.com)"
     },
     {
         src: GridImg4,
         thumbnail: GridImg4,
-        thumbnailWidth: 320,
-        thumbnailHeight: 374,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 374,
         caption: "After Rain (Jeshu John - designerspics.com)"
     },
     {
         src: GridImg5,
         thumbnail: GridImg5,
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 174,
         caption: "After Rain (Jeshu John - designerspics.com)"
     },
     {
         src: GridImg6,
         thumbnail: GridImg6,
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 174,
         caption: "After Rain (Jeshu John - designerspics.com)"
     },
 ]

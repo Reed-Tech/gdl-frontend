@@ -1,0 +1,19 @@
+.careerCareer {
+
+    &_content {
+        padding: clamp(10px, 5vw, 8vw);
+        // padding-bottom: 2em;
+        margin-bottom: 2em;
+
+        h1{
+            margin-bottom: 1em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        div{
+            margin-bottom: clamp(2em, 8vw, 3em);
+        }
+    }
+}
+

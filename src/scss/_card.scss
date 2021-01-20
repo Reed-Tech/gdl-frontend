@@ -1,6 +1,6 @@
 .customCard {
     padding: 1.5em;
-    background-color: rgba($color: black, $alpha: .65);
+    background-color: $primary-background-color;
     color: white;
     height: fit-content;
 
@@ -29,7 +29,7 @@
 
 .customCardCenter {
     padding: 1em;
-    background-color: rgba($color: black, $alpha: .65);
+    background-color: $primary-background-color;
     color: white;
     display: flex;
     align-items: center;

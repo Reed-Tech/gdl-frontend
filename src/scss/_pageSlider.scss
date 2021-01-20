@@ -1,5 +1,5 @@
 .pageSlider {
-    background-color: rgba(0, 128, 0, 0.102);
+    // background-color: rgba(0, 128, 0, 0.102);
 
     &-dots-right {
         right: 0;
@@ -12,7 +12,7 @@
     &-dots {
         padding: 0;
         color: white;
-        background-color: rgba($color: black, $alpha: 0.6);
+        background-color: $primary-background-color;
         margin: 0;
         width: fit-content;
         margin-top: 2.5em;

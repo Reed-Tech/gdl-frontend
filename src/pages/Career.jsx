@@ -22,11 +22,11 @@ const slideData = [
 // _______________________________________________________________________________________
 
 
-const Career = () => {
+const Career = (props) => {
 
     const renderSlideData = (
         slideData.map((slides) => <section key={slides.h1}>
-            <div className='headerSlider_container' style={{ backgroundImage: `url(${slides.image})`, backgroundPosition:'top right' }}>
+            <div className='career_headerSlider headerSlider_container' style={{ backgroundImage: `url(${slides.image})`, backgroundPosition:'top right' }}>
                 <div className='headerSlider_container-text headerSlider_container-h3'>
                     <h3>{slides.h3}</h3>
                 </div>
@@ -43,7 +43,7 @@ const Career = () => {
                 </HeaderSlider>
                 <StockInfo />
             </header>
-            <CareerContent />
+            <CareerContent history={props.history}/>
             <BannerCareer />
             <div className='career_strandedText'>
                 <p>
@@ -52,7 +52,7 @@ const Career = () => {
                     <strong><a href='mailto:humanresources@gdl.com.ng'>humanresources@gdl.com.ng</a></strong>
                 </p>
             </div>
-            <CareerSlider />
+            <CareerSlider history={props.history} />
             {/* <Banner /> */}
             <NewsLetterSubscription />
             <FooterCareer />

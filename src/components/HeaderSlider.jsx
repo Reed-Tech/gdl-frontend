@@ -1,7 +1,6 @@
 import React from 'react'
 import Slider from "react-slick"
-import Landing from '../assets/images/landing.png'
-import Landing2 from '../assets/images/landing2.png'
+import Landing from '../assets/images/landing07.JPEG'
 
 // _______________________________________________________________________________________
 const slideData = [
@@ -13,7 +12,7 @@ const slideData = [
         h4: 'We are committed to building your wealth with different investment options, all tailored to suit YOU.'
     },
     {
-        image: Landing2,
+        image: Landing,
         id: '2vms',
         h3: 'Your financial goals are our priority.',
         h1: 'WE BUILD FUTURES',

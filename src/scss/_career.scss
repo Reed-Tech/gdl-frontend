@@ -9,4 +9,9 @@
         padding: clamp(3em, 8vw, 10vw) clamp(10px, 5vw, 8vw);
         text-align: center;
     }
+
+    &_headerSlider {
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: overlay;
+    }
 }

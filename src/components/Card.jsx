@@ -21,7 +21,7 @@ const Card = (props) => {
 
     else if (props.scroll)
         return (
-            <OverlayScrollbarsComponent className={`${props.className} text-light`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.65)', padding: '1.5em', height: props.height ?? 'calc(100vh - 20em)' }}>
+            <OverlayScrollbarsComponent className={`${props.className} text-light`} style={{ backgroundColor: 'rgba(153, 35, 51, 0.7)', padding: '1.5em', height: props.height ?? 'calc(100vh - 20em)' }}>
                 {props.children}
             </OverlayScrollbarsComponent>
         )

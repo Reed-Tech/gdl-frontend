@@ -25,17 +25,27 @@ import { whatWeDoCardTexts } from '../components/WhatWeDoModal'
 
 const Home = (props) => {
     const { state, dispatch } = React.useContext(Store)
-    console.log(state);
+    // console.log(props);
+
+
+
 
     React.useEffect(() => {
         let webWidth = 1023
+        const bodyElement = document.getElementsByTagName('BODY')[0]
+
+        if (state?.showModal === true) {
+            bodyElement.style.overflow = 'hidden'
+        }
+        else bodyElement.style.overflow='auto'
+
         $(window).on('resize', () => {
             if (window.innerWidth >= webWidth) {
                 dispatch({ type: t.WWA_MOBILE_MODAL, payload: '' })
                 dispatch({ type: t.WWD_MOBILE_MODAL, payload: 'closed' })
             }
         })
-    }, [dispatch])
+    }, [dispatch, state.showModal])
 
 
 
@@ -66,6 +76,18 @@ const Home = (props) => {
         else if (e === 'WWD') dispatch({ type: t.WWD_MOBILE_MODAL, payload: '' })
         else console.log('argument cant be blank')
 
+    }
+
+    function handleCloseModal() {
+        setTimeout(() => {
+            console.log('hello')
+            dispatch({ type: t.MODAL_CLOSE })
+            document.getElementsByTagName('BODY')[0].style.overflow = 'auto'
+        }, 300)
+    }
+
+    function handleWWDCloseButton(){
+        handleCloseModal()
     }
 
     function boardOfDirectorsMobileContent() {
@@ -192,7 +214,7 @@ const Home = (props) => {
             <div className={`__mobileOnly px-4 wwd_modal ${state.WWDMobileModal === 'opened' ? 'd-block' : ''}`}>
                 <div id='what-we-do-mobile'>
                     <header>
-                        <span className='position-absolute mt-n1' onClick={() => closeMobileModal('WWD')}><FaChevronLeft size={18} color='white' /></span>
+                        <span className='position-absolute mt-n1' onClick={() => {closeMobileModal('WWD'); handleWWDCloseButton()}}><FaChevronLeft size={18} color='white' /></span>
                         <h1>{state.WWDMobileModalNav}</h1>
                     </header>
                     <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 18.5em)', margin: '1em 1.2em' }}>

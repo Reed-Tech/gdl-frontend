@@ -6,4 +6,9 @@
         min-height: vh(100);
 
     }
+
+    &_headerSlider{
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.209);
+    }
 }

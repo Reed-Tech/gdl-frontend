@@ -119,288 +119,7 @@ export const whatWeDoCardTexts = {
 
 }
 
-export const whatWeDoSubpages = {
-    'Money Market Fund': {
-        header: (
-            <div>
-                <h1>MONEY MARKET FUND</h1>
-                <h3>Cruise your way into financial freedom with as little as <strong>N10,000</strong></h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings}>
-                {whatWeDoCardTexts["MONEY MARKET FUND"].map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Interested in Money Market Funds?</p>
-                <Button variant='light'>Click Here</Button>
-            </div>
-        )
-    },
-    'Smart Investment Account': {
-        header: (
-            <div>
-                <h1>SMART INVESTMENT ACCOUNT</h1>
-                <h3>Get access to more money when you join the GDL Smart Investors Club</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings}>
-                {whatWeDoCardTexts["SMART INVESTMENT ACCOUNT"].map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
 
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Start Investing Smartly.</p>
-                <Button variant='light'>Open an Account Here.</Button>
-            </div>
-        )
-    },
-    'Stockbroking': {
-        header: (
-            <div>
-                <h1>STOCKBROKING</h1>
-                <h3>Get access to more money when you join the GDL Smart Investors Club</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings}>
-                {whatWeDoCardTexts.STOCKBROKING.map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Interested in making money from shares?</p>
-                <Button variant='light'>Click Here</Button>
-            </div>
-        )
-    },
-    'Financial Advisory': {
-        header: (
-            <div>
-                <h1>FINANCIAL ADVISORY</h1>
-                <h3>Get Good Advice, Invest Better.</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings}>
-                {whatWeDoCardTexts["FINANCIAL ADVISORY"].map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Take our hand as we light up your way to prosperity.</p>
-                <Button variant='light'>Reach Out To US Now</Button>
-            </div>
-        )
-    },
-    'Enterprise Transgenerational Program': {
-        header: (
-            <div>
-                <h1>Enterprise Transgenerational Program</h1>
-                <h3>Let Us Help You Build Wealth for Generations</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings}>
-                {whatWeDoCardTexts["ENTERPRISE TRANSGENERATIONAL PROGRAM"].map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Safeguard your Legacy today. </p>
-                <Button variant='light'>Sign Up For ETP Here</Button>
-            </div>
-        )
-    },
-    'Research': {
-        header: (
-            <div>
-                <h1>RESEARCH</h1>
-                <h3>Stay Informed, Beat the odds</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings}>
-                {whatWeDoCardTexts.RESEARCH.map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>For further inquiries or clarifications </p>
-                <Button variant='light'>Contact Us</Button>
-            </div>
-        )
-    },
-
-    // -------------------FINANCE AND LEASING -------------------------------
-    'High Yield Note': {
-        header: (
-            <div>
-                <h1>HIGH YIELD NOTE</h1>
-                <h3>High Interest rate + Low risk = The Perfect Investment</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings}>
-                {whatWeDoCardTexts["HIGH YIELD NOTE"].map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Interested in Money Market Fund? </p>
-                <Button variant='light'>Click Here</Button>
-            </div>
-        )
-    },
-    'Treasury Bill': {
-        header: (
-            <div>
-                <h1>TREASURY BILL</h1>
-                <h3>The closest you will ever come to a risk-free investment.</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings} slidesToShow={2}>
-                {whatWeDoCardTexts["TREASURY BILL"].map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Interested? Contact our team of seasoned experts to get started </p>
-                <Button variant='light'>Contact Us</Button>
-            </div>
-        )
-    },
-    'Long Term Note': {
-        header: (
-            <div>
-                <h1>LONG TERM NOTE</h1>
-                <h3>Play the long game, invest for the future</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings} slidesToShow={3}>
-                {whatWeDoCardTexts["LONG TERM NOTE"].map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Ready to invest for the Future?</p>
-                <Button variant='light'>Fill Form</Button>
-            </div>
-        )
-    },
-    'Dollar Note': {
-        header: (
-            <div>
-                <h1>DOLLAR NOTE</h1>
-                <h3> What’s better than making money? Making it in dollars!</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings} slidesToShow={2}>
-                {whatWeDoCardTexts["DOLLAR NOTE"].map(e =>
-                    <Card key={e} minHeight='calc(100vh - 36em)'>
-                        {e}
-                    </Card>
-                )}
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Fill Form Now to invest in the GDL dollar note now. </p>
-                <Button variant='light'>Fill Form</Button>
-            </div>
-        )
-    },
-    'GDL Finance': {
-        header: (
-            <div>
-                <h1>GDL FINANCE</h1>
-                <h3> Don’t do it alone, Get a loan.</h3>
-            </div>
-        ),
-        body: (
-            <Slider {...settings}>
-                <Card minHeight='calc(100vh - 36em)'>
-                    The biggest problem of most businesses is capital. Lack of access to money has been the downfall of many commercial organizations.
-             </Card>
-                <Card minHeight='calc(100vh - 36em)'>
-                    Even banks and other financial institutions which offer loan facilities cannot adequately cater to the financial needs of all the small and medium scale enterprises as well as large organizations.
-             </Card>
-                <Card minHeight='calc(100vh - 36em)'>
-                    Due to these hurdles and our dedication to developing the middle class, we provide loans to established businesses and finance new businesses.
-             </Card>
-                <Card minHeight='calc(100vh - 36em)'>
-                    It’s our way of giving back to society.
-             </Card>
-                <Card minHeight='calc(100vh - 36em)'>
-                    We also offer special credit facilities such as: <br />
-                    Consumer Loans (Fund Management, Project Finance, Asset Finance)
-                        Finance Lease as in the case of Hire Purchase, Trade Finance
-                        Local and International Trade: LPO Finance, Invoice Discounting Contract Finance
-                        Import and Export Finance
-                </Card>
-            </Slider>
-        ),
-
-        footer: (
-            <div className="whatWeDoModal_footer">
-                <p>Interested in Money Market Fund? </p>
-                <Button variant='light'>Click Here</Button>
-            </div>
-        )
-    },
-}
 
 const WhatWeDoModal = (props) => {
     const { state, dispatch } = useContext(Store)
@@ -409,7 +128,288 @@ const WhatWeDoModal = (props) => {
         dispatch({ type: t.MODAL_CLOSE })
     }
 
-
+    const whatWeDoSubpages = {
+        'Money Market Fund': {
+            header: (
+                <div>
+                    <h1>MONEY MARKET FUND</h1>
+                    <h3>Cruise your way into financial freedom with as little as <strong>N10,000</strong></h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings}>
+                    {whatWeDoCardTexts["MONEY MARKET FUND"].map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Interested in Money Market Funds?</p>
+                    <Button onClick={()=>console.log(props.history)} variant='light'>Click Here</Button>
+                </div>
+            )
+        },
+        'Smart Investment Account': {
+            header: (
+                <div>
+                    <h1>SMART INVESTMENT ACCOUNT</h1>
+                    <h3>Get access to more money when you join the GDL Smart Investors Club</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings}>
+                    {whatWeDoCardTexts["SMART INVESTMENT ACCOUNT"].map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Start Investing Smartly.</p>
+                    <Button variant='light'>Open an Account Here.</Button>
+                </div>
+            )
+        },
+        'Stockbroking': {
+            header: (
+                <div>
+                    <h1>STOCKBROKING</h1>
+                    <h3>Get access to more money when you join the GDL Smart Investors Club</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings}>
+                    {whatWeDoCardTexts.STOCKBROKING.map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Interested in making money from shares?</p>
+                    <Button variant='light'>Click Here</Button>
+                </div>
+            )
+        },
+        'Financial Advisory': {
+            header: (
+                <div>
+                    <h1>FINANCIAL ADVISORY</h1>
+                    <h3>Get Good Advice, Invest Better.</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings}>
+                    {whatWeDoCardTexts["FINANCIAL ADVISORY"].map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Take our hand as we light up your way to prosperity.</p>
+                    <Button variant='light'>Reach Out To US Now</Button>
+                </div>
+            )
+        },
+        'Enterprise Transgenerational Program': {
+            header: (
+                <div>
+                    <h1>Enterprise Transgenerational Program</h1>
+                    <h3>Let Us Help You Build Wealth for Generations</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings}>
+                    {whatWeDoCardTexts["ENTERPRISE TRANSGENERATIONAL PROGRAM"].map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+    
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Safeguard your Legacy today. </p>
+                    <Button variant='light'>Sign Up For ETP Here</Button>
+                </div>
+            )
+        },
+        'Research': {
+            header: (
+                <div>
+                    <h1>RESEARCH</h1>
+                    <h3>Stay Informed, Beat the odds</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings}>
+                    {whatWeDoCardTexts.RESEARCH.map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>For further inquiries or clarifications </p>
+                    <Button onClick={()=>console.log(props.history)} variant='light'>Contact Us</Button>
+                </div>
+            )
+        },
+    
+        // -------------------FINANCE AND LEASING -------------------------------
+        'High Yield Note': {
+            header: (
+                <div>
+                    <h1>HIGH YIELD NOTE</h1>
+                    <h3>High Interest rate + Low risk = The Perfect Investment</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings}>
+                    {whatWeDoCardTexts["HIGH YIELD NOTE"].map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Interested in Money Market Fund? </p>
+                    <Button variant='light'>Click Here</Button>
+                </div>
+            )
+        },
+        'Treasury Bill': {
+            header: (
+                <div>
+                    <h1>TREASURY BILL</h1>
+                    <h3>The closest you will ever come to a risk-free investment.</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings} slidesToShow={2}>
+                    {whatWeDoCardTexts["TREASURY BILL"].map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Interested? Contact our team of seasoned experts to get started </p>
+                    <Button variant='light'>Contact Us</Button>
+                </div>
+            )
+        },
+        'Long Term Note': {
+            header: (
+                <div>
+                    <h1>LONG TERM NOTE</h1>
+                    <h3>Play the long game, invest for the future</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings} slidesToShow={3}>
+                    {whatWeDoCardTexts["LONG TERM NOTE"].map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Ready to invest for the Future?</p>
+                    <Button variant='light'>Fill Form</Button>
+                </div>
+            )
+        },
+        'Dollar Note': {
+            header: (
+                <div>
+                    <h1>DOLLAR NOTE</h1>
+                    <h3> What’s better than making money? Making it in dollars!</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings} slidesToShow={2}>
+                    {whatWeDoCardTexts["DOLLAR NOTE"].map(e =>
+                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                            {e}
+                        </Card>
+                    )}
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Fill Form Now to invest in the GDL dollar note now. </p>
+                    <Button variant='light'>Fill Form</Button>
+                </div>
+            )
+        },
+        'GDL Finance': {
+            header: (
+                <div>
+                    <h1>GDL FINANCE</h1>
+                    <h3> Don’t do it alone, Get a loan.</h3>
+                </div>
+            ),
+            body: (
+                <Slider {...settings}>
+                    <Card minHeight='calc(100vh - 36em)'>
+                        The biggest problem of most businesses is capital. Lack of access to money has been the downfall of many commercial organizations.
+                 </Card>
+                    <Card minHeight='calc(100vh - 36em)'>
+                        Even banks and other financial institutions which offer loan facilities cannot adequately cater to the financial needs of all the small and medium scale enterprises as well as large organizations.
+                 </Card>
+                    <Card minHeight='calc(100vh - 36em)'>
+                        Due to these hurdles and our dedication to developing the middle class, we provide loans to established businesses and finance new businesses.
+                 </Card>
+                    <Card minHeight='calc(100vh - 36em)'>
+                        It’s our way of giving back to society.
+                 </Card>
+                    <Card minHeight='calc(100vh - 36em)'>
+                        We also offer special credit facilities such as: <br />
+                        Consumer Loans (Fund Management, Project Finance, Asset Finance)
+                            Finance Lease as in the case of Hire Purchase, Trade Finance
+                            Local and International Trade: LPO Finance, Invoice Discounting Contract Finance
+                            Import and Export Finance
+                    </Card>
+                </Slider>
+            ),
+    
+            footer: (
+                <div className="whatWeDoModal_footer">
+                    <p>Interested in Money Market Fund? </p>
+                    <Button variant='light'>Click Here</Button>
+                </div>
+            )
+        },
+    }
 
 
     // ------------------- WHAT WE DO MODAL SUB-PAGES  ----------------------------

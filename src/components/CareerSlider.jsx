@@ -4,6 +4,9 @@ import Slider from 'react-slick'
 import bg1 from '../assets/images/CareerCard1.png'
 import bg2 from '../assets/images/CCard2.png'
 import bg3 from '../assets/images/CCard3.png'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 
@@ -94,7 +97,9 @@ const careerData = [
     },
 ]
 
-const CareerSlider = () => {
+const CareerSlider = (props) => {
+
+    console.log(props.history.location)
 
 
     const settings = {
@@ -106,7 +111,7 @@ const CareerSlider = () => {
         adaptiveHeight: true,
         variableWidth: false,
         cssEase: "ease-in-out",
-        arrows: false,
+        arrows: true,
 
         responsive: [
             {
@@ -114,6 +119,7 @@ const CareerSlider = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                    arrows: true,
                 }
             },
             {
@@ -121,6 +127,7 @@ const CareerSlider = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrows: true,
                 }
             },
 
@@ -131,7 +138,7 @@ const CareerSlider = () => {
         <section className='careerSlider'>
             <Slider {...settings} >
                 {careerData.map(e =>
-                    <CareerCard key={e.name} image={e.image} name={e.name} description={e.description} responsibilities={e.responsibilities} skills='' education={e.education} link={e.link} />
+                    <CareerCard history={props.history} key={e.name} image={e.image} name={e.name} description={e.description} responsibilities={e.responsibilities} skills='' education={e.education} link={e.link} />
                 )}
 
             </Slider>

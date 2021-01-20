@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap'
 // import bg1 from '../assets/images/CareerCard1.png'
 
 const CareerCard = (props) => {
+  
     return (
         <div className='careerCard'>
             <div className='careerCard_image' style={{ backgroundImage: `url(${props.image})` }} />
@@ -36,7 +37,7 @@ const CareerCard = (props) => {
 
                         </ul>
                     </div>
-                    <Button variant='outline-light' className='rounded-pill'>LEARN MORE</Button>
+                    <Button onClick={() => props.history.push({ pathname: `/career/${props.link}` })} variant='outline-light' className='rounded-pill'>LEARN MORE</Button>
                 </div>
             </main>
 

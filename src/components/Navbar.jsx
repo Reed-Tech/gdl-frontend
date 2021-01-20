@@ -9,12 +9,12 @@ import { Store, type as t } from '../context/store'
 
 const Navbar = (props) => {
 
-    React.useEffect(() => (
+    React.useEffect(() => {
         window.onscroll = () => {
             const navbar = document.getElementById('navbar');
-            window.scrollY > 20 ? navbar.classList.add('navbar_onScroll') : navbar.classList.remove('navbar_onScroll');
+            window.scrollY > 20 ? navbar ? navbar.classList.add('navbar_onScroll') : navbar.classList.remove('navbar_onScroll') : console.log('');
         }
-    ), [])
+    }, [])
 
     const [NavToggle, setNavToggle] = React.useState(false)
     const [dropDown, setDropdown] = React.useState('')
@@ -39,9 +39,17 @@ const Navbar = (props) => {
 
     }
 
+    function handleCloseModal() {
+        setTimeout(() => {
+            console.log('hello')
+            dispatch({ type: t.MODAL_CLOSE })
+            document.getElementsByTagName('BODY')[0].style.overflow = 'auto'
+        }, 300)
+    }
+
     return (
         <>
-            <nav id='navbar' className='navbar'>
+            <nav onClick={handleCloseModal} id='navbar' className='navbar'>
                 <NavLink onClick={goToHome} className='navbar_brand' to='/'>
                     <img src={logo_small} alt="GDL" />
                 </NavLink>
@@ -110,7 +118,7 @@ const Navbar = (props) => {
                 </div>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./contact-us'>CONTACT</NavLink></li>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./#home'>OPEN AN ACCOUNT</NavLink></li>
-                <li className='navbar_mcontainer-navItem'><a  href='https://clientportal.gdl.com.ng/'>Login</a></li>
+                <li className='navbar_mcontainer-navItem'><a href='https://clientportal.gdl.com.ng/'>Login</a></li>
 
             </div>
         </>

@@ -25,7 +25,7 @@ const slideData = [
 const Research = () => {
     const renderSlideData = (
         slideData.map((slides) => <section key={slides.h1}>
-            <div className='headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
+            <div className='research_headerSlider headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
                 <div className='headerSlider_container-text headerSlider_container-h3'>
                     <h3>{slides.h3}</h3>
                     <p>

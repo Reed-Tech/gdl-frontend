@@ -55,8 +55,8 @@ const FinanceAndLeasing = (props) => {
 
     const cardImageHandler = (e) => {
         dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })
-        state.whatWeDoModalPosition === 1 ? dispatch({ type: t.ASSET_MANAGEMENT, payload: financeAndLeasingCards.map(e => e.id) }) :
-            console.log('Bug Found');
+        state.whatWeDoModalPosition === 1 ? dispatch({ type: t.ASSET_MANAGEMENT, payload: financeAndLeasingCards.map(e => e.id) }) : console.log();
+            // console.log('Bug Found');
     }
 
     return (

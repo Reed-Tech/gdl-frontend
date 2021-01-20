@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
-import BackgroundImage from '../assets/images/crwealth.png'
+import BackgroundImage from '../assets/images/crwealth.JPEG'
 import Slider from 'react-slick'
 import FooterNav from '../components/FooterNav'
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'

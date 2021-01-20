@@ -12,8 +12,8 @@ const assetManagementCards = [
     { id: 'Money Market Fund', text: <h3>MONEY<br />MARKET<br />FUND</h3>, image: ProductBackground1 },
     { id: 'Smart Investment Account', text: <h3>SMART<br />INVESTMENT<br />ACCOUNT</h3>, image: ProductBackground1 },
     { id: 'Stockbroking', text: <h3>STOCKBROKING</h3>, image: ProductBackground1 },
-    { id: 'Research', text: <h3>Research</h3>, image: ProductBackground2 },
-    { id: 'Financial Advisory', text: <h3>Financial Advisory</h3>, image: ProductBackground2 },
+    { id: 'Research', text: <h3>RESEARCH</h3>, image: ProductBackground2 },
+    { id: 'Financial Advisory', text: <h3>FINANCIAL ADVISORY</h3>, image: ProductBackground2 },
     { id: 'Enterprise Transgenerational Program', text: <h3>ETP</h3>, image: ProductBackground2 },
 ]
 
@@ -73,8 +73,8 @@ const AssetsManagement = (props) => {
 
     const cardImageHandler = (e) => {
         dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })
-        state.whatWeDoModalPosition === 0 ? dispatch({ type: t.ASSET_MANAGEMENT, payload: assetManagementCards.map(e => e.id) }) :
-            console.log('Bug Found');
+        state.whatWeDoModalPosition === 0 ? dispatch({ type: t.ASSET_MANAGEMENT, payload: assetManagementCards.map(e => e.id) }) : console.log();
+            // console.log('Bug Found');
     }
 
     return (
