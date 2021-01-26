@@ -12,7 +12,7 @@ const Navbar = (props) => {
     React.useEffect(() => {
         window.onscroll = () => {
             const navbar = document.getElementById('navbar');
-            window.scrollY > 20 ? navbar ? navbar.classList.add('navbar_onScroll') : navbar.classList.remove('navbar_onScroll') : console.log('');
+            window.scrollY > 20 ? navbar.classList.add('navbar_onScroll') :  navbar.classList.remove('navbar_onScroll');
         }
     }, [])
 
@@ -54,14 +54,15 @@ const Navbar = (props) => {
                     <img src={logo_small} alt="GDL" />
                 </NavLink>
                 <ul className='navbar_ul'>
-                    <li className='navbar_ul-li mr-lg-5 mr-md-0'><NavLink onClick={goToHome} to='./#home'>Home</NavLink></li>
+                    <li className='navbar_ul-li mr-lg-5 mr-md-0'><NavLink to='./#home' onClick={goToHome}>Home</NavLink></li>
                     <li className='navbar_ul-li'><a href='/#who-we-are'>Who we are</a></li>
                     <li className='navbar_ul-li'><a href='/#what-we-do'>What we do</a></li>
                 </ul>
                 <ul className='navbar_ul'>
                     <li className='navbar_ul-li navbar_nested_parent'>
                         <div className="navbar_nested_parent-container">
-                            <NavLink to='#'>Resources</NavLink>
+                            <a href>Resources</a>
+                            {/* <NavLink to='#'>Resources</NavLink> */}
                             <ul className='navbar_nested_ul'>
                                 <li> <NavLink to='/blog' onClick={goToHome} >Blog</NavLink>  </li>
                                 <li> <NavLink to='/media' onClick={goToHome} >Media</NavLink>  </li>
@@ -73,7 +74,7 @@ const Navbar = (props) => {
                     <li className='navbar_ul-li'><NavLink to='/contact-us' onClick={goToHome}>Contact</NavLink></li>
                 </ul>
                 <ul className='navbar_ul'>
-                    <li className='navbar_ul-li'><NavLink to='#'>Open an account</NavLink></li>
+                    <li className='navbar_ul-li'><a href='https://mystifying-goodall-2b93ae.netlify.app/'>Open an account</a></li>
                     <li className='navbar_ul-li'><a href='https://clientportal.gdl.com.ng/'>Login</a></li>
                 </ul>
 
@@ -117,7 +118,7 @@ const Navbar = (props) => {
                     </div>
                 </div>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./contact-us'>CONTACT</NavLink></li>
-                <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./#home'>OPEN AN ACCOUNT</NavLink></li>
+                <li className='navbar_mcontainer-navItem'><a href='https://mystifying-goodall-2b93ae.netlify.app/'>OPEN AN ACCOUNT</a></li>
                 <li className='navbar_mcontainer-navItem'><a href='https://clientportal.gdl.com.ng/'>Login</a></li>
 
             </div>
