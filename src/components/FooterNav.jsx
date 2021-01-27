@@ -13,9 +13,9 @@ const FooterNav = (props) => {
             </div>
             <nav className='col-sm-12 col-md-6 col-lg-4 w-100 d-flex justify-content-between flex-wrap footerNav_links align-content-center'>
                 <NavLink to='/#home' onClick={goToHome}>Home</NavLink>
-                <NavLink to='/blog'>Blog</NavLink>
-                <NavLink to='/media'>Media</NavLink>
-                <NavLink to='/career'>Career</NavLink>
+                <NavLink to='/blog' onClick={goToHome}>Blog</NavLink>
+                <NavLink to='/media' onClick={goToHome}>Media</NavLink>
+                <NavLink to='/career' onClick={goToHome}>Career</NavLink>
             </nav>
             <div className='col-sm-12 col-lg-4 w-100 d-flex'>
                 <HeaderSocialLinks customClass='footerNav_socialLinks' />

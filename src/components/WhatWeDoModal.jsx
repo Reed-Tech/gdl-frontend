@@ -45,7 +45,7 @@ const settings = {
 
 export const whatWeDoCardTexts = {
     'MONEY MARKET FUND': [
-        'The GDL Money Market Fund is a special investment plan that allows you to invest with as low as N10,000 for a minimum investment period of 30 days.',
+        'The GDL Money Market Fund is a special investment plan that allows you to invest with as low as N10,000  for a minimum investment period of 30 days.',
         'It is a high-quality investment plan that provides a far higher yield than a regular bank account and is available to both Individuals and Organizations.',
         'You can keep adding to your investment as much as you like and your money is available to you anytime, any day, anywhere.',
         'All investments are managed by our excellent team of asset managers who invest in a wide range of short-term assets.',
@@ -437,7 +437,9 @@ const WhatWeDoModal = (props) => {
             <div className="whatWeDoModal_header">
                 <a style={{ marginRight: '12px' }} href='#whatWeDo' onClick={toggle}><FaLongArrowAltLeft color='fff' size='24' className='mt-2' /> </a>
                 {/* ----Place Header Here */}
-                {whatWeDoSubpages[state.assetManagementActive] ? whatWeDoSubpages[state.assetManagementActive].header : four04}
+                <div className="whatWeDoModal_header--text">
+                    {whatWeDoSubpages[state.assetManagementActive] ? whatWeDoSubpages[state.assetManagementActive].header : four04}
+                </div>
                 <div className="whatWeDoModal_nav">
                     <ul>
                         {NavItems}

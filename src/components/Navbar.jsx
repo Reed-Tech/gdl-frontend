@@ -12,7 +12,7 @@ const Navbar = (props) => {
     React.useEffect(() => {
         window.onscroll = () => {
             const navbar = document.getElementById('navbar');
-            window.scrollY > 20 ? navbar.classList.add('navbar_onScroll') :  navbar.classList.remove('navbar_onScroll');
+            window.scrollY > 20 ? navbar.classList.add('navbar_onScroll') : navbar.classList.remove('navbar_onScroll');
         }
     }, [])
 
