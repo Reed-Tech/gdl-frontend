@@ -172,7 +172,6 @@ const Home = (props) => {
                 <StockInfo />
                 <HeaderSlider />
             </div>
-            <WhoWeAre />
             {/* who we are mobile ----------------------------- */}
 
 
@@ -242,6 +241,7 @@ const Home = (props) => {
                 </div>
             </div>
             <Advert />
+            <WhoWeAre />
             <CreatingWealth history={props.history} />
         </div>
     )

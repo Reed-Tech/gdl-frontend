@@ -93,6 +93,11 @@
     &_header {
         display: flex;
 
+        &--text {
+            text-align: center;
+            margin-left: auto;
+        }
+
         h3 {
             font-size: 1.125em;
         }

@@ -1,18 +1,10 @@
 import React from 'react'
 import CardImage from './CardImage'
-import SmartSavingImg from '../assets/images/SmartSaving.png'
-import StockBG from '../assets/images/assetManagement1s.png'
-import SiaBG from '../assets/images/SIA.png'
-import MMF from '../assets/images/MMF.png'
 import CAF from '../assets/images/CAF.png'
 import IAF from '../assets/images/IAF.png'
 
 
 const cardData = [
-    { name: 'GDL STOCKBROKING FORM', image: StockBG, link: 'stock broking link', },
-    { name: 'GDL SIA FORM', image: SiaBG, link: 'sia form link', },
-    { name: 'MMF APPLICATION FORM', image: MMF, link: 'application form link', },
-    { name: 'SMART SAVE ACCOUNT FORM', image: SmartSavingImg, link: 'smart account link', },
     { name: 'CORPORATE ACCOUNT FORM', image: CAF, link: 'corporate account link', },
     { name: 'INDIVIDUAL ACCOUNT FORM', image: IAF, link: 'individual account link', },
 ]
@@ -29,7 +21,7 @@ const OurMission = (props) => {
             </div>
             <div className="col-lg-7 col-sm-12 ourMission_createAccount">
                 <h1 className='text-sm-left mt-5 mt-lg-0 text-lg-center'>Create your Account Now</h1>
-                <div className='ourMission_createAccount-cards justify-content-lg-center justify-content-sm-start'>
+                <div className='ourMission_createAccount-cards mt-5 justify-content-lg-center justify-content-sm-start'>
                     {cardData.map((e) =>
                         <CardImage onClick={()=> console.log(e.link)} key={e.name} width='180px' image={e.image}>
                             <h3>{e.name}</h3>
