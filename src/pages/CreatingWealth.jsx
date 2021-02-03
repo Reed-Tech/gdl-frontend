@@ -70,7 +70,7 @@ const CreatingWealth = (props) => {
                             </Card>
                         </div>
                         <div className='col-lg-4 col-md-12 creatingWealth_slide'>
-                            <Card maxHeight='calc(100vh - 20em)' className='creatingWealth_slide-card'>
+                            <Card maxHeight='calc(100vh)' className='creatingWealth_slide-card'>
                                 <Slider {...parentSliderSettings}>
                                     {renderSliderData}
                                 </Slider>

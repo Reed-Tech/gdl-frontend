@@ -8,6 +8,7 @@ import Blog from "./pages/Blog";
 import Media from "./pages/Media";
 import Career from "./pages/Career";
 import Research from "./pages/Research";
+import WhoWeAre from "./pages/WhoWeAre";
 import "overlayscrollbars/css/OverlayScrollbars.css";
 import "./scss/base/_myTheme.css";
 import CareerCareer from "./pages/CareerCareer";
@@ -24,6 +25,7 @@ const App = () => {
           <Route exact path="/career" component={Career} />
           <Route exact path="/career/:careerPath" component={CareerCareer} />
           <Route exact path="/research" component={Research} />
+          <Route exact path="/whoWeAre" component={WhoWeAre} />
         </Switch>
       </BrowserRouter>
     </Provider>

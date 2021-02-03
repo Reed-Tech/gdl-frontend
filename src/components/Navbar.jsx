@@ -55,10 +55,8 @@ const Navbar = (props) => {
                 </NavLink>
                 <ul className='navbar_ul'>
                     <li className='navbar_ul-li mr-lg-5 mr-md-0'><NavLink to='./#home' onClick={goToHome}>Home</NavLink></li>
-                    <li className='navbar_ul-li'><a href='/#who-we-are'>Who we are</a></li>
                     <li className='navbar_ul-li'><a href='/#what-we-do'>What we do</a></li>
-                </ul>
-                <ul className='navbar_ul'>
+                    <li className='navbar_ul-li'><NavLink to='/whoWeAre' onClick={goToHome} >Who we are</NavLink> </li>
                     <li className='navbar_ul-li navbar_nested_parent'>
                         <div className="navbar_nested_parent-container">
                             <a href>Resources</a>
@@ -72,11 +70,11 @@ const Navbar = (props) => {
                         </div>
                     </li>
                     <li className='navbar_ul-li'><NavLink to='/contact-us' onClick={goToHome}>Contact</NavLink></li>
-                </ul>
-                <ul className='navbar_ul'>
                     <li className='navbar_ul-li'><a href='https://mystifying-goodall-2b93ae.netlify.app/'>Open an account</a></li>
                     <li className='navbar_ul-li'><a href='https://clientportal.gdl.com.ng/'>Login</a></li>
                 </ul>
+           
+
 
                 {/* Mobile Menu */}
                 <div className='navbar_mobile-hamburgerMenu'>

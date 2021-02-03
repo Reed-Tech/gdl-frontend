@@ -148,7 +148,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Funds?</p>
-                    <Button onClick={()=>console.log(props.history)} variant='light'>Click Here</Button>
+                    <Button onClick={()=>console.log(props.history)} href="https://mystifying-goodall-2b93ae.netlify.app/" variant='light'>Create your account now</Button>
                 </div>
             )
         },
@@ -172,7 +172,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Start Investing Smartly.</p>
-                    <Button variant='light'>Open an Account Here.</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
                 </div>
             )
         },
@@ -196,7 +196,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in making money from shares?</p>
-                    <Button variant='light'>Click Here</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
                 </div>
             )
         },
@@ -220,7 +220,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Take our hand as we light up your way to prosperity.</p>
-                    <Button variant='light'>Reach Out To US Now</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
                 </div>
             )
         },
@@ -245,7 +245,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Safeguard your Legacy today. </p>
-                    <Button variant='light'>Sign Up For ETP Here</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
                 </div>
             )
         },
@@ -295,7 +295,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Fund? </p>
-                    <Button variant='light'>Click Here</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
                 </div>
             )
         },
@@ -343,7 +343,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Ready to invest for the Future?</p>
-                    <Button variant='light'>Fill Form</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
                 </div>
             )
         },
@@ -367,7 +367,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Fill Form Now to invest in the GDL dollar note now. </p>
-                    <Button variant='light'>Fill Form</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
                 </div>
             )
         },
@@ -405,7 +405,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Fund? </p>
-                    <Button variant='light'>Click Here</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
                 </div>
             )
         },
