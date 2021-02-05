@@ -38,7 +38,7 @@ const slideData = [
 
 ]
 
-const About = (props) => {
+const WhoWeAre = (props) => {
     const { state, dispatch } = React.useContext(Store)
     // console.log(props);
 
@@ -91,7 +91,6 @@ const About = (props) => {
 
     function closeMobileModal(e) {
         if (e === 'WWA') dispatch({ type: t.WWA_MOBILE_MODAL, payload: '' })
-        else if (e === 'WWD') dispatch({ type: t.WWD_MOBILE_MODAL, payload: '' })
         else console.log('argument cant be blank')
 
     }
@@ -186,4 +185,4 @@ const About = (props) => {
     )
 }
 
-export default About
+export default WhoWeAre
