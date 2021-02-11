@@ -25,7 +25,6 @@ const Wwa = (props) => {
                 <WhyUs />
             </div>
            
-           {/* mobile */}
            {/* <div id='who-we-are'>
                 <PageSlider navLinks={pages} navRight>
                     <CorporateInformation />

@@ -54,8 +54,8 @@ const Home = (props) => {
     }
 
     function closeMobileModal(e) {
-        if (e === 'WWA') dispatch({ type: t.WWA_MOBILE_MODAL, payload: '' })
-        else if (e === 'WWD') dispatch({ type: t.WWD_MOBILE_MODAL, payload: '' })
+        // if (e === 'WWA') dispatch({ type: t.WWA_MOBILE_MODAL, payload: '' })
+         if (e === 'WWD') dispatch({ type: t.WWD_MOBILE_MODAL, payload: '' })
         else console.log('argument cant be blank')
 
     }

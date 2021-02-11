@@ -10,12 +10,12 @@ import { FaPaperPlane } from 'react-icons/fa';
 const NewsLetterSubscription = () => {
     return (
         <div className='newsLetterSubscription d-flex flex-wrap'>
-            <div className="col-lg-6 d-none d-lg-flex flex-wrap newsLetterSubscription_outdoor">
+            <div className="col-lg-6 d-flex flex-wrap newsLetterSubscription_outdoor">
                 <div className='col-5 newsLetterSubscription_outdoor-image' style={{ backgroundImage: `url(${BGFull})` }}>
                 </div>
                 <div className='col-7'>
                     {/* <Button className='d-flex ml-auto rounded-pill'>Leisure</Button> */}
-                    <h1>Outdoor Experience</h1>
+                    <h3>Everything you need to know about finance and investing in Nigeria</h3>
                     <p>It’s windy. The cool breeze of the ocean. It gives, a sense of beauty, in motion. All is flowing, rushing and tide-And I sit in wonder, dreaming beside.</p>
                     <div className='d-flex flex-wrap newsLetterSubscription_outdoor-images'>
                         <div className="col-4 newsLetterSubscription_outdoor-imagesGrid " style={{ backgroundImage: `url(${Image1})` }}></div>
@@ -33,7 +33,7 @@ const NewsLetterSubscription = () => {
                 <div className='col-md-6 col-sm-12 mt-sm-5'>
                     <div>
                         <h3>Subscribe</h3>
-                        <p>Subscribe to our newsletter to be the first to receive updates on our products and promotions</p>
+                        <p>Subscribe to our newsletter and be the first to receive updates on our new investment opportunities and promo</p>
                     </div>
                     <div>
                         <InputGroup className="col-12 p-0">
