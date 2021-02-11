@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from "react-slick"
 import slideOne from '../assets/images/homeSlide1.JPG'
-import slideTwo from '../assets/images/homeSlide2.JPEG'
+import slideTwo from '../assets/images/home-1.jpg'
 
 // _______________________________________________________________________________________
 const slideData = [

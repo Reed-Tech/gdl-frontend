@@ -28,11 +28,11 @@ const Navbar = (props) => {
         setDropdown('')
     }
 
-    function handleWWANav(page) {
-        dispatch({ type: t.WWA_MOBILE, payload: page }, [])
-        setNavToggle(!NavToggle)
+    // function handleWWANav(page) {
+    //     dispatch({ type: t.WWA_MOBILE, payload: page }, [])
+    //     setNavToggle(!NavToggle)
 
-    }
+    // }
     function handleWWDNav(page) {
         dispatch({ type: t.WWD_MOBILE, payload: page }, [])
         setNavToggle(!NavToggle)
@@ -87,7 +87,8 @@ const Navbar = (props) => {
             </nav>
             <div className={`navbar_mcontainer ${NavToggle ? 'navbar_mcontainer-opened' : ''}`}>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./#home'>HOME</NavLink></li>
-                <div>
+                <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./whoWeAre'>WHO WE ARE</NavLink></li>
+                {/* <div>
                     <li className={`navbar_mcontainer-navItem ${dropDown === 1 ? 'navbar_mcontainer-navItem-down' : ''}`}> <a onClick={() => setDropdown(1)} href='./#who-we-are-mobile'>WHO WE ARE <FaCaretDown color='black' /> </a></li>
                     <div className={`${dropDown === 1 ? 'navbar_mcontainer-navItem-subnavOpen' : 'navbar_mcontainer-navItem-subnavClosed'}`}>
                         <li className='navbar_mcontainer-navItem'><a onClick={() => handleWWANav('CORPORATE INFORMATION')} href='./#who-we-are-mobile'>CORPORATE INFORMATION</a></li>
@@ -96,18 +97,18 @@ const Navbar = (props) => {
                         <li className='navbar_mcontainer-navItem'><a onClick={() => handleWWANav('WHY US/VALUE PROPOSITION')} href='./#who-we-are-mobile'>WHY US/VALUE PROPOSITION</a></li>
 
                     </div>
-                </div>
+                </div> */}
                 <div>
-                    <li className={`navbar_mcontainer-navItem ${dropDown === 2 ? 'navbar_mcontainer-navItem-down' : ''}`}> <a onClick={() => setDropdown(2)} href='./#what-we-do-mobile'>WHAT WE DO <FaCaretDown color='black' /> </a></li>
-                    <div className={`${dropDown === 2 ? 'navbar_mcontainer-navItem-subnavOpen' : 'navbar_mcontainer-navItem-subnavClosed'}`}>
+                    <li className={`navbar_mcontainer-navItem ${dropDown === 1 ? 'navbar_mcontainer-navItem-down' : ''}`}> <a onClick={() => setDropdown(1)} href='./#what-we-do-mobile'>WHAT WE DO <FaCaretDown color='black' /> </a></li>
+                    <div className={`${dropDown === 1 ? 'navbar_mcontainer-navItem-subnavOpen' : 'navbar_mcontainer-navItem-subnavClosed'}`}>
                         <li className='navbar_mcontainer-navItem'><a onClick={() => handleWWDNav('ASSET MANAGEMENT')} href='./#what-we-do-mobile'>ASSET MANAGEMENT</a></li>
                         <li className='navbar_mcontainer-navItem'><a onClick={() => handleWWDNav('FINANCE AND LEASING')} href='./#what-we-do-mobile'>FINANCE AND LEASING</a></li>
 
                     </div>
                 </div>
                 <div>
-                    <li className={`navbar_mcontainer-navItem ${dropDown === 3 ? 'navbar_mcontainer-navItem-down' : ''}`}> <NavLink onClick={() => setDropdown(3)} to='./#home'>RESOURCES <FaCaretDown color='black' /> </NavLink></li>
-                    <div className={`${dropDown === 3 ? 'navbar_mcontainer-navItem-subnavOpen' : 'navbar_mcontainer-navItem-subnavClosed'}`}>
+                    <li className={`navbar_mcontainer-navItem ${dropDown === 2 ? 'navbar_mcontainer-navItem-down' : ''}`}> <NavLink onClick={() => setDropdown(2)} to='./#home'>RESOURCES <FaCaretDown color='black' /> </NavLink></li>
+                    <div className={`${dropDown === 2 ? 'navbar_mcontainer-navItem-subnavOpen' : 'navbar_mcontainer-navItem-subnavClosed'}`}>
                         <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./blog'>BLOG</NavLink></li>
                         <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./media'>MEDIA</NavLink></li>
                         <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./career'>CAREER</NavLink></li>

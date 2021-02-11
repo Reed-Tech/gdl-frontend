@@ -48,10 +48,45 @@
     &_copyright {
         p {
             margin: 3px 0 0 0;
-            font-size: .825em;
+            font-size: .995em;
             color: #979797;
             width: 100%;
             text-align: center;
         }
     }
+
+    &_services {
+        color: #ffff;
+       ul {
+           list-style: none;
+           
+       }
+    }
+}
+
+.footerNav {
+    font-size: .9rem;   
+}
+
+.footerNav .footer-title {
+    font-size: 1.1rem;
+    margin-bottom: 30px; 
+    color: #fff;
+}
+
+.footerNav ul li {
+    margin-bottom: 10px; 
+}
+
+.footerNav a {
+    color: #fff; 
+}
+
+.footerNav a:hover {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.footerNav_socialLinks li a img {
+    color: #fff !important;
 }

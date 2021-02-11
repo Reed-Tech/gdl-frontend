@@ -9,7 +9,7 @@
      height: 100vh;
      min-height: -webkit-fill-available;
 
-     scroll-snap-align: start;
+     // scroll-snap-align: start;
 
      @media screen and (max-width:1023px) {
           display: none;
@@ -28,14 +28,14 @@
 .corp-wwa {
      position: relative;
      background: url(../assets/images/landing08.JPEG) ;
-    background-color: rgba($color: #000000, $alpha: 0.2);
-     background-blend-mode: overlay;
+//     background-color: rgba($color: #000000, $alpha: 0.2);
+     // background-blend-mode: overlay;
      background-size: cover;
      background-repeat: no-repeat;
      padding-top: 8em;
      height: 100vh;
-     min-height: -webkit-fill-available;
-     scroll-snap-align: start;
+     // min-height: -webkit-fill-available;
+     // scroll-snap-align: start;
 }
 
 .board-wwa {
@@ -65,13 +65,19 @@
 .why-wwa {
      position: relative;
      background: url(../assets/images/img00000.png) ;
-     background-color: rgba($color: #000000, $alpha: 0.2);
-     background-blend-mode: overlay;
+     // background-color: rgba($color: #000000, $alpha: 0.2);
+     // background-blend-mode: overlay;
      background-size: cover;
      background-repeat: no-repeat;
      padding-top: 8em;
      height: 100vh;
-     min-height: -webkit-fill-available;
-     scroll-snap-align: start;
+     // min-height: -webkit-fill-available;
+     // scroll-snap-align: start;
      min-height: 100%;
+}
+
+@media(max-width: 819px){
+     #_wwa {
+          display: none;
+     }
 }

@@ -6,10 +6,24 @@ import FooterMap from '../components/FooterMap'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
+import { useEffect } from "react"
 
 
 
 const ContactUs = () => {
+
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         alert("I just responded to the code and ran after 5 secs");
+    //     }, 1000)
+    //     return () => {
+    //         clearTimeout(timer);
+    //     }
+    // }, []);
+
+    useEffect(() => {
+        localStorage.setItem("name", "Ememobong")
+    }, []);
 
     return (
         <section className='contactUs'>

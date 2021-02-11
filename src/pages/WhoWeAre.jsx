@@ -3,7 +3,7 @@ import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
-import FooterNav from '../components/FooterNav'
+// import FooterNav from '../components/FooterNav'
 import Wwa from './Wwa.jsx'
 import { corporateInformationMobile } from './CorporateInformation'
 import { Store, type as t } from '../context/store'
@@ -84,7 +84,7 @@ const WhoWeAre = (props) => {
     function boardOfDirectorsMobileHandler(e) {
         dispatch({ type: t.BOARD_OF_DIRECTORS_MOBILE, active: e })
     }
-    function managementTeamMobileHandler(e) {
+    function managementTeamMobileHandler(e) {   
         dispatch({ type: t.MANAGEMENT_TEAM_MOBILE, active: e })
     }
 
@@ -134,7 +134,7 @@ const WhoWeAre = (props) => {
 
 
     return (
-        <section className='_whoWeAre'>
+        <div className='_whoWeAre'>
             <header style={{ height: '100vh' }}>
                 <Navbar />
                 <HeaderSocialLinks customClass='HeaderSocialLinks contactUs_socialLinks' />
@@ -145,6 +145,7 @@ const WhoWeAre = (props) => {
             </header>
             <Wwa />
             {/* who we are mobile ----------------------------- */}
+
 
 
             <div className={`__mobileOnly wwa_modal px-4 ${state.WWAMobileModal === 'BOARD OF DIRECTORS' ? 'd-block' : state.WWAMobileModal === 'MANAGEMENT TEAM' ? 'd-block' : ''}`}>
@@ -159,7 +160,7 @@ const WhoWeAre = (props) => {
             </div>
 
 
-            <div className={`WWA_container __mobileOnly`} style={{ scrollSnapAlign: 'start', height: '100vh' }}>
+            {/* <div className={`WWA_container __mobileOnly`} style={{ scrollSnapAlign: 'start', height: '100vh' }}>
                 <div id='who-we-are-mobile' >
                     <header>
                         <h1>{state.WWAMobile}</h1>
@@ -179,9 +180,53 @@ const WhoWeAre = (props) => {
                         <span className={state?.WWAMobile === 'WHY US/VALUE PROPOSITION' ? 'navActive' : ''} onClick={() => handleWWANav('WHY US/VALUE PROPOSITION')}>WHY US/VALUE PROPOSITION</span>
                     </footer>
                 </div>
+            </div> */}
+            
+
+            {/* my version */}
+           
+            <div className="WWA_container __mobileOnly py-5" style={{ scrollSnapAlign: 'start', height: '100vh' }}>
+                <div id="what-we-do-mobile">
+                    <div className="corp-wwa">
+                        <header>
+                            <h1>Corporate Infomation</h1>
+                        </header>
+                        <OverlayScrollbarsComponent  style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
+                            { corporateInformationMobile }
+                        </OverlayScrollbarsComponent>
+                    </div>
+                    {/* <div className="board-wwa">
+                        <header>
+                            <h1>Board Of Directors</h1>
+                        </header>
+                        <OverlayScrollbarsComponent  style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
+                            {corporateInformationMobile }
+                        </OverlayScrollbarsComponent>
+                    </div>
+                  
+                    <div className="manage-wwa">
+                        <header>
+                            <h1>Management Team</h1>
+                        </header>
+                        <OverlayScrollbarsComponent  style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
+                            { corporateInformationMobile }
+                        </OverlayScrollbarsComponent>
+                    </div> */}
+                    <div className="why-wwa">
+                        <header>
+                            <h1>Why Us</h1>
+                        </header>
+                        <OverlayScrollbarsComponent  style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
+                            {WhyUsMobile }
+                        </OverlayScrollbarsComponent>
+                    </div>
+
+                </div>
+
             </div>
-            <FooterNav />
-        </section>
+
+            {/* <FooterNav /> */}
+        </div>
     )
 }
 
