@@ -16,6 +16,7 @@ import Card from '../components/Card'
 import { boardOfDirectorsData } from './BoardOfDirectors'
 import { managementTeamData } from './ManagementTeam'
 import MediaBG from '../assets/images/GdlBuilding.jpg'
+import MediaBGTwo from '../assets/images/gdlStaff.jpg'
 
 
 // _______________________________________________________________________________________
@@ -26,14 +27,9 @@ const slideData = [
         h3: 'At GDL, we strive to bring you the best in the finance industry',
     },
     {
-        image: MediaBG,
+        image: MediaBGTwo,
         id: '2vms',
         h3: 'Some catchy message to wow our users',
-    },
-    {
-        image: MediaBG,
-        id: '2vmas',
-        h3: 'You really need to provide this catchy messages',
     },
 
 ]

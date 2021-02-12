@@ -59,7 +59,7 @@ const CreatingWealth = (props) => {
         <section>
             <div className='creatingWealth justify-content-lg-between' style={{ backgroundImage: `url('${BackgroundImage}')` }}>
                 <h1 className='d-sm-block mb-4 mt-4 d-lg-none'>CREATING WEALTH AND TRANSFORMING SOCIETY</h1>
-                <OverlayScrollbarsComponent style={{height: 'calc(100vh - 20em)'}}>
+                <OverlayScrollbarsComponent className="d-block d-lg-none" style={{height: 'calc(100vh - 20em)'}}>
                     <div className='creatingWealth_web d-block d-lg-flex justify-content-lg-between'>
                         <div className='col-lg-6 col-sm-12 creatingWealth_text'>
                             <h1 className='mb-5 d-none d-lg-block'>CREATING  WEALTH AND TRANSFORMING SOCIETY</h1>
@@ -77,7 +77,25 @@ const CreatingWealth = (props) => {
                         </div>
                     </div>
                 </OverlayScrollbarsComponent>
-            </div>
+                    <div className="d-none d-lg-block">
+                        <div className='creatingWealth_web d-block d-lg-flex justify-content-lg-between'>
+                                <div className='col-lg-6 col-sm-12 creatingWealth_text'>
+                                    <h1 className='mb-5 d-none d-lg-block'>CREATING  WEALTH AND TRANSFORMING SOCIETY</h1>
+                                    <Card >
+                                        <p>At GDL we see the socio-economic challenges facing Nigeria as an opportunity to provide platforms for creating private sector led frameworks that will help to address some of the major concerns of the average Nigerian household in a sustainable way, using mainly, in-country resources.</p>
+                                        <p>We are passionate about Nigeria and her potentials. We see our business as a vehicle of delivering key social dividends to Nigerians while at the same time achieving significant economic returns for our stakeholders and investors.</p>
+                                    </Card>
+                                </div>
+                                <div className='col-lg-4 col-md-12 creatingWealth_slide'>
+                                    <Card maxHeight='calc(100vh)' className='creatingWealth_slide-card'>
+                                        <Slider {...parentSliderSettings}>
+                                            {renderSliderData}
+                                        </Slider>
+                                    </Card>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
     )

@@ -8,6 +8,7 @@ export const corporateInformationMobile = (
             <Card>
                 <h3>Vision</h3>
                 <p>A leading diversified financial institution creating wealth and transforming society</p>
+                <h3>Mission</h3>
                 <p>Providing unique financial solutions to strengthen and expand the middle class</p>
                 <h5>CORE VALUES <span style={{ display: 'inline-block' }}>(I-ARISE):</span></h5>
                 <h2>I – Integrity</h2>
@@ -63,8 +64,9 @@ const CorporateInformation = (props) => {
                 <div className='d-flex justify-content-between mx-5 '>
 
                     <Card scroll className='col-3' align='left' maxHeight='calc(100vh - 20em)'>
-                        <h3>Vision</h3>
+                        <h3>VISION</h3>
                         <p>A leading diversified financial institution creating wealth and transforming society</p>
+                        <h3>MISSION</h3>
                         <p>Providing unique financial solutions to strengthen and expand the middle class</p>
                         <h5>CORE VALUES <span style={{ display: 'inline-block' }}>(I-ARISE):</span></h5>
                         <h2>I – Integrity</h2>

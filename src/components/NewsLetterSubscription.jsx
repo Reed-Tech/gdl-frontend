@@ -15,8 +15,8 @@ const NewsLetterSubscription = () => {
                 </div>
                 <div className='col-7'>
                     {/* <Button className='d-flex ml-auto rounded-pill'>Leisure</Button> */}
-                    <h3>Everything you need to know about finance and investing in Nigeria</h3>
-                    <p>It’s windy. The cool breeze of the ocean. It gives, a sense of beauty, in motion. All is flowing, rushing and tide-And I sit in wonder, dreaming beside.</p>
+                    <h3>BLOG</h3>
+                    <p>Everything you need to know about finance and investing in Nigeria</p>
                     <div className='d-flex flex-wrap newsLetterSubscription_outdoor-images'>
                         <div className="col-4 newsLetterSubscription_outdoor-imagesGrid " style={{ backgroundImage: `url(${Image1})` }}></div>
                         <div className="col-4 newsLetterSubscription_outdoor-imagesGrid" style={{ backgroundImage: `url(${Image2})` }}></div>

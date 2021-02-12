@@ -4,23 +4,22 @@
 
 // function BlogApi() {
 //   const { data } = useContext(BlogContext);
-//   console.log(data);
+//   // console.log(data);
 
 //   return (
 //     <div>
-//       <h1>Hello</h1>
-//       {/* <h1 className="head__text"></h1> */}
-//       {/* <div className="all__post"> */}
+//       <div className="all__post">
 //         {/* {data
 //           ? "HIiii"
-//           : "Loading"}
-//           {data ? console.log(data.title) : "Loading Blog"} */}
+//           : "Loading"} */}
+//           {data ? console.log(data) : "Loading Blog"} 
+
 //             {/* {data
 //           ? data.posts.map((post) => (
 //             <BlogPost data={post} key={post.id} />
 //           ))
 //           : "Loading"} */}
-//       {/* </div> */}
+//       </div>
 //     </div>
 //   );
 // }
