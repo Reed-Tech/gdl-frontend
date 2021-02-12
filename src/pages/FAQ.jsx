@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from "react-dom";
 import Accordion from "../components/Accordion";
 import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'

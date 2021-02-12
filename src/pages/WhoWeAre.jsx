@@ -9,7 +9,7 @@ import { corporateInformationMobile } from './CorporateInformation'
 import { Store, type as t } from '../context/store'
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 import { WhyUsMobile } from './WhyUs'
-import { boardOfDirectorsMobile } from './BoardOfDirectors'
+// import { boardOfDirectorsMobile } from './BoardOfDirectors'
 import { FaChevronLeft } from 'react-icons/fa'
 import $ from 'jquery'
 import Card from '../components/Card'
@@ -73,13 +73,13 @@ const WhoWeAre = (props) => {
 
 
 
-    function handleWWANav(page) {
-        dispatch({ type: t.WWA_MOBILE, payload: page }, [])
-    }
+    // function handleWWANav(page) {
+    //     dispatch({ type: t.WWA_MOBILE, payload: page }, [])
+    // }
 
-    function handleWWAModal(e) {
-        dispatch({ type: t.WWA_MOBILE_MODAL, payload: e })
-    }
+    // function handleWWAModal(e) {
+    //     dispatch({ type: t.WWA_MOBILE_MODAL, payload: e })
+    // }
 
     function boardOfDirectorsMobileHandler(e) {
         dispatch({ type: t.BOARD_OF_DIRECTORS_MOBILE, active: e })
