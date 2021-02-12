@@ -71,7 +71,7 @@ const Navbar = (props) => {
                     </li>
                     <li className='navbar_ul-li'><NavLink to='/contact-us' onClick={goToHome}>Contact</NavLink></li>
                     <li className='navbar_ul-li'><a href='https://mystifying-goodall-2b93ae.netlify.app/'>Open an account</a></li>
-                    <li className='navbar_ul-li'><a href='https://clientportal.gdl.com.ng/'>Login</a></li>
+                    <li className='navbar_ul-li'><a href='https://clientportal.gdl.com.ng/'>LOGIN</a></li>
                 </ul>
            
 
