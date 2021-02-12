@@ -10,10 +10,10 @@ function BlogApi() {
     <div>
       {/* <h1 className="head__text"></h1> */}
       <div className="all__post">
-        {data
+        {/* {data
           ? "HIiii"
           : "Loading"}
-          {data ? console.log(data.title) : "Loading Blog"}
+          {data ? console.log(data.title) : "Loading Blog"} */}
             {/* {data
           ? data.posts.map((post) => (
             <BlogPost data={post} key={post.id} />
