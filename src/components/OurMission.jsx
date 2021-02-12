@@ -14,9 +14,9 @@ const OurMission = (props) => {
     return (
         <div className='ourMission d-flex flex-wrap'>
             <div className="col-lg-5 col-sm-12 ourMission_mission">
-                <div>
+                <div className="ourMission_mission--left">
                     <h1>{props.header ?? 'Our Mission'}</h1>
-                    <p>{props.body ?? 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}</p>
+                    <p>{props.body ?? `Providing unique financial solutions to \n strengthen and expand the middle class`}</p>
                 </div>
             </div>
             <div className="col-lg-7 col-sm-12 ourMission_createAccount">

@@ -12,6 +12,18 @@
     //     justify-content: center;
     //     align-items: center;
     // }
+    .ourMission_mission {
+        white-space: pre-line;
+
+        &--left {
+            margin-top: 100px;
+        }
+        @media (max-width: 767px) {
+            &--left {
+                margin-top: 0;
+            }
+        }
+    }
     &_createAccount{
         max-width: fit-content;
         &-cards{
