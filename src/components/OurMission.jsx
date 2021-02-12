@@ -21,6 +21,7 @@ const OurMission = (props) => {
             </div>
             <div className="col-lg-7 col-sm-12 ourMission_createAccount">
                 <h1 className='text-sm-left mt-5 mt-lg-0 text-lg-center'>Create your Account Now</h1>
+                <p>Choose an account that is right for you and fill in your details to login</p>
                 <div className='ourMission_createAccount-cards mt-5 justify-content-lg-center justify-content-sm-start'>
                     {cardData.map((e) =>
                         <CardImage onClick={()=> console.log(e.link)} key={e.name} width='180px' image={e.image}>

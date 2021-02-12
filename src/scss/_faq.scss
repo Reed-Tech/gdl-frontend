@@ -1,124 +1,85 @@
 .faq {
+    header {
+        height: 100vh;
+        // min-height: -webkit-fill-available;
 
-}
-.faqContent {
-    margin: 100px 50px;
-    &__tab {
-        &--active{
-            background-color:#CDADAE;
-        }
-        ul {
-            list-style-type: none;
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            border-radius: 50px;
-            overflow: hidden;
-            border: 1px solid red;
-            margin: 0 20px;
-            padding: 0;
-
-            li {
-                cursor: pointer;
-                color: white;
-                display: inline-block;
-                padding: 32px 20px;
-                text-align: center;
-                font-size:18px;
-                font-weight:500;
-                overflow:hidden;
-                &:hover{
-                    background-color:#CDADAE
-                }
-
-            }
-        }
     }
-    &__cards{
-        margin: 40px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+
+    &_strandedText {
+        padding: clamp(3em, 8vw, 10vw) clamp(10px, 5vw, 8vw);
+        text-align: center;
     }
-    &__form{
-        h2{
-            text-align: center;
-        }
+
+    &_headerSlider {
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: overlay;
     }
 }
 
-.faqCard{
-    display: inline-flex;
-    border-radius: 14px;
-    overflow: hidden;
-    background-color: red;
-    margin-bottom: 20px;
-    width: 49%;
-    &__icon{
-        background-color: blue;
-        min-width: 82px;
-        max-width: 82px;
-        border-radius: 14px;
-        overflow: hidden;
-    }
-    &__body{
-        margin: 0 12px;
-
-        &--header{
-            display: flex;
-            justify-content:space-between;
-            height: 72px;
-            align-items:center;
-            
-            h2{
-                margin: 0;
-                color:white;
-
-            }
-        }
-        &--content{
-            color: white;
-            margin: 0 36px 20px 0;
-            display: none;
-        }
-    }
+.faq .container .row .col-md-6 {
+    margin-bottom: 10px;
 }
 
-.faqContent__form h2 {
-    text-align: center;
+
+/* Style the accordion section */
+.accordion__section {
+  display: flex;
+  flex-direction: column;
 }
 
-.contactUs__form {
-    max-width: 700px !important;
-    margin: 60px auto 120px auto;
-  }
-  .contactUs__form input,
-  .contactUs__form textarea {
-    border: 1px solid #BC2228 !important;
-    font-family: "Poppins", sans-serif !important;
-  }
-  .contactUs__form::-moz-placeholder {
-    color: rgba(188, 34, 40, 0.6) !important;
-  }
-  .contactUs__form:-ms-input-placeholder {
-    color: rgba(188, 34, 40, 0.6) !important;
-  }
-  .contactUs__form::-ms-input-placeholder {
-    color: rgba(188, 34, 40, 0.6) !important;
-  }
-  .contactUs__form::placeholder {
-    color: rgba(188, 34, 40, 0.6) !important;
-  }
-  .contactUs__form button {
-    border: 0;
-    background-color: #BC2228;
-    padding: 20px 200px;
-    border-radius: 40px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    position: absolute;
-    margin-left: 50%;
-    transform: translate(-50%);
-  }
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover,
+.accordion .active {
+  background-color: #ccc;
+}
+
+
+/* Style the accordion content title */
+.accordion__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  background-color: white;
+  overflow: auto;
+  transition: max-height 0.6s ease;
+}
+
+/* Style the accordion content text */
+.accordion__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}
+
 
 
