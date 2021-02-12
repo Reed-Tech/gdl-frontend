@@ -8,8 +8,9 @@ function BlogApi() {
 
   return (
     <div>
+      <h1>Hello</h1>
       {/* <h1 className="head__text"></h1> */}
-      <div className="all__post">
+      {/* <div className="all__post"> */}
         {/* {data
           ? "HIiii"
           : "Loading"}
@@ -19,7 +20,7 @@ function BlogApi() {
             <BlogPost data={post} key={post.id} />
           ))
           : "Loading"} */}
-      </div>
+      {/* </div> */}
     </div>
   );
 }
