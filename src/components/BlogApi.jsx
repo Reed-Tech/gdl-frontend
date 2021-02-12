@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { BlogContext } from "../components/BlogContext";
 // import BlogPost from "../components/BlogPost";
 
-function BlogApi(props) {
+function BlogApi() {
   const { data } = useContext(BlogContext);
   console.log(data);
 
