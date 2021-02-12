@@ -10,6 +10,7 @@ import MediaBG from '../assets/images/mediaBg.png'
 import SearchBlog from '../components/SearchBlog'
 import BannerBlog from '../components/BannerBlog'
 import BlogSlider from '../components/BlogSlider'
+import BlogApi from '../components/BlogApi'
 
 
 const slideData = [
@@ -57,6 +58,7 @@ const Blog = () => {
             <SearchBlog />
             <BlogSlider/>
             <BannerBlog />
+            <BlogApi />
             <OurMission
                 header='Why Us'
                 body='We believe that the traditional models of solving societal problems in a developing country like Nigeria has failed with not enough resources channelled towards improving the living conditions of Nigerians. We have observed that even where these resources are deployed, they are fraught with myriads of challenges, principally because our public service models are not strategically designed as service oriented agencies but as a means of distributing the revenue of a nation amongst a meagre few. Non-Governmental Organizations (NGOs) have done a bit in this regard but even they, are limited by the funds available to them from Donor Agencies and the struggle to attract these funds in the first place. We believe that commercial entities can play a significant role here.'
