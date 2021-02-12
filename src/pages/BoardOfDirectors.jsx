@@ -6,7 +6,7 @@ import Avatar from '../assets/images/Avatar.png'
 import Kolade from '../assets/images/9b253ad50b9eb887c6011a0a17b0444e.png'
 import Christiana from '../assets/images/de784d755551f57dfc92a03d54efad0e.png'
 import Farouk from '../assets/images/add55e6563af7e1d76c4e8bb7ebc3ed6.png'
-import Lanre from '../assets/images/548de7423306da262d7f182c28c511d6.png'
+import Lanre from '../assets/images/Lanre-Olaluwa.jpg'
 import Oyekemi from '../assets/images/cf635ca96661303335c62f862c1611f4.png'
 
 

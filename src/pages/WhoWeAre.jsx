@@ -3,7 +3,7 @@ import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
-// import FooterNav from '../components/FooterNav'
+import FooterNav from '../components/FooterNav'
 import Wwa from './Wwa.jsx'
 import { corporateInformationMobile } from './CorporateInformation'
 import { Store, type as t } from '../context/store'
@@ -15,7 +15,7 @@ import $ from 'jquery'
 import Card from '../components/Card'
 import { boardOfDirectorsData } from './BoardOfDirectors'
 import { managementTeamData } from './ManagementTeam'
-import MediaBG from '../assets/images/mediaBg.png'
+import MediaBG from '../assets/images/GdlBuilding.jpg'
 
 
 // _______________________________________________________________________________________
@@ -45,7 +45,7 @@ const WhoWeAre = (props) => {
     const renderSlideData = (
         slideData.map((slides) => <section key={slides.id}>
             <div className='headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
-                <div className='headerSlider_container-text headerSlider_container-h3'>
+                <div className='headerSlider_container-text headerSlider_container-h3 wwa-headSlider-h3'>
                     <h3>{slides.h3}</h3>
                 </div>
             </div>
@@ -224,8 +224,10 @@ const WhoWeAre = (props) => {
                 </div>
 
             </div>
-
-            {/* <FooterNav /> */}
+            <div className="foot-wwa d-none d-md-block">
+                  <FooterNav />
+                
+            </div>
         </div>
     )
 }

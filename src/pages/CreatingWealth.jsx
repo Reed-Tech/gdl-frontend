@@ -78,7 +78,7 @@ const CreatingWealth = (props) => {
                         </div>
                     </div>
                 </OverlayScrollbarsComponent>
-                <FooterNav history={props.history} />
+                {/* <FooterNav history={props.history} /> */}
             </div>
         </section>
 

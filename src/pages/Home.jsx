@@ -14,6 +14,7 @@ import { FaChevronLeft } from 'react-icons/fa'
 import $ from 'jquery'
 import Card from '../components/Card'
 import { whatWeDoCardTexts } from '../components/WhatWeDoModal'
+import FooterNav from '../components/FooterNav'
 
 
 
@@ -154,6 +155,8 @@ const Home = (props) => {
             </div>
             <Advert />
             <CreatingWealth history={props.history} />
+            <FooterNav />
+
         </div>
     )
 }
