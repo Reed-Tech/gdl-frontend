@@ -20,22 +20,26 @@ const BlogSlider = () => {
 
     return (
         <section className="blogSlider py-5">
-            <div class="container">
-                <div className="blogSlider_grid">
-                    {data
-                        ? data.data.posts.map((datas) => (
-                        <div className='blogCard' key={datas.id}>
-                            <div className='blogCard_image ' style={{ backgroundImage: `url(${datas.thumbnail_image})` }} />
-                            <div className='blogCard_body'> 
-                                <h6>{datas.created_at}</h6>
-                                <h1>{datas.title}</h1>
-                                <p>{datas.description} </p>
+            <div className="container text-center">
+                <div className="row text-center">
+                    <div className="blogSlider_sss">
+                        {data
+                            ? data.data.posts.map((datas) => (
+                            <div className='blogCard' key={datas.id}>
+                                <div className='blogCard_image ' style={{ backgroundImage: `url(${datas.thumbnail_image})` }} />
+                                <div className='blogCard_body'> 
+                                    <h6>{datas.created_at}</h6>
+                                    <h1>{datas.title}</h1>
+                                    <p>{datas.description} </p>
+                                </div>
                             </div>
-                        </div>
-                        ))
-                        : "Loading GDL Blog..."
-                    }
+                            ))
+                            : "Loading GDL Blog..."
+                        }
+                    </div>
+
                 </div>
+
             </div>
       </section>
         
