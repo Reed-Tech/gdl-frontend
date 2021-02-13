@@ -1,38 +1,44 @@
-import React from 'react'
-import BlogCard from './BlogCard'
-import FlatList from 'flatlist-react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 
 const BlogSlider = () => {
-    const renderProduct = (card, idx) => {
-        return (
-            <BlogCard />
-        );
-    }
+    const [data, setdata] = useState()
 
-
-    const products = [
-        { name: 'Basic Slim Fit T-Shirt', price: '$11s9.99', image: '../../../images/images/mask35647.png' },
-        { name: 'Basic Slim Fit T-Shirt', price: '$11s9.99', image: '../../../images/images/mask35647.png' },
-        { name: 'Basic Slim Fit T-Shirt', price: '$11s9.99', image: '../../../images/images/mask35647.png' },
-        { name: 'Basic Slim Fit T-Shirt', price: '$11s9.99', image: '../../../images/images/mask35647.png' },
-        { name: 'Basic Slim Fit T-Shirt', price: '$11s9.99', image: '../../../images/images/mask35647.png' },
-        { name: 'Basic Slim Fit T-Shirt', price: '$11s9.99', image: '../../../images/images/mask35647.png' },
-    ];
-
-
-
-
+    useEffect(() => {
+        axios
+        .get('https://gdlnigeria.herokuapp.com/api/v1/blog/post')
+        .then(res => {
+            console.log(res);
+            setdata(res.data)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+      
+    }, [])
 
     return (
-        <div className='blogSlider'>
-            <FlatList
-                list={products}
-                renderItem={renderProduct}
-                displayGrid
-                minColumnWidth={'360px'}
-            />
-        </div>
+        <section className="blogSlider py-5">
+            <div class="container">
+                <div className="blogSlider_grid">
+                    {data
+                        ? data.data.posts.map((datas) => (
+                        <div className='blogCard' key={datas.id}>
+                            <div className='blogCard_image ' style={{ backgroundImage: `url(${datas.thumbnail_image})` }} />
+                            <div className='blogCard_body'> 
+                                <h6>{datas.created_at}</h6>
+                                <h1>{datas.title}</h1>
+                                <p>{datas.description} </p>
+                            </div>
+                        </div>
+                        ))
+                        : "Loading GDL Blog..."
+                    }
+                </div>
+            </div>
+      </section>
+        
     )
 }
 
