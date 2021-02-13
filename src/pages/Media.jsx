@@ -12,7 +12,7 @@ import NewsLetterSubscription from '../components/NewsLetterSubscription'
 import Banner from '../components/Banner'
 import Events from '../components/Events'
 import FooterCareer from '../components/FooterCareer'
-import BlogSlider from '../components/BlogSlider'
+// import BlogSlider from '../components/BlogSlider'
 
 
 // _______________________________________________________________________________________
@@ -49,7 +49,7 @@ const Media = () => {
                 <StockInfo />
             </header>
             <Videos />
-            <BlogSlider />
+            {/* <BlogSlider /> */}
             <Banner />
             <ImagesCarousel />
             <Events />

@@ -7,7 +7,7 @@ import ResearchBG from '../assets/images//research-1.jpg'
 import OurMission from '../components/OurMission'
 import NewsLetterSubscription from '../components/NewsLetterSubscription'
 import FooterNav from '../components/FooterNav'
-import BlogSlider from '../components/BlogSlider'
+// import BlogSlider from '../components/BlogSlider'
 
 
 
@@ -45,7 +45,7 @@ const Research = () => {
                 </HeaderSlider>
                 <StockInfo />
             </header>
-            <BlogSlider />
+            {/* <BlogSlider /> */}
             <OurMission />
             <NewsLetterSubscription />
             <FooterNav />
