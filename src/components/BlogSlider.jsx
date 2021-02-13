@@ -28,7 +28,7 @@ const BlogSlider = () => {
                             <div className='blogCard' key={datas.id}>
                                 <div className='blogCard_image ' style={{ backgroundImage: `url(${datas.thumbnail_image})` }} />
                                 <div className='blogCard_body'> 
-                                    <h6>{datas.created_at}</h6>
+                                    {/* <h6>{datas.created_at}</h6> */}
                                     <h1>{datas.title}</h1>
                                     <p>{datas.description} </p>
                                 </div>
