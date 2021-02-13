@@ -3,7 +3,7 @@ import HeaderSlider from '../components/HeaderSlider'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
 import Videos from '../components/Videos'
-import MediaBG from '../assets/images/mediaBg.png'
+import MediaBG from '../assets/images/Media.jpeg'
 import FooterNav from '../components/FooterNav'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import ImagesCarousel from '../components/ImagesCarousel'
@@ -21,17 +21,7 @@ const slideData = [
         image: MediaBG,
         id: 1,
         h3: 'At GDL, we strive to bring you the best in the finance industry',
-    },
-    {
-        image: MediaBG,
-        id: '2vms',
-        h3: 'Some catchy message to wow our users',
-    },
-    {
-        image: MediaBG,
-        id: '2vmas',
-        h3: 'You really need to provide this catchy messages',
-    },
+    }
 
 ]
 // _______________________________________________________________________________________
