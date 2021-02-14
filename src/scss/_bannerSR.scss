@@ -1,0 +1,56 @@
+.bannerSR {
+    color: white;
+    background-image: url('../assets/images/SB-overlay.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    width: 100%;
+
+    &-txt {
+        padding: clamp(3em, 3vw, 10vw) clamp(10px, 5vw, 8vw);
+    }
+
+
+    h1 {
+        font-weight: 600;
+        margin: 0;
+        text-align: center;
+        color: white;
+    }
+
+    @media (min-width: 991px) {
+        h1 {
+            letter-spacing: 0.5rem;
+        }
+    }
+
+    .col-md-6 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    @media(min-width : 767px) {
+        .col-md-6:first-child {
+            border-right: 3px solid #fff;
+        }
+    }
+
+    .btn-SR_invest {
+        background: white;
+        border-radius: 30px;
+        color: #000;
+        line-height: 1.5;
+        border: 10px solid white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    &-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: auto;
+
+    }
+   
+}

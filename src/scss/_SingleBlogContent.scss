@@ -1,0 +1,18 @@
+.SingleBlogContent {
+    border-bottom: 1px solid #ccc;
+}
+
+.singleBlogSlider_container-h3 {
+    font-size: clamp(5em, 5vw, 2em);
+}
+
+.singleBlogSlider_container-h3 a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.singleBlogSlider_container-h3 a:hover {
+    // color: #992333;
+    color: #fff;
+    text-decoration: none;
+}

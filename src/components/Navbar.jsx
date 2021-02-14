@@ -88,16 +88,6 @@ const Navbar = (props) => {
             <div className={`navbar_mcontainer ${NavToggle ? 'navbar_mcontainer-opened' : ''}`}>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./#home'>HOME</NavLink></li>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./whoWeAre'>WHO WE ARE</NavLink></li>
-                {/* <div>
-                    <li className={`navbar_mcontainer-navItem ${dropDown === 1 ? 'navbar_mcontainer-navItem-down' : ''}`}> <a onClick={() => setDropdown(1)} href='./#who-we-are-mobile'>WHO WE ARE <FaCaretDown color='black' /> </a></li>
-                    <div className={`${dropDown === 1 ? 'navbar_mcontainer-navItem-subnavOpen' : 'navbar_mcontainer-navItem-subnavClosed'}`}>
-                        <li className='navbar_mcontainer-navItem'><a onClick={() => handleWWANav('CORPORATE INFORMATION')} href='./#who-we-are-mobile'>CORPORATE INFORMATION</a></li>
-                        <li className='navbar_mcontainer-navItem'><a onClick={() => handleWWANav('BOARD OF DIRECTORS')} href='./#who-we-are-mobile'>BOARD OF DIRECTORS</a></li>
-                        <li className='navbar_mcontainer-navItem'><a onClick={() => handleWWANav('MANAGEMENT TEAM')} href='./#who-we-are-mobile'>MANAGEMENT TEAM</a></li>
-                        <li className='navbar_mcontainer-navItem'><a onClick={() => handleWWANav('WHY US/VALUE PROPOSITION')} href='./#who-we-are-mobile'>WHY US/VALUE PROPOSITION</a></li>
-
-                    </div>
-                </div> */}
                 <div>
                     <li className={`navbar_mcontainer-navItem ${dropDown === 1 ? 'navbar_mcontainer-navItem-down' : ''}`}> <a onClick={() => setDropdown(1)} href='./#what-we-do-mobile'>WHAT WE DO <FaCaretDown color='black' /> </a></li>
                     <div className={`${dropDown === 1 ? 'navbar_mcontainer-navItem-subnavOpen' : 'navbar_mcontainer-navItem-subnavClosed'}`}>
@@ -118,7 +108,7 @@ const Navbar = (props) => {
                 </div>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./contact-us'>CONTACT</NavLink></li>
                 <li className='navbar_mcontainer-navItem'><a href='https://mystifying-goodall-2b93ae.netlify.app/'>OPEN AN ACCOUNT</a></li>
-                <li className='navbar_mcontainer-navItem'><a href='https://clientportal.gdl.com.ng/'>Login</a></li>
+                <li className='navbar_mcontainer-navItem'><a href='https://clientportal.gdl.com.ng/'>LOGIN</a></li>
 
             </div>
         </>

@@ -11,6 +11,13 @@ const ContactUsForm = (props) => {
             <p>Send us a message</p>
             <Form>
                 <Form.Group>
+                    <Form.Label>Example select</Form.Label>
+                    <Form.Control as="select">
+                        <option>Buy Shares</option>
+                        <option>Make Inquiry</option>
+                    </Form.Control>
+                </Form.Group>
+                <Form.Group>
                     <Form.Row>
                         <Col sm='auto'>
                             <Form.Control required placeholder="First name" className='contactUsForm_firstName'/>

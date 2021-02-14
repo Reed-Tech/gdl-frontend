@@ -1,14 +1,13 @@
 import React from 'react'
-import BlogImage from '../assets/images/BlogImage.png'
+// import BlogImage from '../assets/images/BlogImage.png'
 
-const BlogCard = () => {
+const BlogCard = (props) => {
     return (
         <div className='blogCard'>
-            <div className='blogCard_image' style={{ backgroundImage: `url(${BlogImage})` }} />
+            <div className='blogCard_image' style={{ backgroundImage: `url(${props.image})` }} />
             <div className='blogCard_body'> 
-                <h6>TRAVEL</h6>
-                <h1>Surfing in Maldives</h1>
-                <p>It’s windy. The cool breeze of the ocean. It gives, a sense of beauty, in motion. All is flowing, rushing and tide-And I sit in wonder, dreaming beside.</p>
+                <h6  onClick={() => props.history.push({ pathname: `/career/${props.link}` })} >{props.name}</h6>
+                <p>{props.description}</p>
             </div>
         </div>
     )
