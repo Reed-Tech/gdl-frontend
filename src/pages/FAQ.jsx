@@ -54,7 +54,7 @@ const FAQ = () => {
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="Which languages does you support?"
+                            title="How to manage assets?"
                             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                         />
                     </div>
@@ -66,7 +66,7 @@ const FAQ = () => {
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="Can I use a custom domain?"
+                            title="Buying more shares from Gdl?"
                             content="
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </br>
@@ -77,13 +77,13 @@ const FAQ = () => {
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="Which languages does you support?"
+                            title="How to manage assets?"
                             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                         />
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="Can I use a custom domain?"
+                            title="Buying more shares from Gdl?"
                             content="
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </br>

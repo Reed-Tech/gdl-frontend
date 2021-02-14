@@ -5,8 +5,8 @@ import IAF from '../assets/images/IAF.png'
 
 
 const cardData = [
-    { name: 'CORPORATE ACCOUNT FORM', image: CAF, link: 'corporate account link', },
-    { name: 'INDIVIDUAL ACCOUNT FORM', image: IAF, link: 'individual account link', },
+    { name: 'CORPORATE ACCOUNT FORM', image: CAF, link: 'https://mystifying-goodall-2b93ae.netlify.app/corporate', },
+    { name: 'INDIVIDUAL ACCOUNT FORM', image: IAF, link: 'https://mystifying-goodall-2b93ae.netlify.app/individual', },
 ]
 
 const OurMission = (props) => {
@@ -25,7 +25,7 @@ const OurMission = (props) => {
                 <div className='ourMission_createAccount-cards mt-5 justify-content-lg-center justify-content-sm-start'>
                     {cardData.map((e) =>
                         <CardImage onClick={()=> console.log(e.link)} key={e.name} width='180px' image={e.image}>
-                            <h3>{e.name}</h3>
+                            <h3><a href={e.link}>{e.name}</a> </h3>
                         </CardImage>
                     )}
 

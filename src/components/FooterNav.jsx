@@ -41,11 +41,9 @@ const FooterNav = (props) => {
                         <h3 className="footer-title">Our Services</h3>
                         <ul className="list-unstyled">
                             <li><a href="https://mystifying-goodall-2b93ae.netlify.app/">Invest Now</a></li>
-                            <li><a href="/#what-we-do">Money Market Fund</a></li>
-                            <li><a href="/">Buy Shares</a></li>
-                            <li><a href="/#what-we-do">Asset Management</a></li>
-                            <li><a href="/#what-we-do">Finance and Leasing</a></li>
+                            <li><a href="/contact-us">Buy Shares</a></li>
                             <li><a href="/research">Research</a></li>
+                            <li><a href="/#what-we-do">What We Do</a></li>
                         </ul>
                     </div>
                     <div className="col-md-4 mx-auto">
@@ -54,7 +52,7 @@ const FooterNav = (props) => {
                             <li><NavLink to='/#home' onClick={goToHome}>Home</NavLink></li>
                             <li><NavLink to='/blog' onClick={goToHome}>Blog</NavLink></li>
                             <li><NavLink to='/media' onClick={goToHome}>Media</NavLink></li>
-                            <li><a href="/faq">FAQs</a></li>
+                            <li><NavLink to='/faq' onClick={goToHome}>FAQs</NavLink></li>
                             <li><NavLink to='/career' onClick={goToHome}>Career</NavLink></li>
                         </ul>
                     </div>
