@@ -13,6 +13,7 @@ import "overlayscrollbars/css/OverlayScrollbars.css";
 import "./scss/base/_myTheme.css";
 import CareerCareer from "./pages/CareerCareer";
 import Faq from "./pages/FAQ";
+import SingleBlog from "./pages/SingleBlog";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route exact path="/research" component={Research} />
           <Route exact path="/whoWeAre" component={WhoWeAre} />
           <Route exact path="/faq" component={Faq} />
+          <Route exact path="/singleBlog/:id" component={SingleBlog} />
         </Switch>
       </BrowserRouter>
     </Provider>

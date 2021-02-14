@@ -12,7 +12,7 @@ const Advert = (props) => {
                         videos
                 </video>
                 </div>
-                <div className='advert_text d-none d-lg-block col-sm-12 col-lg-5 pl-sm-3 pr-sm-3 pb-5'>
+                <div className='advert_text  col-sm-12 col-lg-6'>
                     {/* <h1>Advert</h1> */}
                     <p>At GDL, we believe that the children are the future and there's no better way to invest in them and their future than the GDL Smart Investment Account which gives you access to loans for all educational expenses.</p>
                     <Button href='/media' variant='primary' > View Media</Button>

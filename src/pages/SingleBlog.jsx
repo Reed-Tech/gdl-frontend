@@ -3,33 +3,34 @@ import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
-import ResearchBG from '../assets/images//research-1.jpg'
-import OurMission from '../components/OurMission'
+import SingleBlogBG from '../assets/images/BlogImage.png'
 import NewsLetterSubscription from '../components/NewsLetterSubscription'
 import FooterNav from '../components/FooterNav'
-import ResearchCards from '../components/ResearchCards'
+import SingleBlogContent from '../components/SingleBlogContent'
+import BannerSingleBlog from '../components/BannerSingleBlog'
+import SbComment from '../components/SbComment'
 
 
 
 const slideData = [
     {
-        image: ResearchBG,
+        image: SingleBlogBG,
         id: 1,
-        h3: 'GDL Research',
+        h3: 'Surfing In Maldives',
     },
 
 ]
 // _______________________________________________________________________________________
 
 
-const Research = () => {
+const SingleBlog = () => {
     const renderSlideData = (
         slideData.map((slides) => <section key={slides.h1}>
             <div className='research_headerSlider headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
-                <div className='headerSlider_container-text headerSlider_container-h3'>
+                <div className='headerSlider_container-text singleBlogSlider_container-h3'>
                     <h3>{slides.h3}</h3>
                     <p>
-                        GDL Research Division aims at providing clients with independent and unbiased access to analysis and opinion.
+                        <a href="/blog">BACK TO BLOGS</a>
                     </p>
                 </div>
             </div>
@@ -44,12 +45,15 @@ const Research = () => {
                 </HeaderSlider>
                 <StockInfo />
             </header>
-            <ResearchCards />
-            <OurMission />
+
+            < SingleBlogContent />
+            < SbComment />
+            < BannerSingleBlog />
+         
             <NewsLetterSubscription />
             <FooterNav />
         </section>
     )
 }
 
-export default Research
+export default SingleBlog

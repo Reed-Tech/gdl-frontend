@@ -118,7 +118,7 @@ const Navbar = (props) => {
                 </div>
                 <li className='navbar_mcontainer-navItem'><NavLink onClick={goToHome} to='./contact-us'>CONTACT</NavLink></li>
                 <li className='navbar_mcontainer-navItem'><a href='https://mystifying-goodall-2b93ae.netlify.app/'>OPEN AN ACCOUNT</a></li>
-                <li className='navbar_mcontainer-navItem'><a href='https://clientportal.gdl.com.ng/'>Login</a></li>
+                <li className='navbar_mcontainer-navItem'><a href='https://clientportal.gdl.com.ng/'>LOGIN</a></li>
 
             </div>
         </>
