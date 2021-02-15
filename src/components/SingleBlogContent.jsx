@@ -1,7 +1,8 @@
 import React from 'react'
 import BlogContent from '../assets/images/event (6).png'
 
-function SingleBlogContent() {
+function SingleBlogContent(props) {
+    // console.log(props)
     return (
         <section className="SingleBlogContent py-5">
             <div class="container text-center">

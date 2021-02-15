@@ -29,7 +29,7 @@ const App = () => {
           <Route exact path="/research" component={Research} />
           <Route exact path="/whoWeAre" component={WhoWeAre} />
           <Route exact path="/faq" component={Faq} />
-          <Route exact path="/singleBlog/:id" component={SingleBlog} />
+          <Route exact path="/singleBlog/:slug" component={SingleBlog} />
         </Switch>
       </BrowserRouter>
     </Provider>
