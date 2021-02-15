@@ -34,7 +34,8 @@ const slideData = [
 
 
 
-const Blog = () => {
+const Blog = (props) => {
+    console.log(props)
     const renderSlideData = (
         slideData.map((slides) => <section key={slides.id}>
             <div className='headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>

@@ -20,11 +20,11 @@ const slideData = [
 // _______________________________________________________________________________________
 
 
-const CareerCareer = () => {
+const SingleSingle = () => {
 
-    const { careerPath } = useParams()
+    const { singleBlog } = useParams()
 
-    console.log(careerPath);
+    console.log(singleBlog);
 
     const renderSlideData = (
         slideData.map((slides) => <section key={slides.h1}>
@@ -46,7 +46,7 @@ const CareerCareer = () => {
                 <StockInfo />
             </header>
             <section className='careerCareer_content'>
-                <h1>{careerPath.description}</h1>
+                <h1>{singleBlog}</h1>
                 <div>
                     <h4>Description</h4>
                     <p>
@@ -95,4 +95,4 @@ const CareerCareer = () => {
     )
 }
 
-export default CareerCareer
+export default SingleSingle
