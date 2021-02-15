@@ -139,7 +139,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings}>
                     {whatWeDoCardTexts["MONEY MARKET FUND"].map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -162,7 +162,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings}>
                     {whatWeDoCardTexts["SMART INVESTMENT ACCOUNT"].map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -186,7 +186,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings}>
                     {whatWeDoCardTexts.STOCKBROKING.map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -210,7 +210,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings}>
                     {whatWeDoCardTexts["FINANCIAL ADVISORY"].map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -234,7 +234,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings}>
                     {whatWeDoCardTexts["ENTERPRISE TRANSGENERATIONAL PROGRAM"].map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -259,7 +259,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings}>
                     {whatWeDoCardTexts.RESEARCH.map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -285,7 +285,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings}>
                     {whatWeDoCardTexts["HIGH YIELD NOTE"].map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -309,7 +309,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings} slidesToShow={2}>
                     {whatWeDoCardTexts["TREASURY BILL"].map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -333,7 +333,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings} slidesToShow={3}>
                     {whatWeDoCardTexts["LONG TERM NOTE"].map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -357,7 +357,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings} slidesToShow={2}>
                     {whatWeDoCardTexts["DOLLAR NOTE"].map(e =>
-                        <Card key={e} minHeight='calc(100vh - 36em)'>
+                        <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
                     )}
@@ -380,19 +380,19 @@ const WhatWeDoModal = (props) => {
             ),
             body: (
                 <Slider {...settings}>
-                    <Card minHeight='calc(100vh - 36em)'>
+                    <Card minHeight='auto'>
                         The biggest problem of most businesses is capital. Lack of access to money has been the downfall of many commercial organizations.
                  </Card>
-                    <Card minHeight='calc(100vh - 36em)'>
+                    <Card minHeight='auto'>
                         Even banks and other financial institutions which offer loan facilities cannot adequately cater to the financial needs of all the small and medium scale enterprises as well as large organizations.
                  </Card>
-                    <Card minHeight='calc(100vh - 36em)'>
+                    <Card minHeight='auto'>
                         Due to these hurdles and our dedication to developing the middle class, we provide loans to established businesses and finance new businesses.
                  </Card>
-                    <Card minHeight='calc(100vh - 36em)'>
+                    <Card minHeight='auto'>
                         It’s our way of giving back to society.
                  </Card>
-                    <Card minHeight='calc(100vh - 36em)'>
+                    <Card minHeight='auto'>
                         We also offer special credit facilities such as: <br />
                         Consumer Loans (Fund Management, Project Finance, Asset Finance)
                             Finance Lease as in the case of Hire Purchase, Trade Finance

@@ -20,7 +20,7 @@ const slideData = [
     {
         image: MediaBG,
         id: 1,
-        h3: 'At GDL, we strive to bring you the best in the finance industry',
+        // h3: '',
     }
 
 ]
