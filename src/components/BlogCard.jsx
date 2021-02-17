@@ -1,17 +1,15 @@
 import React from 'react'
-// import { Button } from 'react-bootstrap'
-// import BlogImage from '../assets/images/BlogImage.png'
+import BlogImage from '../assets/images/BlogImage.png'
 
 const BlogCard = (props) => {
     return (
         <div className='blogCard'>
-            <div className='blogCard_image' style={{ backgroundImage: `url(${props.image})` }} />
+            <div className='blogCard_image' style={{ backgroundImage: `url(${BlogImage})` }} />
             <div className='blogCard_body'> 
-                <h6>{props.name}</h6>
-                <p>{props.description}</p>
+                <h6>TRAVEL</h6>
+                <h1>Surfing in Maldives</h1>
+                <p>It’s windy. The cool breeze of the ocean. It gives, a sense of beauty, in motion. All is flowing, rushing and tide-And I sit in wonder, dreaming beside.</p>
             </div>
-            {/* <Button onClick={() => props.history.push({ pathname: `/career/${props.link}` })} variant='outline-light' className='rounded-pill'>LEARN MORE</Button> */}
-
         </div>
     )
 }

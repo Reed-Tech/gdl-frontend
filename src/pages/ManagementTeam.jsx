@@ -5,9 +5,6 @@ import { Store, type as t } from '../context/store'
 import Avatar from '../assets/images/Avatar.png'
 import Kolade from '../assets/images/9b253ad50b9eb887c6011a0a17b0444e.png'
 import Oyekemi from '../assets/images/cf635ca96661303335c62f862c1611f4.png'
-import Peter from '../assets/images/Peter.png'
-import Tunde from '../assets/images/Tunde.png'
-import Henry from '../assets/images/Henry.png'
 import Ofonama from '../assets/images/Ofonama.png'
 import Perpetual from '../assets/images/Perpetual.png'
 import Oluyemi from '../assets/images/Oluyemi.png'
@@ -31,24 +28,6 @@ export const managementTeamData = {
         text: ['Oyekemi holds an MBA from the prestigious Lagos Business School (Pan African University) and B.Pharm from the University of Ife. She is also a trained Oracle Certified Application Developer. Her experience spans twenty years in various fields including Pharmacy, Software Development and Business Management. She is a well experienced and an astitute business administrator. She brings on board her skills in the areas of strategic planning, operations and project management.'],
         image: Oyekemi,
     },
-    'Peter Shodipo': {
-        id: 'Peter Shodipo',
-        name: 'Peter Shodipo',
-        text: ['Prior to joining GDL, Peter worked with Stanbic IBTC and Chartered Bank Plc. He has banking and investment advisory experience spanning over a period of fifteen years. He is Fellow (FCA) member of The Institute of Chartered Accountants of Nigeria (ICAN) and an Associate member of Chartered Institute of Taxation of Nigeria (CITN). He is also a certified Forensic Accountant (CFA) and a member of the Chartered Institute of Bankers of Nigeria (CIBN). He holds an MBA degree from Obafemi Awolowo University, Ile-Ife. He is also certified by the Balanced Scorecard Institute USA as a Balanced Scorecard Professional (BSP) and holds ACCA in International Financial Reporting Standards (IFRS). He is currently the president of Committee of Chief Compliance Association of Capital Market Operators in Nigeria (CCCOCIN).'],
-        image: Peter
-    },
-    'Tunde Thomas': {
-        id: 'Tunde Thomas',
-        name: 'Tunde Thomas',
-        text: ['Tunde is an experienced investment banker with a bachelor’s degree in economics and MBA both from Obafemi Awolowo University, Ile-Ife. He has over 15 years industry experience in banking and has attended various courses both locally and internationally including the prestigious Stanford Graduate Business School. He joined GDL in March from Weiji Capital LLC, where he was the Director of Deal Originations for West Africa.'],
-        image: Tunde,
-    },
-    'Henry Ogbuaku': {
-        id: 'Henry Ogbuaku',
-        name: 'Henry Ogbuaku',
-        text: ['Henry joined GDL from Fidelity Union Securities Limited (FUSL) (a subsidiary of Fidelity Bank Plc) where he was Head of Research. Prior to joining GDL, he lectured at the department of Economics, University of Lagos. Henry holds a B.Sc in Economics from the University of Benin and a Masters? Degree in Economics from the University of Ibadan. He has also attended various professional trainings and conferences in advanced financial analysis and investment management. Henry is also a student member of the Chartered Institute of Stockbrokers.'],
-        image: Henry
-    },
     'Ofonama Joshua': {
         id: 'Ofonama Joshua',
         name: 'Ofonama Joshua',
@@ -65,6 +44,12 @@ export const managementTeamData = {
         id: 'Oluyemi Adekoya',
         name: 'Oluyemi Adekoya',
         text: ['Yemi is an Information Systems Architect with tertiary degrees in Chemical Engineering, Computing and Information Systems. His working experience spans across Manufacturing, Telecoms, Oil & Gas and Finance sectors of the Nigerian Economy. He currently is the Head, Strategy and Information Systems in EDAM Nigeria. Apart from possessing several vendor specific certifications which include Microsoft & Cisco, he is also a member of ISACA (Information Security Audit and Control Association) as a Certified Information Systems Auditor (CISA). He is certified by the Balanced Scorecard Institute USA as a Balanced Scorecard Professional (BSP).'],
+        image: Oluyemi
+    },
+    'Josephine Ernest-Ikechukwu': {
+        id: 'Josephine Ernest-Ikechukwu',
+        name: 'Josephine Ernest-Ikechukwu',
+        text:['Josephine joined GDL with over 10 years experience from Ecobank Development Securities EDC, where she served in various department from Client service to Retail marketing and Institutional marketing from 2006 to 2018 November. Josephine is a graduate of Nnamdi Azikwe University from the French department and speaks fluently, she joins GDL with vast knowledge both in Money Market and Capital market dynamics and client winning strategies. Josephine is a student member of the Chartered Institute of Stockbrokers where she has concluded her 1st level to become a Chartered Stockbroker. She has attended various trainings both within the country and outside Nigeria, from Lagos Business School(LBS) and Euromoney Consultant.'],
         image: Oluyemi
     },
 

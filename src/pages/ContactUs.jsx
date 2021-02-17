@@ -6,7 +6,7 @@ import FooterMap from '../components/FooterMap'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
-import { useEffect } from "react"
+// import { useEffect } from "react"
 
 
 
@@ -21,9 +21,7 @@ const ContactUs = () => {
     //     }
     // }, []);
 
-    useEffect(() => {
-        localStorage.setItem("name", "Ememobong")
-    }, []);
+
 
     return (
         <section className='contactUs'>
@@ -32,7 +30,6 @@ const ContactUs = () => {
                 <div className='contactUs_blur' />
                 <Navbar />
                 <div className='contactUs_text'>
-                    {/* <Link to='#'>BACK TO CAREER</Link> */}
                     <h1>Contact Us</h1>
                     <p>How can we assist you?</p>
                 </div>

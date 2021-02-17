@@ -96,7 +96,7 @@ export const whatWeDoCardTexts = {
         'Our special team of wealth managers work round the clock to ensure all our investors earn the rewards of their investments and even more.  Interest can be paid monthly or at once depending on your preferences.',
         'More importantly, we are regulated and approved by the Securities and Exchanges Commission to invest funds on behalf of its clients. You can sleep with both eyes closed; all your funds are safe with us.',
     ],
-    'TREASURY BILL': [
+    'TREASURY BILLS': [
         'Treasury Bills are assets that offered to the public by the capital bank. The investment is short term and is issued with no additional charges.',
         'The chances of you losing your money are almost nonexistent as the government is obligated to pay no matter what. Also, the interest accrued from treasury bills is not taxable. You get to keep all your profits to yourself.',
     ],
@@ -110,11 +110,10 @@ export const whatWeDoCardTexts = {
         'The dollar note is open to everyone irrespective of age and location.',
     ],
     'GDL FINANCE': [
-        'The biggest problem of most businesses is capital. Lack of access to money has been the downfall of many commercial organizations.',
+        'The biggest problem of most businesses is capital.',
         'Even banks and other financial institutions which offer loan facilities cannot adequately cater to the financial needs of all the small and medium scale enterprises as well as large organizations.',
         'Due to these hurdles and our dedication to developing the middle class, we provide loans to established businesses and finance new businesses.',
-        'It’s our way of giving back to society.',
-        'We also offer special credit facilities such as: Consumer Loans (Fund Management, Project Finance, Asset Finance) Finance Lease as in the case of Hire Purchase, Trade Finance, Local and International Trade: LPO Finance, Invoice Discounting Contract Finance, Import and Export Finance'
+        'We also offer special credit facilities such as: Fund Management, Project Finance, Asset Finance, Trade Finance, Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance, Import and Export Finance, Bank Guarantee.'
     ],
 
 }
@@ -299,16 +298,16 @@ const WhatWeDoModal = (props) => {
                 </div>
             )
         },
-        'Treasury Bill': {
+        'Treasury Bills': {
             header: (
                 <div>
-                    <h1>TREASURY BILL</h1>
+                    <h1>TREASURY BILLS</h1>
                     <h3>The closest you will ever come to a risk-free investment.</h3>
                 </div>
             ),
             body: (
                 <Slider {...settings} slidesToShow={2}>
-                    {whatWeDoCardTexts["TREASURY BILL"].map(e =>
+                    {whatWeDoCardTexts["TREASURY BILLS"].map(e =>
                         <Card key={e} minHeight='auto'>
                             {e}
                         </Card>
@@ -381,7 +380,7 @@ const WhatWeDoModal = (props) => {
             body: (
                 <Slider {...settings}>
                     <Card minHeight='auto'>
-                        The biggest problem of most businesses is capital. Lack of access to money has been the downfall of many commercial organizations.
+                        The biggest problem of most businesses is capital.
                  </Card>
                     <Card minHeight='auto'>
                         Even banks and other financial institutions which offer loan facilities cannot adequately cater to the financial needs of all the small and medium scale enterprises as well as large organizations.
@@ -389,16 +388,12 @@ const WhatWeDoModal = (props) => {
                     <Card minHeight='auto'>
                         Due to these hurdles and our dedication to developing the middle class, we provide loans to established businesses and finance new businesses.
                  </Card>
-                    <Card minHeight='auto'>
-                        It’s our way of giving back to society.
-                 </Card>
-                    <Card minHeight='auto'>
-                        We also offer special credit facilities such as: <br />
-                        Consumer Loans (Fund Management, Project Finance, Asset Finance)
-                            Finance Lease as in the case of Hire Purchase, Trade Finance
-                            Local and International Trade: LPO Finance, Invoice Discounting Contract Finance
-                            Import and Export Finance
-                    </Card>
+                <Card minHeight='auto'>
+                    We also offer special credit facilities such as: <br />
+                    Fund Management, Project Finance, Asset Finance, Trade Finance,
+                        Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance
+                        Import and Export Finance, Bank Guarantee.
+                </Card>
                 </Slider>
             ),
     
