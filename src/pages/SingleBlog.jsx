@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import HeaderSlider from '../components/HeaderSlider'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
@@ -8,6 +9,7 @@ import FooterNav from '../components/FooterNav'
 import BannerSingleBlog from '../components/BannerSingleBlog'
 import SbComment from '../components/SbComment'
 import { Store } from '../context/store'
+
 
 
 
@@ -34,7 +36,7 @@ const SingleBlog = (props) => {
                     <h3>{slides.h3}</h3>
 
                     <p>
-                        <a href="/blog">BACK TO BLOGS</a>
+                        <NavLink to="/blog">BACK TO BLOGS</NavLink>
                     </p>
                 </div>
             </div>
@@ -58,10 +60,6 @@ const SingleBlog = (props) => {
                         }}>
                         
                     </div>
-                    {/* <div className="mt-3 mb-3">
-                        <img src={blogData.thumbnail_image} alt="blog img" srcset=""/>
-                    </div> */}
-                    
                 </div>
             </section>
             <SbComment />
