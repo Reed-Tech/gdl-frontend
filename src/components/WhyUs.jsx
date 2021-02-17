@@ -9,7 +9,7 @@ const WhyUs = () => {
 
             </div>
             <div className='whyUs-cards'>
-                <h1>Create Your Account Now</h1>
+                <h1>Open an account</h1>
                 <div>
                     <CardImage/>
                     
