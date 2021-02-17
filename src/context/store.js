@@ -16,6 +16,7 @@ const initialState = {
   WWAMobileModal: "",
   WWDMobileModal: "",
   WWDMobileModalNav: "",
+  singleBlogPage:{},
 };
 
 export const Store = createContext(initialState);
@@ -40,6 +41,7 @@ export const type = {
   WWA_MOBILE_MODAL: "WWA_MOBILE_MODAL",
   WWD_MOBILE_MODAL: "WWD_MOBILE_MODAL",
   WWD_MOBILE_MODAL_NAV: "WWD_MOBILE_MODAL_NAV",
+  SINGLE_BLOG_PAGE: "SINGLE_BLOG_PAGE"
 };
 
 // ----------REDUCER--------------
@@ -130,6 +132,12 @@ function reducer(state, action) {
       return {
         ...state,
         WWDMobileModalNav: action.payload,
+      };
+
+    case type.SINGLE_BLOG_PAGE:
+      return {
+        ...state,
+        singleBlogPage: action.data,
       };
 
     default:

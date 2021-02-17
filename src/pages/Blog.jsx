@@ -61,7 +61,7 @@ const Blog = (props) => {
                 <StockInfo />
             </header>
             <SearchBlog />
-            <BlogSlider/>
+            <BlogSlider history={props.history}/>
             <BannerBlog />
             <OurMission
                 header='Why Us'
