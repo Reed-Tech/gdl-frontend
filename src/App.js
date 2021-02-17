@@ -23,13 +23,13 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/contact-us" component={ContactUs} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/:singleBlog" component={SingleBlog} />
           <Route exact path="/media" component={Media} />
           <Route exact path="/career" component={Career} />
           <Route exact path="/career/:careerPath" component={CareerCareer} />
           <Route exact path="/research" component={Research} />
           <Route exact path="/whoWeAre" component={WhoWeAre} />
           <Route exact path="/faq" component={Faq} />
-          <Route exact path="/singleBlog/:blogId" component={SingleBlog} />
         </Switch>
       </BrowserRouter>
     </Provider>

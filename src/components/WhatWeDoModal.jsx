@@ -97,13 +97,13 @@ export const whatWeDoCardTexts = {
         'More importantly, we are regulated and approved by the Securities and Exchanges Commission to invest funds on behalf of its clients. You can sleep with both eyes closed; all your funds are safe with us.',
     ],
     'TREASURY BILLS': [
-        'Treasury Bills are assets that offered to the public by the capital bank. The investment is short term and is issued with no additional charges.',
-        'The chances of you losing your money are almost nonexistent as the government is obligated to pay no matter what. Also, the interest accrued from treasury bills is not taxable. You get to keep all your profits to yourself.',
+        'Treasury Bills are assets that offered to the public by the central bank as a form of short-term loan to the government.',
+        'An investment with no hidden transaction charges, untaxed interest and guaranteed safety',
     ],
     'LONG TERM NOTE': [
         'Our long-term note offers investors a higher interest rate than commercial banks. If you intend to save funds for a long period with a fixed rate of return higher than the conventional fixed deposit.',
         'Your money will be held and invested by us for Two Years in which you can liquidate by giving us a  month’s notice and paying a small fee',
-        'The minimum amount for this superb investment plan is N2,500,000 with a sky-high gross interest rate of 11% per annum which is paid twice within the year.',
+        'The minimum amount for this superb investment plan is N2,500,000.',
     ],
     'DOLLAR NOTE': [
         'Invest in our dollar note and earn all your dividends in dollars. We invest your funds for a fixed amount of time and pay dividends when due.',
@@ -113,7 +113,7 @@ export const whatWeDoCardTexts = {
         'The biggest problem of most businesses is capital.',
         'Even banks and other financial institutions which offer loan facilities cannot adequately cater to the financial needs of all the small and medium scale enterprises as well as large organizations.',
         'Due to these hurdles and our dedication to developing the middle class, we provide loans to established businesses and finance new businesses.',
-        'We also offer special credit facilities such as: Fund Management, Project Finance, Asset Finance, Trade Finance, Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance, Import and Export Finance, Bank Guarantee.'
+        'We also offer special credit facilities such as: Fund Management, Project Finance, Asset Finance, Trade Finance, Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance, Bank Guarantee.'
     ],
 
 }
@@ -147,7 +147,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Funds?</p>
-                    <Button onClick={()=>console.log(props.history)} href="https://mystifying-goodall-2b93ae.netlify.app/" variant='light'>Create your account now</Button>
+                    <Button onClick={()=>console.log(props.history)} href="https://mystifying-goodall-2b93ae.netlify.app/" variant='light'>Open an account</Button>
                 </div>
             )
         },
@@ -171,7 +171,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Start Investing Smartly.</p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -195,7 +195,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in making money from shares?</p>
-                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -219,7 +219,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Take our hand as we light up your way to prosperity.</p>
-                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -244,7 +244,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Safeguard your Legacy today. </p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -294,7 +294,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Fund? </p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -317,8 +317,8 @@ const WhatWeDoModal = (props) => {
     
             footer: (
                 <div className="whatWeDoModal_footer">
-                    <p>Interested? Contact our team of seasoned experts to get started </p>
-                    <Button variant='light'>Contact Us</Button>
+                    <p>Interested? </p>
+                    <Button href="https://mystifying-goodall-2b93ae.netlify.app/" variant='light'>Open an account</Button>
                 </div>
             )
         },
@@ -342,7 +342,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Ready to invest for the Future?</p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -366,7 +366,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Fill Form Now to invest in the GDL dollar note now. </p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -391,8 +391,7 @@ const WhatWeDoModal = (props) => {
                 <Card minHeight='auto'>
                     We also offer special credit facilities such as: <br />
                     Fund Management, Project Finance, Asset Finance, Trade Finance,
-                        Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance
-                        Import and Export Finance, Bank Guarantee.
+                        Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance, Bank Guarantee.
                 </Card>
                 </Slider>
             ),
@@ -400,7 +399,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Fund? </p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Create your account now</Button>
+                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },

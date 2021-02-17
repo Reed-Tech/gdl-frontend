@@ -2,6 +2,12 @@
     border-bottom: 1px solid #ccc;
 }
 
+
+.SingleBlogContent  img{
+   width: 50%;
+   height: auto;
+}
+
 .singleBlogSlider_container-h3 {
     font-size: clamp(5em, 5vw, 2em);
 }

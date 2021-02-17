@@ -16,19 +16,8 @@ const slideData = [
     {
         image: MediaBG,
         id: 1,
-        h3: 'At GDL, we strive to bring you the best in the finance industry',
+        // h3: 'At GDL, we strive to bring you the best in the finance industry',
     },
-    // {
-    //     image: MediaBG,
-    //     id: '2vms',
-    //     h3: 'Some catchy message to wow our users',
-    // },
-    // {
-    //     image: MediaBG,
-    //     id: '2vmas',
-    //     h3: 'You really need to provide this catchy messages',
-    // },
-
 ]
 // _______________________________________________________________________________________
 
@@ -61,7 +50,7 @@ const Blog = (props) => {
                 <StockInfo />
             </header>
             <SearchBlog />
-            <BlogSlider/>
+            <BlogSlider history={props.history}/>
             <BannerBlog />
             <OurMission
                 header='Why Us'

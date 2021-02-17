@@ -24,16 +24,6 @@ const Wwa = (props) => {
             <div className="why-wwa">
                 <WhyUs />
             </div>
-           
-           {/* <div id='who-we-are'>
-                <PageSlider navLinks={pages} navRight>
-                    <CorporateInformation />
-                    <BoardOfDirectors />
-                    <ManagementTeam />
-                    <WhyUs />
-                </PageSlider>
-          </div> */}
-           
         </div>
     )
 }
