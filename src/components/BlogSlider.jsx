@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const BlogSlider = (props) => {
-    console.log(props);
+const BlogSlider = () => {
     const [data, setdata] = useState()
 
     useEffect(() => {
@@ -29,7 +28,7 @@ const BlogSlider = (props) => {
                     {data
                             ? data.data.posts.map((datas, index) => (
                             <div className='blogCard' key={datas.id}>
-                                <Link to={`/singleArticle/${index + 1}`} className="blogSlider-link">
+                                <Link to={`/singleBlog/${index + 1}`} className="blogSlider-link">
                                     <div className='blogCard_image ' style={{ backgroundImage: `url(${datas.thumbnail_image})` }} />
                                     <div className='blogCard_body'> 
                                         {/* <h6>{datas.created_at}</h6> */}

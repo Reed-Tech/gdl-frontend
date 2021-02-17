@@ -113,7 +113,7 @@ export const whatWeDoCardTexts = {
         'The biggest problem of most businesses is capital.',
         'Even banks and other financial institutions which offer loan facilities cannot adequately cater to the financial needs of all the small and medium scale enterprises as well as large organizations.',
         'Due to these hurdles and our dedication to developing the middle class, we provide loans to established businesses and finance new businesses.',
-        'We also offer special credit facilities such as: Fund Management, Project Finance, Asset Finance, Trade Finance, Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance, Import and Export Finance, Bank Guarantee.'
+        'We also offer special credit facilities such as: Fund Management, Project Finance, Asset Finance, Trade Finance, Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance, Bank Guarantee.'
     ],
 
 }
@@ -391,8 +391,7 @@ const WhatWeDoModal = (props) => {
                 <Card minHeight='auto'>
                     We also offer special credit facilities such as: <br />
                     Fund Management, Project Finance, Asset Finance, Trade Finance,
-                        Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance
-                        Import and Export Finance, Bank Guarantee.
+                        Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance, Bank Guarantee.
                 </Card>
                 </Slider>
             ),
