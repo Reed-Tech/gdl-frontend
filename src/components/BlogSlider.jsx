@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import BlogCard from './BlogCard';
-
 
 const BlogSlider = (props) => {
     console.log(props);
