@@ -98,7 +98,7 @@ const Home = (props) => {
 
     const financeLeasingNavLinks = (<>
         <span className={state?.WWDMobileModalNav === 'HIGH YIELD NOTE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('HIGH YIELD NOTE')}>HIGH YIELD NOTE</span>
-        <span className={state?.WWDMobileModalNav === 'TREASURY BILL' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('TREASURY BILL')}>TREASURY BILL</span>
+        <span className={state?.WWDMobileModalNav === 'TREASURY BILLS' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('TREASURY BILLS')}>TREASURY BILLS</span>
         <span className={state?.WWDMobileModalNav === 'LONG TERM NOTE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('LONG TERM NOTE')}>LONG TERM NOTE</span>
         <span className={state?.WWDMobileModalNav === 'DOLLAR NOTE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('DOLLAR NOTE')}>DOLLAR NOTE</span>
         <span className={state?.WWDMobileModalNav === 'GDL FINANCE' ? 'navActive' : ''} onClick={() => handleWWDMobileModalNav('GDL FINANCE')}>GDL FINANCE</span>

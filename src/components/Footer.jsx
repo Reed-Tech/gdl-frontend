@@ -34,6 +34,8 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 col-sm-12 footer_headerText">
                     <h3 className='footer_hederText'>Tel</h3>
                     <a href='tel:+234 (0) 705 443 5000'>+234 (0) 705 443 5000</a>
+                    <h3>8am - 4pm : Phone calls</h3>
+                    <h3>4pm - 6pm : Whatsapp </h3>
             </div>
         </div>
     );

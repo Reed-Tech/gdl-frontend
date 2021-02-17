@@ -11,7 +11,6 @@ const ContactUsForm = (props) => {
             <p>Send us a message</p>
             <Form>
                 <Form.Group>
-                    <Form.Label>Example select</Form.Label>
                     <Form.Control as="select">
                         <option>Buy Shares</option>
                         <option>Make Inquiry</option>

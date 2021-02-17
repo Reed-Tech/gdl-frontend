@@ -8,7 +8,7 @@ import { Store, type as t } from '../context/store'
 
 const financeAndLeasingCards = [
     { id: 'High Yield Note', text: <h3>HIGH YIELD<br />NOTE</h3>, image: ProductBackground1 },
-    { id: 'Treasury Bill', text: <h3>TREASURY<br />BILL</h3>, image: ProductBackground1 },
+    { id: 'Treasury Bills', text: <h3>TREASURY<br />BILLS</h3>, image: ProductBackground1 },
     { id: 'Long Term Note', text: <h3>LONG TERM <br />NOTE</h3>, image: ProductBackground1 },
     { id: 'Dollar Note', text: <h3>DOLLAR NOTE</h3>, image: ProductBackground2 },
     { id: 'GDL Finance', text: <h3>GDL <br />FINANCE</h3>, image: ProductBackground2 },

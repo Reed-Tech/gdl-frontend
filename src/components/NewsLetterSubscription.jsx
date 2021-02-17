@@ -33,7 +33,7 @@ const NewsLetterSubscription = () => {
                 <div className='col-md-6 col-sm-12 mt-sm-5'>
                     <div>
                         <h3>Subscribe</h3>
-                        <p>Subscribe to our newsletter and be the first to receive updates on our new investment opportunities and promo</p>
+                        <p>Subscribe to our newsletter and be the first to receive updates on our new investment opportunities and promotions</p>
                     </div>
                     <div>
                         <InputGroup className="col-12 p-0">
