@@ -18,25 +18,6 @@ const CareerCard = (props) => {
                         <h5>Description</h5>
                         <p>{props.description}</p>
                     </div>
-                    <div>
-                        <h5>Key Responsibilities</h5>
-                        <ul>
-                            {props.responsibilities?.map((e) => <li>{e}</li>)}
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Desired Skills</h5>
-                        <ul>
-                            {props.responsibilities?.map((e) => <li>{e}</li>)}
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Education/Experience</h5>
-                        <ul>
-                            {props.education?.map((e) => <li>{e}</li>)}
-
-                        </ul>
-                    </div>
                     <Button onClick={() => props.history.push({ pathname: `/career/${props.link}` })} variant='outline-light' className='rounded-pill'>LEARN MORE</Button>
                 </div>
             </main>
