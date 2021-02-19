@@ -93,12 +93,12 @@ const WhoWeAre = (props) => {
         {
             image: MediaBG,
             id: 1,
-            h3: 'At GDL, we strive to bring you the best in the finance industry',
+            h3: 'We operate with the highest levels of security, providing total safety for our customers and all their investments. ',
         },
         {
             image: MediaBGTwo,
             id: '2vms',
-            h3: 'Some catchy message to wow our users',
+            h3: 'Begin your journey to financial freedom.',
         },
     
     ]

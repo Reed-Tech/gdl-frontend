@@ -59,10 +59,10 @@ export const whatWeDoCardTexts = {
         'You can open a Smart Investment Account with at least N25,000 and continue with a monthly contribution of not less than N5,000.',
     ],
     'STOCKBROKING': [
-        'Due to our outstanding performance as a financial institution, we earned licenses from the Nigerian Stock Exchange (NSE) and the Securities and Exchange Commission (SEC) to carry out stockbroking in Nigeria.',
+        'Buy shares of profitable Nigerian companies earn great dividends as they increase in value. ',
+        'We can buy and sell shares on your behalf, looking out for favourable trades which will be beneficial to you.',
         'With our strong research base and remarkable stockbrokers, we have mastered the art of analyzing, trading and advising on the stock market and other related ventures.',
-        'We have the power to make transactions on your behalf, looking out for favourable trades which will be beneficial to you.',
-        ' We have created a process that makes these transactions totally seamless and timely. You do not have to worry about anything. Just say the word and we will execute.',
+        'Our personalized process makes these transactions totally seamless and timely. You do not have to worry about anything. Just say the word and we will execute.',
     ],
     'FINANCIAL ADVISORY': [
         'Making financial decisions without proper consultation is like hunting in the dark, the results are bound to be unpleasant. However, these misfortunes can be avoided if you can see clearly.',
@@ -73,13 +73,10 @@ export const whatWeDoCardTexts = {
         'Our services are unmatched as we have a vast knowledge of the financial space and we have spent years guiding our clients through different stages and decisions in their businesses.',
     ],
     'ENTERPRISE TRANSGENERATIONAL PROGRAM': [
-        'Your business is thriving. Great! It has been running for years. Even Better.',
-        'But picture this. It is the year 2100, your grand-kids are now running the business you started, and they have expanded it even better than you planned.',
-        'You would love that right? Who wouldn’t? So here’s the thing, building a transgenerational business is not an easy feat and you cannot do it alone. You need a solid advisory partner, just like any serious relationship.',
         'We want to help you turn your booming business into a powerful organization that withstands the test of time.',
-        'When you join our Enterprise Transgenerational Program, you get unlimited access to our wealth of knowledge, extensive network and resources.',
         'For a duration of 3 - 5 years, we would offer you financial and business advisory support services tailored specifically to your business. We will guide you throughout your journey to becoming an enterprise that would remain standing for future generations.',
-        'Your Children would thank you',
+        'Building a transgenerational business is not an easy feat and you cannot do it alone. You need a solid advisory partner.',
+        'When you join our Enterprise Transgenerational Program, you get unlimited access to our wealth of knowledge, extensive network, resources and everything your business needs to succeed.',
     ],
     'RESEARCH': [
         'Our research team gives powerful insights into all the important happenings in the world of business.',
@@ -90,20 +87,19 @@ export const whatWeDoCardTexts = {
         'As your trusted investment partner, we must provide you with objective and timely business and market intelligence from verified sources.',
     ],
     'HIGH YIELD NOTE': [
-        'Why keep your money in the bank where it remains stagnant when you can invest in our high yield note and make much more?',
-        'Our interest rates are higher than that of any commercial bank, coupled with the total absence of maintenance fees and other hidden charges, investing in our high yield note is the best thing you can do to your money.',
-        'We have worked hard to make the plan so flexible that you can withdraw all your funds even before the agreed maturity date in case of emergencies. After all, it is still your money.',
-        'Our special team of wealth managers work round the clock to ensure all our investors earn the rewards of their investments and even more.  Interest can be paid monthly or at once depending on your preferences.',
-        'More importantly, we are regulated and approved by the Securities and Exchanges Commission to invest funds on behalf of its clients. You can sleep with both eyes closed; all your funds are safe with us.',
+        'Our high yield investment product offers competitive interest rates, no maintenance fees, no hidden charges and guaranteed safety. ',
+        'The high yield plan is very flexible and you can withdraw all your funds even before the agreed maturity date in case of emergencies.  Interest can be paid monthly or at once depending on preference.',
+        'You can sleep with both eyes closed; all your funds are safe with us.',
+        'Our special team of wealth managers work round the clock to ensure all our investors earn the rewards of their investments and even more.',
+        'We are regulated and approved by the Securities and Exchanges Commission to invest funds on behalf of our clients.',
     ],
     'TREASURY BILLS': [
         'Treasury Bills are assets that offered to the public by the central bank as a form of short-term loan to the government.',
         'An investment with no hidden transaction charges, untaxed interest and guaranteed safety',
     ],
     'LONG TERM NOTE': [
-        'Our long-term note offers investors a higher interest rate than commercial banks. If you intend to save funds for a long period with a fixed rate of return higher than the conventional fixed deposit.',
-        'Your money will be held and invested by us for Two Years in which you can liquidate by giving us a  month’s notice and paying a small fee',
-        'The minimum amount for this superb investment plan is N2,500,000.',
+        'Our long-term note offers investors a higher interest rate than commercial banks. Invest funds for a long period with better rates than the conventional fixed deposit.',
+        'The money will be held and invested by us for at least two years. After which you can liquidate with your capital and interest.',
     ],
     'DOLLAR NOTE': [
         'Invest in our dollar note and earn all your dividends in dollars. We invest your funds for a fixed amount of time and pay dividends when due.',
@@ -330,7 +326,7 @@ const WhatWeDoModal = (props) => {
                 </div>
             ),
             body: (
-                <Slider {...settings} slidesToShow={3}>
+                <Slider {...settings} slidesToShow={2}>
                     {whatWeDoCardTexts["LONG TERM NOTE"].map(e =>
                         <Card key={e} minHeight='auto'>
                             {e}

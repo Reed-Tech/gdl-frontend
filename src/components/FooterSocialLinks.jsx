@@ -18,7 +18,7 @@ const FooterSocialLinks = (props) => {
                 <li><a href="instagram"><img src={InstagramIcon} alt="Instagram Link"/></a></li>
                 {/* <li><a href="email"><img src={EmailIcon} alt="Email Link"/></a></li> */}
                 <li><a href="instagram"><img src={LinkedInIcon} alt="Linkedin Link"/></a></li>
-                <li><a href="instagram"><img src={PhoneIcon} alt="Phone No"/></a></li>
+                <li><a href="tel:+234 (0) 705 443 5000"><img src={PhoneIcon} alt="Phone No"/></a></li>
             </ul>
   
     )
