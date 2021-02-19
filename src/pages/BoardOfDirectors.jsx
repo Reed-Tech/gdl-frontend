@@ -94,7 +94,7 @@ const BoardOfDirectors = () => {
         <section className='boardOfDirectors'>
             <div className='boardOfDirectors_web'>
                 <h1>BOARD OF DIRECTORS</h1>
-                <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
+                <div className='d-md-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
                     <div className='row boardOfDirectors_container'>
 
                         <Card scroll className='boardOfDirectors_card col-6' maxHeight='calc(100vh - 20em)'>

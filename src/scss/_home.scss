@@ -34,15 +34,14 @@
 }
 
 
-.WWA_container {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    // background-color: rgba($color: #000000, $alpha: 0.4);
-    background-image: url(../assets/images/landing08.JPEG);
-    background-attachment: fixed;
+// .WWA_container_mobile {
+//    display: none;
+// }
 
+@media screen and (min-width: 800px) {
+    .WWA_container_mobile {
+        display: none;
+     }
 }
 
 .WWD_container {

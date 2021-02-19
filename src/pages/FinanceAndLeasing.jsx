@@ -1,17 +1,15 @@
 import React, { useContext } from 'react'
 import Card from '../components/Card'
 import CardImage from '../components/CardImage'
-import ProductBackground1 from '../assets/images/assetManagement1.png'
-import ProductBackground2 from '../assets/images/assetManagement2.png'
 import { Store, type as t } from '../context/store'
 
 
 const financeAndLeasingCards = [
-    { id: 'High Yield Note', text: <h3>HIGH YIELD<br />NOTE</h3>, image: ProductBackground1 },
-    { id: 'Treasury Bills', text: <h3>TREASURY<br />BILLS</h3>, image: ProductBackground1 },
-    { id: 'Long Term Note', text: <h3>LONG TERM <br />NOTE</h3>, image: ProductBackground1 },
-    { id: 'Dollar Note', text: <h3>DOLLAR NOTE</h3>, image: ProductBackground2 },
-    { id: 'GDL Finance', text: <h3>GDL <br />FINANCE</h3>, image: ProductBackground2 },
+    { id: 'High Yield Note', text: <h3>HIGH YIELD<br />NOTE</h3>, },
+    { id: 'Treasury Bills', text: <h3>TREASURY<br />BILLS</h3>, },
+    { id: 'Long Term Note', text: <h3>LONG TERM <br />NOTE</h3>, },
+    { id: 'Dollar Note', text: <h3>DOLLAR NOTE</h3>,  },
+    { id: 'GDL Finance', text: <h3>GDL <br />FINANCE</h3>,  },
 ]
 
 
@@ -70,7 +68,6 @@ const FinanceAndLeasing = (props) => {
 
                     </Card>
 
-                >
                     <Card scrollable className=' mt-sm-3 mt-lg-0 ml-2'>
                         <h3 className='text-center mb-3'>PRODUCTS</h3>
                         <div className=' row d-flex justify-content-center align-content-center' >
