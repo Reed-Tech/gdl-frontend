@@ -26,7 +26,7 @@ const WhyUs = () => {
 
     return (
         <section className='whyUs ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
-            <div className='whyUs_web'>
+            <div className='whyUs_web mx-5'>
                 <h1>WHY US/VALUE PROPOSITION</h1>
                 <OverlayScrollbarsComponent style={{height: 'calc(100%)'}}>
                     <div style={{ height: 'calc(100vh - 20em)' }}>

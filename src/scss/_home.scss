@@ -33,14 +33,31 @@
 
 }
 
-
-// .WWA_container_mobile {
-//    display: none;
-// }
-
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 793px) {
     .WWA_container_mobile {
-        display: none;
+        display: block !important;
+        visibility: visible !important;
+     }
+}
+
+@media screen and (min-width: 794px) {
+    .WWA_container_mobile {
+        display: none !important;
+        visibility: hidden !important;
+     }
+}
+
+@media screen and (max-width: 793px) {
+     #_wwa {
+        display: none !important;
+        visibility: hidden !important;
+     }
+}
+
+@media screen and (min-width: 794px) {
+    #_wwa {
+        display: block !important;
+        visibility: visible !important;
      }
 }
 

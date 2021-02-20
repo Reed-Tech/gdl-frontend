@@ -1,14 +1,14 @@
 .corporateInformation {
     @include headerFontStyle;
 
-    @media screen and (max-width:1023px) {
-        display: none;
-    }
+    // @media screen and (max-width:1023px) {
+    //     display: none;
+    // }
 
     &_mobile {
-        @media screen and (min-width:1023px) {
-            display: none;
-        }
+        // @media screen and (min-width:1023px) {
+        //     display: none;
+        // }
 
         height: 100%;
 

@@ -46,7 +46,7 @@ const CareerCareer = () => {
                 <StockInfo />
             </header>
             <section className='careerCareer_content'>
-                <h1>{careerPath.description}</h1>
+                <h1>{careerPath}</h1>
                 <div>
                     <h4>Description</h4>
                     <p>
