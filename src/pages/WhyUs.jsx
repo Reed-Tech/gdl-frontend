@@ -16,7 +16,7 @@ export const WhyUsMobile = (
 
         <Card className='text-center' >
             <p>For further inquiries or clarifications </p>
-            <Button variant='light'>Contact Us</Button>
+            <Button href="/contact-us" variant='light'>Contact Us</Button>
         </Card>
     </div>
 )
@@ -38,7 +38,7 @@ const WhyUs = () => {
 
                         <Card className='text-center align-self-center mt-3' >
                             <p>For further inquiries or clarifications </p>
-                            <Button variant='light'>Contact Us</Button>
+                            <Button href="/contact-us" variant='light'>Contact Us</Button>
                         </Card>
                     </div>
                 </OverlayScrollbarsComponent>

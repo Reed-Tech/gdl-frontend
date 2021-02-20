@@ -112,6 +112,8 @@ const CareerSlider = (props) => {
         variableWidth: false,
         cssEase: "ease-in-out",
         arrows: true,
+        autoplay: true,
+
 
         responsive: [
             {
@@ -120,6 +122,7 @@ const CareerSlider = (props) => {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     arrows: true,
+                    autoplay: true,
                 }
             },
             {
@@ -128,6 +131,9 @@ const CareerSlider = (props) => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: true,
+                    dots: false,
+                    autoplay: true,
+
                 }
             },
 
