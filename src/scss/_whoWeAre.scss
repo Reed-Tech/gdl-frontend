@@ -18,9 +18,6 @@
 }
 
 ._whoWeAre {
-     // &_sliderText {
-     //         font-size: clamp(2em, 5vw, 4em);
-     // }
      overflow-x: hidden;
  
  }
@@ -68,11 +65,13 @@
 
 
 
-@media(max-width: 767px){
-     #_wwa {
-          display: none;
-     }
-}
+// @media(max-width: 793px){
+//      #_wwa {
+//           display: none;
+//      }
+// }
+
+
 
 #who-we-are-mobile h1 {
      color: white;

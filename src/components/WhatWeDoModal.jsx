@@ -264,7 +264,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>For further inquiries or clarifications </p>
-                    <Button onClick={()=>console.log(props.history)} variant='light'>Contact Us</Button>
+                    <Button href="/contact-us" onClick={()=>console.log(props.history)} variant='light'>Contact Us</Button>
                 </div>
             )
         },

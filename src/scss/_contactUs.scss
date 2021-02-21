@@ -2,7 +2,9 @@
   header {
     height: 100vh;
     min-height: vh(100);
-    background-image: url(../assets/images/Contact-1.jpg);
+    background-color: rgba($color: black, $alpha: 0.4);
+    background-blend-mode: overlay;
+    background-image: url(../assets/images/gdlStaff.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;

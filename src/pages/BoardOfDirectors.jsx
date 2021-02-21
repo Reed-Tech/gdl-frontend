@@ -92,7 +92,7 @@ const BoardOfDirectors = () => {
 
     return (
         <section className='boardOfDirectors'>
-            <div className='boardOfDirectors_web'>
+            <div className='boardOfDirectors_web mx-5'>
                 <h1>BOARD OF DIRECTORS</h1>
                 <div className='d-md-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
                     <div className='row boardOfDirectors_container'>
@@ -100,9 +100,9 @@ const BoardOfDirectors = () => {
                         <Card scroll className='boardOfDirectors_card col-6' maxHeight='calc(100vh - 20em)'>
                             {state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].text ? boardOfDirectorsData[state.boardOfDirectorsActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
                         </Card>
-                        <div className='col-lg-4 boardOfDirectors_image' style={{ backgroundImage: `url(${state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].image ? boardOfDirectorsData[state.boardOfDirectorsActive].image : error.image})` }}>
+                        <div className='col-md-4 boardOfDirectors_image' style={{ backgroundImage: `url(${state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].image ? boardOfDirectorsData[state.boardOfDirectorsActive].image : error.image})` }}>
                         </div>
-                        <div className='col-lg-2'>
+                        <div className='col-md-2'>
                             <ul>
                                 {NavItems}
                             </ul>

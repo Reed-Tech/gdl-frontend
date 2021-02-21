@@ -69,18 +69,18 @@ const ManagementTeam = (props) => {
 
     return (
         <section className='managementTeam'>
-            <div className="managementTeamWeb">
+            <div className="managementTeamWeb  mx-5">
                 <h1>MANAGEMENT TEAM</h1>
-                <div className='d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
+                <div className='d-md-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
                     <div className='row d-flex managementTeam_container'>
                         <Card scroll maxHeight='calc(100vh - 20em)' className='managementTeam_card col-6'>
                             <OverlayScrollbarsComponent>
                                 {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
                             </OverlayScrollbarsComponent>
                         </Card>
-                        <div className='col-lg-4 managementTeam_image' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : error.image})` }}>
+                        <div className='col-md-4 managementTeam_image' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : error.image})` }}>
                         </div>
-                        <div className='col-lg-2'>
+                        <div className='col-md-2'>
                             <ul>
                                 {NavItems}
                             </ul>

@@ -29,18 +29,35 @@
         display: none;
     }
 
-    padding-top: 6em;
+    padding-top: 4em;
 
 }
 
-
-// .WWA_container_mobile {
-//    display: none;
-// }
-
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 793px) {
     .WWA_container_mobile {
-        display: none;
+        display: block !important;
+        visibility: visible !important;
+     }
+}
+
+@media screen and (min-width: 794px) {
+    .WWA_container_mobile {
+        display: none !important;
+        visibility: hidden !important;
+     }
+}
+
+@media screen and (max-width: 793px) {
+     #_wwa {
+        display: none !important;
+        visibility: hidden !important;
+     }
+}
+
+@media screen and (min-width: 794px) {
+    #_wwa {
+        display: block !important;
+        visibility: visible !important;
      }
 }
 
@@ -49,9 +66,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    // background-color: rgba($color: #000000, $alpha: 0.4);
-    background-image: url(../assets/images/landing3.JPEG);
-    background-attachment: fixed;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    background-image: url(../assets/images/wwd.png);
+    // background-attachment: fixed;
 }
 
 #who-we-are-mobile,
@@ -153,12 +170,12 @@
 }
 
 .wwd_modal {
-    background-image: url(../assets/images/landing3.JPEG);
+    background-image: url(../assets/images/wwd.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: overlay;
-    // background-color: rgba($color: #000000, $alpha: 0.4);
+    background-color: rgba($color: #000000, $alpha: 0.4);
     position: absolute;
     height: 100vh;
     width: 100%;

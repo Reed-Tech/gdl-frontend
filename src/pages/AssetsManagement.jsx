@@ -1,20 +1,24 @@
 import React from 'react'
 import Card from '../components/Card'
 import CardImage from '../components/CardImage'
-import ProductBackground1 from '../assets/images/assetManagement1.png'
-import ProductBackground2 from '../assets/images/AssetManagementCard2.png'
+import iconImage1 from '../assets/images/icon-1.png'
+import iconImage2 from '../assets/images/icon-2.png'
+import iconImage3 from '../assets/images/icon-3.png'
+import iconImage4 from '../assets/images/icon-4.png'
+import iconImage5 from '../assets/images/icon-5.png'
+import iconImage6 from '../assets/images/icon-6.png'
 import { Store, type as t } from '../context/store'
 
 
 
 const assetManagementCards = [
     // ID Text used for  Nav Links Text  .... i don't have strength please😐 
-    { id: 'Money Market Fund', text: <h3>MONEY<br />MARKET<br />FUND</h3>, image: ProductBackground1 },
-    { id: 'Smart Investment Account', text: <h3>SMART<br />INVESTMENT<br />ACCOUNT</h3>, image: ProductBackground1 },
-    { id: 'Stockbroking', text: <h3>STOCKBROKING</h3>, image: ProductBackground1 },
-    { id: 'Research', text: <h3>RESEARCH</h3>, image: ProductBackground2 },
-    { id: 'Financial Advisory', text: <h3>FINANCIAL ADVISORY</h3>, image: ProductBackground2 },
-    { id: 'Enterprise Transgenerational Program', text: <h3>ETP</h3>, image: ProductBackground2 },
+    { id: 'Money Market Fund', text: <h3>MONEY<br />MARKET<br />FUND</h3>, icon: iconImage1 },
+    { id: 'Smart Investment Account', text: <h3>SMART<br />INVESTMENT<br />ACCOUNT</h3>,  icon: iconImage2 },
+    { id: 'Stockbroking', text: <h3>STOCKBROKING</h3>,  icon: iconImage3 },
+    { id: 'Research', text: <h3>RESEARCH</h3>,  icon: iconImage4 },
+    { id: 'Financial Advisory', text: <h3>FINANCIAL ADVISORY</h3>,  icon: iconImage5 },
+    { id: 'Enterprise Transgenerational Program', text: <h3>ETP</h3>,  icon: iconImage6 },
 ]
 
 
@@ -36,7 +40,7 @@ export const AssetManagementMobile = (props) => {
 
     return (
         <div>
-            <Card>
+            <Card  className='col-12' maxHeight='auto' maxWeight="100%">
                 <p>
                     Money lasts longer when properly managed and knowing how to manage assets to yield maximum profit is an exceptional skill that only a few possess.
                     That is why we built a skillful team of wealth managers who provide discretionary and non-discretionary investment management to all our customers.
@@ -46,20 +50,21 @@ export const AssetManagementMobile = (props) => {
                     </p>
                 <p>
                     Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
-                    </p>
-            </Card>
-            <br />
-            <Card>
-                <h3 className='text-center mb-3'>PRODUCTS</h3>
-                <div className=' row d-flex justify-content-center align-content-center'>
-                    {assetManagementCards.map((e) =>
-                        <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={()=>handleMobileModal(e.id.toLocaleUpperCase())}>
-                            {e.text}
-                        </CardImage>
-                    )}
+                </p>
+                <div className="products--display">
+                    <h3 className='text-center mb-3 mt-3'>PRODUCTS</h3>
+                    <div className=' row d-flex justify-content-center align-content-center'>
+                        {assetManagementCards.map((e) =>
+                            <CardImage key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={()=>handleMobileModal(e.id.toLocaleUpperCase())}>
+                               <div className="d-block  text-center mx-auto">
+                                   <img src={e.icon} className=" text-center mx-auto" alt="icons" />
+                                    {e.text}
+                               </div>
+                             </CardImage>
+                        )}
+                    </div>
                 </div>
             </Card>
-
         </div>
     )
 }
@@ -81,30 +86,32 @@ const AssetsManagement = (props) => {
         <section >
             <div className='assetManagement'>
                 <h1>ASSET MANAGEMENT</h1>
-                <div className=' d-lg-flex justify-content-between ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
-                    <Card className='col-lg-6 mr-2' maxHeight='calc(100vh - 20em)'>
+                <div className=' text-center ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
+                    <Card className='col-12' maxHeight='auto' maxWeight="100%">
                         <p>
                             Money lasts longer when properly managed and knowing how to manage assets to yield maximum profit is an exceptional skill that only a few possess.
                             That is why we built a skillful team of wealth managers who provide discretionary and non-discretionary investment management to all our customers.
                         </p>
                         <p>
                             Your money will be put in diverse assets which will in turn gather interest, all for your benefit.
-                    </p>
+                        </p>
                         <p>
                             Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
-                    </p>
+                        </p>
+                       <div className="products--display">
+                            <h3 className='text-center mb-3 mt-3'>PRODUCTS</h3>
+                            <div className=' row d-flex justify-content-center align-content-center'>
+                                {assetManagementCards.map((e) =>
+                                    <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => cardImageHandler(e.id)}>
+                                       <div className="d-block text-center mx-auto">
+                                            <img src={e.icon} className="text-center mx-auto" alt="icons" />
+                                            {e.text}
+                                        </div>
+                                    </CardImage>
+                                )}
+                            </div>
+                       </div>
                     </Card>
-                    <Card scrollable maxWidth='655px' className='ml-2' maxHeight='clac(100vh - 20em)'>
-                        <h3 className='text-center mb-3'>PRODUCTS</h3>
-                        <div className=' row d-flex justify-content-center align-content-center'>
-                            {assetManagementCards.map((e) =>
-                                <CardImage image={e.image} key={e.id} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => cardImageHandler(e.id)}>
-                                    {e.text}
-                                </CardImage>
-                            )}
-                        </div>
-                    </Card>
-
                 </div>
             </div>
         </section>

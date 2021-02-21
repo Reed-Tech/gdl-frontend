@@ -16,7 +16,7 @@ export const WhyUsMobile = (
 
         <Card className='text-center' >
             <p>For further inquiries or clarifications </p>
-            <Button variant='light'>Contact Us</Button>
+            <Button href="/contact-us" variant='light'>Contact Us</Button>
         </Card>
     </div>
 )
@@ -26,7 +26,7 @@ const WhyUs = () => {
 
     return (
         <section className='whyUs ml-lg-5 mr-lg-5 mr-md-0 ml-md-0'>
-            <div className='whyUs_web'>
+            <div className='whyUs_web mx-5'>
                 <h1>WHY US/VALUE PROPOSITION</h1>
                 <OverlayScrollbarsComponent style={{height: 'calc(100%)'}}>
                     <div style={{ height: 'calc(100vh - 20em)' }}>
@@ -38,7 +38,7 @@ const WhyUs = () => {
 
                         <Card className='text-center align-self-center mt-3' >
                             <p>For further inquiries or clarifications </p>
-                            <Button variant='light'>Contact Us</Button>
+                            <Button href="/contact-us" variant='light'>Contact Us</Button>
                         </Card>
                     </div>
                 </OverlayScrollbarsComponent>

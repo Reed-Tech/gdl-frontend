@@ -15,9 +15,9 @@ const FooterSocialLinks = (props) => {
                 <li><a href="facebook"><img src={FacebookIcon} alt="Facebook Link"/></a></li>
                 <li><a href="twitter"><img src={TwitterIcon} alt="Twitter Link"/></a></li>
                 <li><a href="youtube"><img src={YoutubeIcon} alt="Youtube Link"/></a></li>
-                <li><a href="instagram"><img src={InstagramIcon} alt="Instagram Link"/></a></li>
+                <li><a href="https://www.instagram.com/gdl_nigeria/?igshid=db676hd70sc4"><img src={InstagramIcon} alt="Instagram Link"/></a></li>
                 {/* <li><a href="email"><img src={EmailIcon} alt="Email Link"/></a></li> */}
-                <li><a href="instagram"><img src={LinkedInIcon} alt="Linkedin Link"/></a></li>
+                <li><a href="linkedIn"><img src={LinkedInIcon} alt="Linkedin Link"/></a></li>
                 <li><a href="tel:+234 (0) 705 443 5000"><img src={PhoneIcon} alt="Phone No"/></a></li>
             </ul>
   

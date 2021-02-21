@@ -72,11 +72,11 @@ const careerData = [
             'Skill 2',
             'Skill 3',
         ],
-        link: 'accountant'
+        link: 'Actuary'
     },
     {
-        image: bg1,
-        name: 'Accountant',
+        image: bg2,
+        name: 'Economist',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quaerat, facilis dolorum sit perferendis officiis? A dolor laborum voluptates ducimus.',
         responsibilities: [
             'Deliver the best User Experience',
@@ -93,7 +93,7 @@ const careerData = [
             'Skill 2',
             'Skill 3',
         ],
-        link: 'accountant'
+        link: 'Economist'
     },
 ]
 
@@ -104,14 +104,15 @@ const CareerSlider = (props) => {
 
     const settings = {
         slides: 1,
-        dots: true,
         center: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         adaptiveHeight: true,
         variableWidth: false,
         cssEase: "ease-in-out",
-        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+
 
         responsive: [
             {
@@ -120,6 +121,7 @@ const CareerSlider = (props) => {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     arrows: true,
+                    autoplay: true,
                 }
             },
             {
@@ -128,6 +130,9 @@ const CareerSlider = (props) => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: true,
+                    dots: false,
+                    autoplay: true,
+
                 }
             },
 
