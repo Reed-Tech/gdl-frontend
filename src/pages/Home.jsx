@@ -142,11 +142,11 @@ const Home = (props) => {
                     <header>
                         <h1>{state.WWDMobile}</h1>
                     </header>
-                    <OverlayScrollbarsComponent style={{ height: 'calc(100vh - 17em)', margin: '1em 1.2em' }}>
+                    <div style={{ margin: '1em 1.2em' }}>
                         {state.WWDMobile === 'ASSET MANAGEMENT' ? AssetManagementMobile() :
                             state.WWDMobile === 'FINANCE AND LEASING' ? FinanceAndLeasingMobile() : 'select a valid option'
                         }
-                    </OverlayScrollbarsComponent>
+                    </div>
                     <footer>
                         <span className={state?.WWDMobile === 'ASSET MANAGEMENT' ? 'navActive' : ''} onClick={() => handleWWDNav('ASSET MANAGEMENT')}>ASSET MANAGEMENT</span>
                         <span className={state?.WWDMobile === 'FINANCE AND LEASING' ? 'navActive' : ''} onClick={() => handleWWDNav('FINANCE AND LEASING')}>FINANCE AND LEASING</span>

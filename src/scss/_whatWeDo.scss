@@ -1,11 +1,12 @@
 #what-we-do {
     position: relative;
-    background: url(../assets/images/landing3.JPEG);  
+    background: url(../assets/images/wwd.png);  
     background-color: rgba($color: #000000, $alpha: 0.4);
     background-blend-mode: overlay;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    padding-top: 8em;
+    padding-top: 4em;
     height: 100vh;
     min-height: -webkit-fill-available;
 
@@ -13,6 +14,11 @@
 
     @media screen and (max-width:1023px) {
         display: none;
+
+    }
+
+    @media screen and (min-width:1440px) {
+        padding-top: 8em;
 
     }
 
