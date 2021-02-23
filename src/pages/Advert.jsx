@@ -6,14 +6,13 @@ import AdThumbnail from '../assets/videos/Advert_nail.JPG'
 const Advert = (props) => {
     return (
         <section className='advert' style={{ backgroundImage: `url('${AdThumbnail}')` }}>
-            <div className='advert_container'>
+            <div className='advert_container ml-lg-5'>
                 <div className='advert_video col-md-12 col-lg-6 '>
                     <video src={AdVideo} poster={AdThumbnail} controls>
                         videos
-                </video>
+                    </video>
                 </div>
                 <div className='advert_text  col-sm-12 col-lg-6'>
-                    {/* <h1>Advert</h1> */}
                     <p>At GDL, we believe that the children are the future and there's no better way to invest in them and their future than the GDL Smart Investment Account which gives you access to loans for all educational expenses.</p>
                     <Button href='/media' variant='primary' > View Media</Button>
                 </div>

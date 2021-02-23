@@ -3,7 +3,6 @@
     background-blend-mode: overlay;
     padding: 128px 0;
     min-height: 20vh;
-    scroll-snap-align: start;
     height: 100vh;
     // min-height: vh(100);
     display: flex;
@@ -28,6 +27,8 @@
     &_video {
         display: block;
         margin: 0 auto;
+        text-align: center;
+
 
         video {
             width: 100%;

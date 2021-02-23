@@ -15,6 +15,7 @@ import { managementTeamData } from '../pages/ManagementTeam'
 import FooterNav from '../components/FooterNav'
 import MediaBG from '../assets/images/GdlBuilding.jpg'
 import MediaBGTwo from '../assets/images/gdlStaff.jpg'
+import Xample from '../pages/Xample'
 
 
 
@@ -64,7 +65,7 @@ const WhoWeAre = (props) => {
 
     function managementTeamMobileContent() {
         return (
-            <div style={{ height: `calc(100vh - ${state.WWAMobileModal === "BOARD OF DIRECTORS" ? '17em' : '19.7em'})`, margin: '0.89em 1.2em' }}>
+            <div style={{ height: `calc(100vh - ${state.WWAMobileModal === "MANAGEMENT TEAM" ? '17em' : '19.7em'})`, margin: '0.89em 1.2em' }}>
                 <div className='wwa_modal-image' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : null})`, marginBottom: '1.8em' }}></div>
                 <OverlayScrollbarsComponent >
                     <Card scroll className='boardOfDirectors_card' height='calc(100vh - 35em)'>

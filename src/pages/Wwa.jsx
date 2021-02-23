@@ -1,8 +1,8 @@
 import React from 'react'
 import BoardOfDirectors from './BoardOfDirectors'
 import CorporateInformation from './CorporateInformation'
-import ManagementTeam from './ManagementTeam'
 import WhyUs from './WhyUs'
+import Xample from './Xample'
 
 
 const Wwa = (props) => {
@@ -16,7 +16,7 @@ const Wwa = (props) => {
                 <BoardOfDirectors />
             </div>
             <div className="manage-wwa">
-                <ManagementTeam />
+                <Xample />
             </div>
             <div className="why-wwa">
                 <WhyUs />

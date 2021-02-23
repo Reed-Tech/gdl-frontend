@@ -14,12 +14,17 @@
     }
 
     &_image {
-        padding: 0;
         background-repeat: no-repeat !important;
-        background-size: contain;
+        background-size: cover;
         box-sizing: border-box;
-        border-left: 15px solid transparent;
-        background-position-y: center !important;
+        background-position: center !important;
+        border-radius: 50%;
+        width: 200px;
+        height: 230px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        position: relative;
+        cursor: pointer;
     }
 
     ul {
@@ -51,4 +56,15 @@
             }
         }
     }
+}
+
+img.mgtTeamImg {
+    border-radius: 50%;
+    width: 200px;
+    height: 180px;
+    // margin: 0 auto;
+    margin-bottom: 10px;
+    // position: relative;
+    // cursor: pointer;
+
 }

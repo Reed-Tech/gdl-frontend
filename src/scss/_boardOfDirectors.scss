@@ -1,20 +1,13 @@
 .boardOfDirectors {
     @include headerFontStyle;
 
-    // &_web {
-    //     @media screen and (max-width:1023px) {
-    //         display: none !important;
-
-    //     }
-    // }
-
 
     &_card {
         align-self: center;
 
-        p {
-            line-height: 1.8;
-        }
+        // p {
+        //     line-height: 1.8;
+        // }
     }
 
     &_container {
@@ -24,14 +17,18 @@
     }
 
     &_image {
-        padding: 0;
+        // padding: 0;
         background-repeat: no-repeat !important;
-        background-size: contain;
+        background-size: cover;
         box-sizing: border-box;
-        border-left: 15px solid transparent;
         background-position-y: center !important;
-        // display: block;
-        min-height: 300px;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        position: relative;
+        cursor: pointer;
     }
 
     ul {

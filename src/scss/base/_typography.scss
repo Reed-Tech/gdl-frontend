@@ -88,11 +88,9 @@ html,
 body {
     font-size: 16px;
     scroll-behavior: smooth;
-    // scroll-snap-type: y mandatory;
 
     @media screen and (min-width: 1023px) {
         scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
     }
 }
 

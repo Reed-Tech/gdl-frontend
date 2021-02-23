@@ -1,0 +1,30 @@
+.imageCircle {
+    // background-color: black !important;
+    // background-blend-mode: overlay;
+    // background: url('../../assets/images/assetManagement1.png');
+    border-radius: 50%;
+    background-size: cover !important;
+    background-position: center;
+    overflow: hidden;
+    height: 180px;
+    min-width: 150PX;
+    max-width: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  
+
+    &:hover {
+        cursor: pointer;
+
+        h3 {
+            transform: scale(1);
+
+        }
+
+    }
+}
