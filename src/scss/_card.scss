@@ -6,6 +6,10 @@
     text-align: center;
     // width: 100%;
 
+    // @media screen and (max-width: 1023px) {
+    //     height: auto;
+    //   }
+
 
     h3 {
         font-size: 24px;
@@ -27,7 +31,6 @@
     }
 
 }
-
 
 .customCardCenter {
     padding: 1em;
