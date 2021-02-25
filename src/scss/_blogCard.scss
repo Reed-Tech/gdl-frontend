@@ -30,7 +30,11 @@
             margin-bottom: .6em;
             cursor: pointer;
 
+            @media screen and (max-width:991px) {
+                font-size: 1.3em;
+            } 
         }
+
 
         p {
             font-size: 0.825em;

@@ -28,9 +28,6 @@ const Blog = (props) => {
     const renderSlideData = (
         slideData.map((slides) => <section key={slides.id}>
             <div className='headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
-                {/* <div className='headerSlider_container-text headerSlider_container-h3'>
-                    <h3>{slides.h3}</h3>
-                </div> */}
                  <div className="headerSlider_container-overlay">
                     <div className='headerSlider_container-text'>
                         <h3>{slides.h3}</h3>

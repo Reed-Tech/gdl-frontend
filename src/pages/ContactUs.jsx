@@ -6,7 +6,7 @@ import FooterMap from '../components/FooterMap'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
-import PopUp from "../components/PopUp";
+// import PopUp from "../components/PopUp";
 
 
 const ContactUs = () => {
@@ -14,7 +14,7 @@ const ContactUs = () => {
 
     return (
         <section className='contactUs'>
-            <PopUp />
+            {/* <PopUp /> */}
             <header>
                 <HeaderSocialLinks customClass='HeaderSocialLinks contactUs_socialLinks' />
                 <div className='contactUs_blur' />
