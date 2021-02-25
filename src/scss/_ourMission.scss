@@ -1,28 +1,15 @@
 .ourMission{
     background-color: #f0f0f0;
-    min-height: 50vh;
+    // min-height: 50vh;
     padding: clamp(3em, 5vw, 8vw);
     justify-content: space-between;
     h1{
         font-size: clamp(1.2em, 4vw, 1.825em);
         
     }
-    // &_mission{
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    
     .ourMission_mission {
         white-space: pre-line;
-
-        // &--left {
-        //     margin-top: 100px;
-        // }
-        // @media (max-width: 767px) {
-        //     &--left {
-        //         margin-top: 0;
-        //     }
-        // }
     }
     &_createAccount{
         max-width: fit-content;

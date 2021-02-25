@@ -8,9 +8,9 @@ import CareerContent from '../components/CareerContent'
 import BannerCareer from '../components/BannerCareer'
 // import Banner from '../components/Banner'
 import NewsLetterSubscription from '../components/NewsLetterSubscription'
-import FooterCareer from '../components/FooterCareer'
+// import FooterCareer from '../components/FooterCareer'
 import FooterNav from '../components/FooterNav'
-import CareerSlider from '../components/CareerSlider'
+// import CareerSlider from '../components/CareerSlider'
 
 const slideData = [
     {
@@ -52,10 +52,11 @@ const Career = (props) => {
                     <strong><a href='mailto:humanresources@gdl.com.ng'>humanresources@gdl.com.ng</a></strong>
                 </p>
             </div>
-            <CareerSlider history={props.history} />
+            {/* <CareerSlider history={props.history} /> */}
+            <h4 className="text-center">No career vacancy available at the moment, please check back later</h4>
             {/* <Banner /> */}
             <NewsLetterSubscription />
-            <FooterCareer />
+            {/* <FooterCareer /> */}
             <FooterNav />
 
         </section>

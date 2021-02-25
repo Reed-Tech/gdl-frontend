@@ -3,7 +3,8 @@ import React from 'react'
 const FooterCareer = () => {
     return (
         <div className='footerCareer d-flex flex-wrap'>
-            <div className="col-lg-4 col-sm-12">
+            <h4>No career vacancy available at the moment, please check back later</h4>
+            {/* <div className="col-lg-4 col-sm-12">
                 <h5>Engineering</h5>
                 <div>
                     <p>Senior IT Engineer</p>
@@ -26,7 +27,7 @@ const FooterCareer = () => {
                     <p>Senior Manager</p>
                     <p>Translator and Subtitler</p>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

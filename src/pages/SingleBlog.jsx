@@ -9,6 +9,8 @@ import FooterNav from '../components/FooterNav'
 import BannerSingleBlog from '../components/BannerSingleBlog'
 import SbComment from '../components/SbComment'
 import { Store } from '../context/store'
+import { FaAngleLeft } from 'react-icons/fa'
+import { FaHeart, FaShareAlt } from 'react-icons/fa/index.esm'
 
 
 
@@ -36,7 +38,7 @@ const SingleBlog = (props) => {
                     <h3>{slides.h3}</h3>
 
                     <p>
-                        <NavLink to="/blog">BACK TO BLOGS</NavLink>
+                        <NavLink to="/blog"><FaAngleLeft /> BACK TO BLOGS  </NavLink>
                     </p>
                 </div>
             </div>
@@ -53,12 +55,21 @@ const SingleBlog = (props) => {
                 <StockInfo />
             </header>
             <section className="SingleBlogContent py-5">
-                <div class="container text-center">
-                    <div
-                        dangerouslySetInnerHTML={{
-                            __html: blogData.post
-                        }}>
-                        
+                <div class="SingleBlogContent_container text-center">
+                    <div className="row">
+                        <div 
+                            className="col-md-12"
+                            //  <div
+                                dangerouslySetInnerHTML={{
+                                    __html: blogData.post
+                                }}>
+                                
+                            {/* </div> */}
+                        </div>
+                        <div className=" col-md-12  mt-5 mb-5 text-center reacion">
+                            <span className="mr-4"> <FaHeart size='24' /> </span>
+                            <span><FaShareAlt  size='24' /></span>
+                        </div>
                     </div>
                 </div>
             </section>
