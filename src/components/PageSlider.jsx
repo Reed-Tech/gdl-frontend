@@ -19,17 +19,13 @@ const PageSlider = (props) => {
         arrows: false,
         focusOnSelect: false,
         speed: 900,
+        beforeChange: (i) => props.afterChange(i),
         dotsClass: `pageSlider-dots ${props.navRight ? ' pageSlider-dots-right' : ''}`,
         customPaging: function (i) {
             return (
                 <p><span>{props.navLinks[i]}</span></p>
             );
         },
-        // afterChange: function (index) {
-        //     dispatch({type: t.WHAT_WE_DO_MODAL_POSITION, index})
-        // }
-        afterChange: props.afterChange
-        // afterChange: (i) => console.log(i)
     }
 
 

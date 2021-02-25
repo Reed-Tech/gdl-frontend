@@ -118,6 +118,7 @@ export const whatWeDoCardTexts = {
 
 const WhatWeDoModal = (props) => {
     const { state, dispatch } = useContext(Store)
+    console.log(state)
 
     const toggle = () => {
         dispatch({ type: t.MODAL_CLOSE })
@@ -143,7 +144,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Funds?</p>
-                    <Button onClick={()=>console.log(props.history)} href="https://mystifying-goodall-2b93ae.netlify.app/" variant='light'>Open an account</Button>
+                    <Button onClick={() => console.log(props.history)} href="https://mystifying-goodall-2b93ae.netlify.app/" variant='light'>Open an account</Button>
                 </div>
             )
         },
@@ -163,11 +164,11 @@ const WhatWeDoModal = (props) => {
                     )}
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Start Investing Smartly.</p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -187,7 +188,7 @@ const WhatWeDoModal = (props) => {
                     )}
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in making money from shares?</p>
@@ -211,7 +212,7 @@ const WhatWeDoModal = (props) => {
                     )}
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Take our hand as we light up your way to prosperity.</p>
@@ -233,14 +234,14 @@ const WhatWeDoModal = (props) => {
                             {e}
                         </Card>
                     )}
-    
+
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Safeguard your Legacy today. </p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -260,15 +261,15 @@ const WhatWeDoModal = (props) => {
                     )}
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>For further inquiries or clarifications </p>
-                    <Button href="/contact-us" onClick={()=>console.log(props.history)} variant='light'>Contact Us</Button>
+                    <Button href="/contact-us" onClick={() => console.log(props.history)} variant='light'>Contact Us</Button>
                 </div>
             )
         },
-    
+
         // -------------------FINANCE AND LEASING -------------------------------
         'High Yield Note': {
             header: (
@@ -286,11 +287,11 @@ const WhatWeDoModal = (props) => {
                     )}
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Fund? </p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -310,7 +311,7 @@ const WhatWeDoModal = (props) => {
                     )}
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested? </p>
@@ -334,11 +335,11 @@ const WhatWeDoModal = (props) => {
                     )}
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Ready to invest for the Future?</p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -358,11 +359,11 @@ const WhatWeDoModal = (props) => {
                     )}
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Fill Form Now to invest in the GDL dollar note now. </p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -384,18 +385,18 @@ const WhatWeDoModal = (props) => {
                     <Card minHeight='auto'>
                         Due to these hurdles and our dedication to developing the middle class, we provide loans to established businesses and finance new businesses.
                  </Card>
-                <Card minHeight='auto'>
-                    We also offer special credit facilities such as: <br />
+                    <Card minHeight='auto'>
+                        We also offer special credit facilities such as: <br />
                     Fund Management, Project Finance, Asset Finance, Trade Finance,
                         Local and International Trade: LPO Finance, Invoice Discounting, Contract Finance, Bank Guarantee.
                 </Card>
                 </Slider>
             ),
-    
+
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in Money Market Fund? </p>
-                    <Button variant='light'  href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
         },
@@ -412,7 +413,7 @@ const WhatWeDoModal = (props) => {
     // {state.assetManagement.map((e) => <li className={`${e === state.assetManagementActive ? 'active' : ''}`} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })} key={e}>{e}</li>)}
     let NavItems = state?.assetManagement.map((e) => <li className={`${e === state.assetManagementActive ? 'active' : ''}`} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })} key={e}>{e}</li>)
     if (state.whatWeDoModalPosition === 0) {
-        NavItems = state?.assetManagement.map((e) => <li className={`${e === state.assetManagementActive ? 'active' : ''}`} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })} key={e}>{e}</li>)
+        NavItems = state?.financeAndLeasing.map((e) => <li className={`${e === state.assetManagementActive ? 'active' : ''}`} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })} key={e}>{e}</li>)
     }
     // else if (state.whatWeDoModalPosition === 1) {
     //     NavItems = state?.financeAndLeasing.map((e) => <li className={`${e === state.assetManagementActive ? 'active' : ''}`} onClick={() => dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })} key={e}>{e}</li>)

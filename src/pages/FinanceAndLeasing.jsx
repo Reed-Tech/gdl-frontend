@@ -10,17 +10,16 @@ import { Store, type as t } from '../context/store'
 
 
 const financeAndLeasingCards = [
-    { id: 'High Yield Note', text: <h3>HIGH YIELD<br />NOTE</h3>,  icon: iconImage1},
-    { id: 'Treasury Bills', text: <h3>TREASURY<br />BILLS</h3>,  icon: iconImage2},
-    { id: 'Long Term Note', text: <h3>LONG TERM <br />NOTE</h3>, icon: iconImage3},
-    { id: 'Dollar Note', text: <h3>DOLLAR NOTE</h3>, icon: iconImage4  },
+    { id: 'High Yield Note', text: <h3>HIGH YIELD<br />NOTE</h3>, icon: iconImage1 },
+    { id: 'Treasury Bills', text: <h3>TREASURY<br />BILLS</h3>, icon: iconImage2 },
+    { id: 'Long Term Note', text: <h3>LONG TERM <br />NOTE</h3>, icon: iconImage3 },
+    { id: 'Dollar Note', text: <h3>DOLLAR NOTE</h3>, icon: iconImage4 },
     { id: 'GDL Finance', text: <h3>GDL <br />FINANCE</h3>, icon: iconImage5 },
 ]
 
 
 export const FinanceAndLeasingMobile = () => {
     const { dispatch } = useContext(Store)
-
 
     const handleMobileModal = (e) => {
         console.log('asset management modal')
@@ -53,11 +52,12 @@ export const FinanceAndLeasingMobile = () => {
 const FinanceAndLeasing = (props) => {
 
     const { state, dispatch } = useContext(Store)
+    React.useEffect(() => dispatch({ type: t.FINANCE_AND_LEASING, payload: financeAndLeasingCards.map(e => e.id) }), [dispatch])
 
     const cardImageHandler = (e) => {
         dispatch({ type: t.ASSET_MANAGEMENT_ACTIVE, payload: e })
         state.whatWeDoModalPosition === 1 ? dispatch({ type: t.ASSET_MANAGEMENT, payload: financeAndLeasingCards.map(e => e.id) }) : console.log();
-            // console.log('Bug Found');
+        // console.log('Bug Found');
     }
 
     return (
@@ -73,7 +73,7 @@ const FinanceAndLeasing = (props) => {
 
                             {financeAndLeasingCards.map((e) =>
                                 <CardImage key={e.id} image={e.image} className='col-4 assetManagement_cardImage' id={e.id} onClick={() => cardImageHandler(e.id)}>
-                                   <div className="d-block  text-center mx-auto">
+                                    <div className="d-block  text-center mx-auto">
                                         <img src={e.icon} className=" text-center mx-auto" alt="icons" />
                                         {e.text}
                                     </div>

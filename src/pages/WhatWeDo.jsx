@@ -20,7 +20,7 @@ const WhatWeDo = (props) => {
     return (
         <div id='what-we-do'>
             <WhatWeDoModal {...props} />
-            <PageSlider afterChange={afterChange} navLinks={pages}>
+            <PageSlider afterChange={(i)=>afterChange(i)} navLinks={pages}>
                 <AssetsManagement {...props} />
                 <FinanceAndLeasing />
             </PageSlider>

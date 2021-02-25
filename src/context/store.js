@@ -5,7 +5,7 @@ const initialState = {
   showModal: false,
   assetManagement: [],
   assetManagementActive: "",
-  financeAndLeasing: "",
+  financeAndLeasing: [],
   whatWeDoModalPosition: "0",
   boardOfDirectorsNav: [],
   boardOfDirectorsActive: "",
@@ -79,7 +79,7 @@ function reducer(state, action) {
     case type.FINANCE_AND_LEASING:
       return {
         ...state,
-        financeAndLeasing: action.nav,
+        financeAndLeasing: action.payload,
       };
     case type.WHAT_WE_DO_MODAL_POSITION:
       return {
