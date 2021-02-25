@@ -6,7 +6,7 @@ import StockInfo from '../components/StockInfo'
 import CareerBG from '../assets/images/Career.png'
 import BannerCareer from '../components/BannerCareer'
 import NewsLetterSubscription from '../components/NewsLetterSubscription'
-import FooterCareer from '../components/FooterCareer'
+// import FooterCareer from '../components/FooterCareer'
 import FooterNav from '../components/FooterNav'
 import { useParams } from 'react-router-dom'
 
@@ -87,7 +87,7 @@ const CareerCareer = () => {
             </div>
             {/* <Banner /> */}
             <NewsLetterSubscription />
-            <FooterCareer />
+            {/* <FooterCareer /> */}
             <FooterNav />
 
         </section>
