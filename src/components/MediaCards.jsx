@@ -7,7 +7,7 @@ function MediaCards() {
 
         <div className="container py-3">
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-12">
                     <div className='blogCard' >
                         <div className='advert_video'>
                             <video src={AdVideo} poster={AdThumbnail} controls>
