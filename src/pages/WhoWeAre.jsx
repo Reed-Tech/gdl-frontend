@@ -15,7 +15,6 @@ import { managementTeamData } from '../pages/ManagementTeam'
 import FooterNav from '../components/FooterNav'
 import MediaBG from '../assets/images/GdlBuilding.jpg'
 import MediaBGTwo from '../assets/images/gdlStaff.jpg'
-import Xample from '../pages/Xample'
 
 
 
