@@ -10,7 +10,8 @@ import BannerSingleBlog from '../components/BannerSingleBlog'
 import SbComment from '../components/SbComment'
 import { Store } from '../context/store'
 import { FaAngleLeft } from 'react-icons/fa'
-import { FaHeart, FaShareAlt } from 'react-icons/fa/index.esm'
+import { FaHeart } from 'react-icons/fa/index.esm'
+import ShareBlog from '../components/ShareBlog'
 
 
 
@@ -67,8 +68,8 @@ const SingleBlog = (props) => {
                             {/* </div> */}
                         </div>
                         <div className=" col-md-12  mt-5 mb-5 text-center reacion">
-                            <span className="mr-4"> <FaHeart size='24' /> </span>
-                            <span><FaShareAlt  size='24' /></span>
+                            <span className="mr-4"> <FaHeart title="react to this blog" className="faHeart" size='24' /> </span>
+                            <span> <ShareBlog /> </span>
                         </div>
                     </div>
                 </div>

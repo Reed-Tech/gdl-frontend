@@ -30,6 +30,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-slick": "^0.27.12",
+    "react-web-share": "^1.0.18",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^2.0.3",
