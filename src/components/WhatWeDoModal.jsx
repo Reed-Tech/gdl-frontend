@@ -47,7 +47,7 @@ export const whatWeDoCardTexts = {
     'MONEY MARKET FUND': [
         'The GDL Money Market Fund is a special investment plan that allows you to invest with as low as N10,000  for a minimum investment period of 30 days.',
         'It is a high-quality investment plan that provides a far higher yield than a regular bank account and is available to both Individuals and Organizations.',
-        'You can keep adding to your investment as much as you like and your money is available to you anytime, any day, anywhere.',
+        'You can keep adding to your investment as much as you like and your money is available to you always.',
         'All investments are managed by our excellent team of asset managers who invest in a wide range of short-term assets.',
         'Register for the Money Market Fund today and Start Investing now',
     ],
@@ -94,7 +94,7 @@ export const whatWeDoCardTexts = {
         'We are regulated and approved by the Securities and Exchanges Commission to invest funds on behalf of our clients.',
     ],
     'TREASURY BILLS': [
-        'Treasury Bills are assets that offered to the public by the central bank as a form of short-term loan to the government.',
+        'Treasury Bills are assets that are offered to the public by the central bank as a form of short-term loan to the government.',
         'An investment with no hidden transaction charges, untaxed interest and guaranteed safety',
     ],
     'LONG TERM NOTE': [
@@ -143,7 +143,7 @@ const WhatWeDoModal = (props) => {
             ),
             footer: (
                 <div className="whatWeDoModal_footer">
-                    <p>Interested in Money Market Funds?</p>
+                    <p>Interested?</p>
                     <Button onClick={() => console.log(props.history)} href="https://mystifying-goodall-2b93ae.netlify.app/" variant='light'>Open an account</Button>
                 </div>
             )
@@ -241,7 +241,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Safeguard your Legacy today. </p>
-                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <Button variant='light' href="/contact-us">Contact Us</Button>
                 </div>
             )
         },
@@ -290,7 +290,7 @@ const WhatWeDoModal = (props) => {
 
             footer: (
                 <div className="whatWeDoModal_footer">
-                    <p>Interested in Money Market Fund? </p>
+                    <p>Interested? </p>
                     <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
                 </div>
             )
@@ -395,8 +395,8 @@ const WhatWeDoModal = (props) => {
 
             footer: (
                 <div className="whatWeDoModal_footer">
-                    <p>Interested in Money Market Fund? </p>
-                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <p>Interested?</p>
+                    <Button variant='light' href="/contact-us">Contact Us</Button>
                 </div>
             )
         },

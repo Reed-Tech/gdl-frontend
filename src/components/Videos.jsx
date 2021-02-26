@@ -1,14 +1,16 @@
 import React, {useState} from 'react'
 // import { Link } from 'react-router-dom'
-import VideoClip from '../assets/videos/Advert.mp4'
+import VideoClip from '../assets/videos/Ads2.mp4'
 import {  Carousel, Modal } from 'react-bootstrap'
-import TestBG from '../assets/images/ContactUsBG.png'
-import VideoBg from '../assets/images/VidBG.png'
+// import TestBG from '../assets/images/ContactUsBG.png'
+import VideoBg from '../assets/videos/Advert_nail.JPG'
 import { MdPlayCircleOutline } from 'react-icons/md';
+import MediaCards from '../components/MediaCards'
+
 
 const videoList = [
-    { text: 'Financial Aspects of Investment ', video: VideoClip, background: VideoBg },
-    { text: 'Lorem Ipsum Here ', video: VideoClip, background: TestBG },
+    { text: 'GDL Christmas Video', video: VideoClip, background: VideoBg },
+    // { text: 'Lorem Ipsum Here ', video: VideoClip, background: TestBG },
 ]
 
 const Videos = () => {
@@ -39,6 +41,7 @@ const Videos = () => {
                     )}
                 </Carousel>
             </div>
+            <MediaCards />
 
         </div>
     )

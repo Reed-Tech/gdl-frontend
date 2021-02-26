@@ -11,9 +11,7 @@ import OurMission from '../components/OurMission'
 import NewsLetterSubscription from '../components/NewsLetterSubscription'
 import Banner from '../components/Banner'
 import Events from '../components/Events'
-// import FooterCareer from '../components/FooterCareer'
-import MediaCards from '../components/MediaCards'
-// import BlogSlider from '../components/BlogSlider'
+
 
 
 // _______________________________________________________________________________________
@@ -49,7 +47,6 @@ const Media = () => {
                 </HeaderSlider>
                 <StockInfo />
             </header>
-            <MediaCards />
             <Videos />
             {/* <BlogSlider /> */}
             <Banner />

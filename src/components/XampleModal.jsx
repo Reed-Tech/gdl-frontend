@@ -71,7 +71,7 @@ export const whatWeDoCardTexts = {
         'We are regulated and approved by the Securities and Exchanges Commission to invest funds on behalf of our clients.',
     ],
     'TREASURY BILLS': [
-        'Treasury Bills are assets that offered to the public by the central bank as a form of short-term loan to the government.',
+        'Treasury Bills are assets that are offered to the public by the central bank as a form of short-term loan to the government.',
         'An investment with no hidden transaction charges, untaxed interest and guaranteed safety',
     ],
     'LONG TERM NOTE': [
