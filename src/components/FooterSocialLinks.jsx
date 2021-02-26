@@ -13,7 +13,7 @@ const FooterSocialLinks = (props) => {
     return (
             <ul className={props.customClass? props.customClass : 'HeaderSocialLinks'}>
                 <li><a href="facebook"><img src={FacebookIcon} alt="Facebook Link"/></a></li>
-                <li><a href="twitter"><img src={TwitterIcon} alt="Twitter Link"/></a></li>
+                <li><a href="https://twitter.com/gdl_nigeria?s=08"><img src={TwitterIcon} alt="Twitter Link"/></a></li>
                 <li><a href="youtube"><img src={YoutubeIcon} alt="Youtube Link"/></a></li>
                 <li><a href="https://www.instagram.com/gdl_nigeria/?igshid=db676hd70sc4"><img src={InstagramIcon} alt="Instagram Link"/></a></li>
                 {/* <li><a href="email"><img src={EmailIcon} alt="Email Link"/></a></li> */}

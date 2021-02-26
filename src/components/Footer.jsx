@@ -2,10 +2,7 @@ import React from "react";
 
 const Footer = () => {
     const footerLinks = [
-        { name: "GENERAL ENQUIRY", email: "info@gdl.com.ng" },
-        { name: "ASSET MANAGEMENT", email: "assetmanagement@gdl.com.ng" },
-        { name: "FINANCE", email: "finance@gdl.com.ng" },
-        { name: "SECURITIES TRADING", email: "securities@gdl.com.ng" },
+        { name: "GENERAL ENQUIRY", email: "customerservice@gdl.com.ng" },
         { name: "INVESTMENT RESEARCH", email: "research@gdl.com.ng" },
         { name: "CUSTOMER CARE", email: "customerservice@gdl.com.ng" },
     ];

@@ -14,7 +14,7 @@ function MediaCards() {
                                 videos
                             </video>
                         </div>
-                        <h4 className='text-center'>GDL Christmas Video</h4>
+                        <h6 className='mediaVideo_card-text text-center'>GDL Christmas Video</h6>
                     </div>
                 </div>
             </div>

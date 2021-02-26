@@ -192,7 +192,7 @@ const WhatWeDoModal = (props) => {
             footer: (
                 <div className="whatWeDoModal_footer">
                     <p>Interested in making money from shares?</p>
-                    <Button variant='light' href="https://mystifying-goodall-2b93ae.netlify.app/">Open an account</Button>
+                    <Button variant='light' href="/contact-us">Contact Us</Button>
                 </div>
             )
         },
