@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 // import { Link } from 'react-router-dom'
-import VideoClip from '../assets/videos/Ads2.mp4'
+import VideoClip from '../assets/videos/GDL.mp4'
 import {  Carousel, Modal } from 'react-bootstrap'
 // import TestBG from '../assets/images/ContactUsBG.png'
-import VideoBg from '../assets/videos/Advert_nail.JPG'
+import VideoBg from '../assets/videos/20210226_163331.jpg'
 import { MdPlayCircleOutline } from 'react-icons/md';
 import MediaCards from '../components/MediaCards'
 

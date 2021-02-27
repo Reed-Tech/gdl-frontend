@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import AdVideo from '../assets/videos/Ads2.mp4'
-import AdThumbnail from '../assets/videos/Advert_nail.JPG'
+import AdVideo from '../assets/videos/GDL.mp4'
+import AdThumbnail from '../assets/videos/20210226_163331.jpg'
 
 const Advert = (props) => {
     return (
