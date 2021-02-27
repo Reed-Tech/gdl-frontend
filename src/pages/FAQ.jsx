@@ -6,7 +6,9 @@ import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
 import FaqBG from '../assets/images/Contact-1.jpg'
 import FooterNav from '../components/FooterNav'
-
+import { Button } from 'react-bootstrap'
+import MMFFAQ from "../assets/images/FAQs for GDL MMF.pdf";
+import SIAFAQ from "../assets/images/SIA Frequently Asked Questions.pdf";
 
 const slideData = [
     {
@@ -42,55 +44,130 @@ const FAQ = () => {
                 </HeaderSlider>
                 <StockInfo />
             </header>
-            {/* accor */}
+            {/* accorodians */}
          
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-6">
                         <Accordion
-                            title="What is your return policy?"
-                            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            title="What is the Full meaning of GDL
+                            ?"
+                            content="Growth & Development Asset Management Ltd.
+                            "
                         />
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="How to manage assets?"
-                            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            title="Who is GDL
+                            ?"
+                            content="Growth and Development Asset Management Limited (GDL) is a non-bank financial institution licensed
+                            by the Securities & Exchange Commission (SEC) and Nigerian Stock Exchange (NSE) to serve as
+                            Broker/Dealer (Stockbroking Services) , Portfolio & Fund Managers"
                         />
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="What is your return policy?"
-                            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        />
-                    </div>
-                    <div className="col-md-6">
-                        <Accordion
-                            title="Buying more shares from Gdl?"
+                            title="How can I be sure my funds are safe with GDL
+                            ?"
                             content="
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                            <p>GDL is regulated by SEC and fully registered under the regulation of the financial institution, We have
+                            professionals managing funds under our management in strict compliance with laid down policies and
+                            procedures
+                            </p>
+                            <p>We are a conservative institution we don’t take excessive risk, we carry out proper research before we
+                            invest in investment instruments. </p>
+                            "
                         />
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="How to manage assets?"
-                            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        />
-                    </div>
-                    <div className="col-md-6">
-                        <Accordion
-                            title="Buying more shares from Gdl?"
+                            title="• Can I have some additional cover or assurance on the safety of my funds
+                            ?"
                             content="
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+                            <p>We can assure you that your funds are safe, we have grown significantly over the last 5years and total
+                            funds under management is over 5Billion, we also have good corporate governance and risk
+                            management framework., with a stable, experienced Board and Management.</p>
+                            <p>You can also invest in our money market which is as safe as funds in the Bank, All the assets of the Fund
+                            are held by the Custodian, UBA Plc (Global Custodian Services). UBA is a large systemically significant
+                            Tier 1 Bank. The custody arrangement completely precludes the Fund Manager and all other parties
+                            from access to the assets of the Fund. the fund also has an BBB investment rating from Augusto & Co.
+                            and a Trustees that ensures we do not break the rule the governs the Fund.</p>
+                            <p>For huge funds, our correspondent banks can issue you a comfort letter pledging to hold your funds till
+                            maturity but interest rates for pledged funds will differ from the usual GDL rates</p>"
                         />
+                    </div>
+                    <div className="col-md-6">
+                        <Accordion
+                            title="Are NBFI( Non-Bank Financial Inst) allowed to receive and place funds for investors?"
+                            content="
+                            <p>We are a licensed and regulated Asset /Fund management Company so by law we can receive
+                            funds on behalf of our client and invest same on behalf of our client in very safe and profitable
+                            investment vehicles </p>
+                            "
+                        />
+                    </div>
+                    <div className="col-md-6">
+                        <Accordion
+                            title="Why should I come to GDL rather than take my funds to the Bank?"
+                            content="
+                            <p>With GDL you enjoy a one-on-one personalized treatment, our customers receive immediate
+                            resolution and attention to their enquiries, queries and concerns. Top of the notch service delivery.
+                            Our interest rates are also higher than commercial banks rates.</p>
+                            "
+                        />
+                    </div>
+                    <div className="col-md-6">
+                        <Accordion
+                            title="How come your rates are higher than the regular banks
+                            ?"
+                            content="
+                            <p>Our rates are higher than the Banks, because in GDL we have less operating cost and are not
+                            mandated to have a CRR position of 30% like the regular banks.</p>
+                           "
+                        />
+                    </div>
+                    <div className="col-md-6">
+                        <Accordion
+                            title="How do I calculate interest earned at maturity of my investment 
+                            ?"
+                            content="
+                            <p>Principal * rate * tenure divided by 365days</p>
+                           "
+                        />
+                    </div>
+                    <div className="col-md-6">
+                        <Accordion
+                            title="What instruments do you invest your funds into
+                            ?"
+                            content="
+                            <p>Our funds are invested in safe money market instruments through our correspondent Banks. We also
+                            invest in safe and well-structured commercial papers. We finance selected businesses who meet
+                            our stringent risk acceptance criteria. </p>
+                           "
+                        />
+                    </div>
+                    <div className="col-md-6">
+                        <Accordion
+                            title="Are you a regulated company
+                            ?"
+                            content="
+                            <p>We are regulated by SEC, NSE and CBN</p>
+                           "
+                        />
+                    </div>
+                    <div className="col-md-6">
+                        <Accordion
+                            title="How much should I have before I can invest with GDL High yield Note
+                            ?"
+                            content="
+                            <p>Minimum of N100,000.00 you can invest with us</p>
+                           "
+                        />
+                    </div>
+                    {/* Buttons for downloadable files */}
+                    <div className="col-12 text-center my-5">
+                        <Button href={MMFFAQ} className="mr-4" variant='primary'>Frequently Asked Questions for GDL MMF </Button>
+                        <Button href={SIAFAQ} variant='primary'>Frequently Asked Questions for GDL SIA</Button>
                     </div>
                 </div>
             </div>

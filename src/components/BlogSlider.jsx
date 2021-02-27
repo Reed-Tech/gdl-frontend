@@ -49,7 +49,7 @@ const BlogSlider = (props) => {
                                 <div onClick={() => handleBlogCard(datas)} className='blogCard' key={datas.id}>
                                     <div className='blogCard_image ' style={{ backgroundImage: `url(${datas.thumbnail_image})` }} />
                                         <div className='blogCard_body'>
-                                            <h1>{datas.title}</h1>
+                                            <h1><strong>{datas.title}</strong></h1>
                                             <p>{datas.description} </p>
                                         </div>
                                 </div>
