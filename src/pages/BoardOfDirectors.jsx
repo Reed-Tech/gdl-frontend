@@ -3,11 +3,11 @@ import Card from '../components/Card'
 import { Store, type as t } from '../context/store'
 import Dr from '../assets/images/8fa87559155b21ac0abb674e3697ea3e.png'
 import Avatar from '../assets/images/Avatar.png'
-import Kolade from '../assets/images/9b253ad50b9eb887c6011a0a17b0444e.png'
+import Kolade from '../assets/images/extra_kola.png'
 import Christiana from '../assets/images/de784d755551f57dfc92a03d54efad0e.png'
 import Farouk from '../assets/images/add55e6563af7e1d76c4e8bb7ebc3ed6.png'
-import Lanre from '../assets/images/Lanre-Olaluwa.jpg'
-import Oyekemi from '../assets/images/cf635ca96661303335c62f862c1611f4.png'
+import Lanre from '../assets/images/cropLanre.jpg'
+import Oyekemi from '../assets/images/cropoyeYemi.png'
 
 
 export function boardOfDirectorsMobile(props) {
@@ -50,8 +50,8 @@ export const boardOfDirectorsData = {
             'Prior to that, he was appointed by the banking regulators to the Board of Mainstreet Bank. Mainstreet Bank was one of three banks acquired by regulators in 2011 consequent to solvency and liquidity problems. The Board and Management succeeded in its mandate to turn the bank around and sell to new owner. Much earlier, he was a key member of the team that recapitalized and turned around National Bank of Nigeria, hitherto deemed terminally and irredeemably distressed. He joined the bank as General Manager after its recapitalization in 2000, and became Chief Executive in 2003. He resigned in the course of the merger of the bank with two other banks as part of the consolidation of the Nigerian banking industry. In 2014, Mr. Ayeye arranged the recapitalisation of Express Discount Asset Management (EDAM) and led the recommencement of business with a new strategic direction before his appointment to the Board of AMCON by the President of the Federal Republic of Nigeria in 2015.',
             'He returned in February 2018 to serve as Group Managing Director/Chief Executive of GDL (formerly EDAM) to champion delivery of our intent to strengthen and expand the middle class. Kola is a chartered accountant with a first degree in Accountancy and a Masters degree in Finance, and is an alumnus of Lagos Business School, Institute of Management Development Lausanne Switzerland, and Harvard Business School. He is committed to the highest ethical standards and brings a network of skills, contacts and resources to GDL.']
     },
-    'Christiana Bamidele': {
-        id: 'Christiana Bamidele',
+    'Christiana Bamidele George': {
+        id: 'Christiana Bamidele George',
         image: Christiana,
         name: 'Christiana Bamidele George',
         text: ['Christiana Bamidele George graduated from Ahmadu Bello University, Zaria, where she graduated with a Bachelor of Science degree (B.Sc.) in Accountancy. She worked in First Bank Nigeria Plc in 1985 and later established the Strong Tower Mission, a Christian charity organization aimed at caring for the underprivileged in the society. Further to this, she established the Little Saints Orphanage which is a sister outreach of the Strong Tower Mission. The strong Tower Mission has since been a formidable tool in assisting the poor, indigent and disadvantaged in the society. Strong Tower Centre is perhaps the foremost charity organization in Nigeria.']

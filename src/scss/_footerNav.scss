@@ -1,7 +1,7 @@
 .footerNav {
     display: inline-flex;
     justify-content: space-around;
-    background-color: rgba($color: black, $alpha: 0.6);
+    background-color: #992333;
     padding: 24px 1em 1em 1em;
     width: 100%;
     flex-wrap: wrap;
@@ -49,7 +49,7 @@
         p {
             margin: 3px 0 0 0;
             font-size: .995em;
-            color: #979797;
+            color: #fff;
             width: 100%;
             text-align: center;
         }
