@@ -166,8 +166,8 @@ const FAQ = () => {
                     </div>
                     {/* Buttons for downloadable files */}
                     <div className="col-12 text-center my-5">
-                        <Button href={MMFFAQ} className="mr-4" variant='primary'>Frequently Asked Questions for GDL MMF </Button>
-                        <Button href={SIAFAQ} variant='primary'>Frequently Asked Questions for GDL SIA</Button>
+                        <Button href={MMFFAQ} className="mr-md-4 mb-3" variant='primary'>Frequently Asked Questions for GDL MMF </Button>
+                        <Button href={SIAFAQ} className="mr-md-4 mb-3" variant='primary'>Frequently Asked Questions for GDL SIA</Button>
                     </div>
                 </div>
             </div>
