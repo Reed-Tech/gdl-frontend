@@ -17,6 +17,11 @@
             display: flex;
             flex-wrap: wrap;
             max-width: 540px;
+            
+            @media screen and (max-width:767px) {
+                justify-content: center;
+            }
+
             h3{
                 color: white;
                 font-size: 1em;

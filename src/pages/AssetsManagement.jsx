@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from '../components/Card'
 import CardImage from '../components/CardImage'
-import iconImage1 from '../assets/images/icon-1.png'
-import iconImage2 from '../assets/images/icon-2.png'
-import iconImage3 from '../assets/images/icon-3.png'
-import iconImage4 from '../assets/images/icon-4.png'
-import iconImage5 from '../assets/images/icon-5.png'
-import iconImage6 from '../assets/images/icon-6.png'
+import iconImage1 from '../assets/images/iconMmf.png'
+import iconImage2 from '../assets/images/iconSia.png'
+import iconImage3 from '../assets/images/iconStockbroking.png'
+import iconImage4 from '../assets/images/iconResearch.png'
+import iconImage5 from '../assets/images/iconAdvisory.png'
+import iconImage6 from '../assets/images/iconsETP.png'
 import { Store, type as t } from '../context/store'
 
 
