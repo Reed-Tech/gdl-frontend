@@ -81,7 +81,7 @@ const FAQ = () => {
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="• Can I have some additional cover or assurance on the safety of my funds
+                            title="Can I have some additional cover or assurance on the safety of my funds
                             ?"
                             content="
                             <p>We can assure you that your funds are safe, we have grown significantly over the last 5years and total
