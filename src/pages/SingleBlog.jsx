@@ -36,7 +36,7 @@ const SingleBlog = (props) => {
         slideData.map((slides) => <section key={slides.h1}>
             <div className='research_headerSlider headerSlider_container' style={{ backgroundImage: `url(${slides.image})` }}>
                 <div className='headerSlider_container-text singleBlogSlider_container-h3'>
-                    <h3>{slides.h3}</h3>
+                    <h4>{slides.h3}</h4>
 
                     <p>
                         <NavLink to="/blog"><FaAngleLeft /> BACK TO BLOGS  </NavLink>

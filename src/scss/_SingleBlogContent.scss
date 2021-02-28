@@ -43,7 +43,13 @@
 }
 
 .singleBlogSlider_container-h3 {
-    font-size: clamp(4em, 3vw, 2em);
+  font-size: clamp(4em, 3vw, 2em);
+}
+
+@media(max-width: 500px) {
+  .singleBlogSlider_container-h3 {
+    font-size: clamp(3em, 1vw, 2em);
+  }
 }
 
 .singleBlogSlider_container-h3 a {
