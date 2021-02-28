@@ -2,12 +2,12 @@ import React, { useContext, useEffect } from 'react'
 import Card from '../components/Card'
 import { Store, type as t } from '../context/store'
 import Avatar from '../assets/images/Avatar.png'
-import Kolade from '../assets/images/9b253ad50b9eb887c6011a0a17b0444e.png'
+import Kolade from '../assets/images/extra_kola.png'
 import Oyekemi from '../assets/images/cropoyeYemi.png'
-import Ofonama from '../assets/images/Ofonama.png'
-import Perpetual from '../assets/images/Perpetual.png'
-import Oluyemi from '../assets/images/Oluyemi.png'
-// import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
+import Ofonama from '../assets/images/cropOfonama.png'
+import Perpetual from '../assets/images/CropPerpetual.png'
+import Oluyemi from '../assets/images/cropOluyemi.png'
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 
 const error = {
     about: 'Please complete the About section in the form.',
@@ -80,18 +80,20 @@ const ManagementTeam = (props) => {
             <div className='managementTeamWeb mx-5'>
                 <div className="d-md-flex justify-content-between">
                     <h1>MANAGEMENT TEAM</h1>
+                    <div className='managementTeam_image text-center' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : error.image})` }}></div>
+
                     <ul>
                         {NavItems}
                     </ul>
                 </div>
-                <div className="row">
-                    <div className="col-12">
-                    <div className='managementTeam_image text-center' style={{ backgroundImage: `url(${state.managementTeamActive && managementTeamData[state.managementTeamActive].image ? managementTeamData[state.managementTeamActive].image : error.image})` }}></div>
-                        <Card scroll className='managementTeam_card  text-center' maxHeight='calc(100vh - 20em)'>
-                            {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
+                <OverlayScrollbarsComponent style={{height: 'calc(100%)'}}>
+                    <div style={{ height: 'calc(100vh - 20em)' }}>
+                        <Card className='managementTeam_card text-center'>
+                          {state.managementTeamActive && managementTeamData[state.managementTeamActive].text ? managementTeamData[state.managementTeamActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
+
                         </Card>
                     </div>
-                </div>
+                </OverlayScrollbarsComponent>
             
             </div>
         </section>

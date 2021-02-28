@@ -8,6 +8,7 @@ import Christiana from '../assets/images/de784d755551f57dfc92a03d54efad0e.png'
 import Farouk from '../assets/images/add55e6563af7e1d76c4e8bb7ebc3ed6.png'
 import Lanre from '../assets/images/cropLanre.jpg'
 import Oyekemi from '../assets/images/cropoyeYemi.png'
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 
 
 export function boardOfDirectorsMobile(props) {
@@ -46,9 +47,9 @@ export const boardOfDirectorsData = {
         name: 'Kolawole Ayeye',
         image: Kolade,
         text: ['Kola is a seasoned professional with over thirty years’ experience in Banking, Financial Services, Audit and Advisory Services.',
-            'Before returning to the Board of GDL, he served as Executive Director of Asset Management Corporation of Nigeria (AMCON) with responsibility for recoveries and resolutions, a role central to the Corporation’s mandate of recovering bad loans acquired from banks. In addition to significantly improving recoveries through various initiatives, his team made significant contributions to the restructure and deployment of major assets and entities in the aviation and oil service sectors.',
-            'Prior to that, he was appointed by the banking regulators to the Board of Mainstreet Bank. Mainstreet Bank was one of three banks acquired by regulators in 2011 consequent to solvency and liquidity problems. The Board and Management succeeded in its mandate to turn the bank around and sell to new owner. Much earlier, he was a key member of the team that recapitalized and turned around National Bank of Nigeria, hitherto deemed terminally and irredeemably distressed. He joined the bank as General Manager after its recapitalization in 2000, and became Chief Executive in 2003. He resigned in the course of the merger of the bank with two other banks as part of the consolidation of the Nigerian banking industry. In 2014, Mr. Ayeye arranged the recapitalisation of Express Discount Asset Management (EDAM) and led the recommencement of business with a new strategic direction before his appointment to the Board of AMCON by the President of the Federal Republic of Nigeria in 2015.',
-            'He returned in February 2018 to serve as Group Managing Director/Chief Executive of GDL (formerly EDAM) to champion delivery of our intent to strengthen and expand the middle class. Kola is a chartered accountant with a first degree in Accountancy and a Masters degree in Finance, and is an alumnus of Lagos Business School, Institute of Management Development Lausanne Switzerland, and Harvard Business School. He is committed to the highest ethical standards and brings a network of skills, contacts and resources to GDL.']
+        'Before returning to the Board of GDL, he served as Executive Director of Asset Management Corporation of Nigeria (AMCON) with responsibility for recoveries and resolutions, a role central to the Corporation’s mandate of recovering bad loans acquired from banks. In addition to significantly improving recoveries through various initiatives, his team made significant contributions to the restructure and deployment of major assets and entities in the aviation and oil service sectors.',
+        'Prior to that, he was appointed by the banking regulators to the Board of Mainstreet Bank. Mainstreet Bank was one of three banks acquired by regulators in 2011 consequent to solvency and liquidity problems. The Board and Management succeeded in its mandate to turn the bank around and sell to new owner. Much earlier, he was a key member of the team that recapitalized and turned around National Bank of Nigeria, hitherto deemed terminally and irredeemably distressed. He joined the bank as General Manager after its recapitalization in 2000, and became Chief Executive in 2003. He resigned in the course of the merger of the bank with two other banks as part of the consolidation of the Nigerian banking industry. In 2014, Mr. Ayeye arranged the recapitalisation of Express Discount Asset Management (EDAM) and led the recommencement of business with a new strategic direction before his appointment to the Board of AMCON by the President of the Federal Republic of Nigeria in 2015.',
+        'He returned in February 2018 to serve as Group Managing Director/Chief Executive of GDL (formerly EDAM) to champion delivery of our intent to strengthen and expand the middle class. Kola is a chartered accountant with a first degree in Accountancy and a Masters degree in Finance, and is an alumnus of Lagos Business School, Institute of Management Development Lausanne Switzerland, and Harvard Business School. He is committed to the highest ethical standards and brings a network of skills, contacts and resources to GDL.'],
     },
     'Christiana Bamidele George': {
         id: 'Christiana Bamidele George',
@@ -93,20 +94,20 @@ const BoardOfDirectors = () => {
     return (
         <section className='boardOfDirectors'>
             <div className='boardOfDirectors_web mx-5'>
-                <div className="d-md-flex justify-content-between">
+                <div className="d-md-flex justify-content-between ">
                     <h1>BOARD OF DIRECTORS</h1>
+                    <div className='boardOfDirectors_image text-center' style={{ backgroundImage: `url(${state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].image ? boardOfDirectorsData[state.boardOfDirectorsActive].image : error.image})` }}> </div>
                     <ul>
                         {NavItems}
                     </ul>
                 </div>
-                <div className="row">
-                    <div className="col-12">
-                        <div className='boardOfDirectors_image text-center' style={{ backgroundImage: `url(${state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].image ? boardOfDirectorsData[state.boardOfDirectorsActive].image : error.image})` }}> </div>
-                        <Card scroll className='boardOfDirectors_card text-center' maxHeight='calc(100vh - 20em)'>
+                <OverlayScrollbarsComponent style={{height: 'calc(100%)'}}>
+                    <div style={{ height: 'calc(100vh - 20em)' }}>
+                        <Card className='boardOfDirectors_card text-center'>
                             {state.boardOfDirectorsActive && boardOfDirectorsData[state.boardOfDirectorsActive].text ? boardOfDirectorsData[state.boardOfDirectorsActive].text.map((e) => <p key={e}>{e}</p>) : error.about}
                         </Card>
                     </div>
-                </div>
+                </OverlayScrollbarsComponent>
                
             </div>
         </section>
