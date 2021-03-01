@@ -35,11 +35,9 @@ const FooterNav = (props) => {
                          <FooterSocialLinks customClass='footerNav_socialLinks' />
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-12 text-center footerNav_copyright">
-                        <p>
+                <div className="row mt-4 text-center">
+                    <div className="col-12 footerNav_copyright">
                         <p>Copyright © {myDate.getFullYear()} GDL. All Rights Reserved.</p>
-                        </p>
                     </div>
                 </div>
             </div>

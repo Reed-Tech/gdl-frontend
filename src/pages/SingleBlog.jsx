@@ -56,7 +56,7 @@ const SingleBlog = (props) => {
                 <StockInfo />
             </header>
             <section className="SingleBlogContent py-5">
-                <div class="SingleBlogContent_container text-center">
+                <div class="SingleBlogContent_container">
                     <div className="row">
                         <div 
                             className="col-md-12"
