@@ -1,20 +1,20 @@
 import React, { useContext } from 'react'
 import Card from '../components/Card'
 import CardImage from '../components/CardImage'
-import iconImage1 from '../assets/images/icon-1.png'
-import iconImage2 from '../assets/images/icon-2.png'
-import iconImage3 from '../assets/images/icon-3.png'
-import iconImage4 from '../assets/images/icon-4.png'
-import iconImage5 from '../assets/images/icon-5.png'
+import iconHighNote from '../assets/images/iconHighNote.png'
+import iconTeasuryBills from '../assets/images/iconTeasuryBills.png'
+import iconDollarNote from '../assets/images/iconDollarNote.png'
+import iconLongTerm from '../assets/images/iconLongTerm.png'
+import iconGdlFinance from '../assets/images/iconGdlFinance.png'
 import { Store, type as t } from '../context/store'
 
 
 const financeAndLeasingCards = [
-    { id: 'High Yield Note', text: <h3>HIGH YIELD<br />NOTE</h3>, icon: iconImage1 },
-    { id: 'Treasury Bills', text: <h3>TREASURY<br />BILLS</h3>, icon: iconImage2 },
-    { id: 'Long Term Note', text: <h3>LONG TERM <br />NOTE</h3>, icon: iconImage3 },
-    { id: 'Dollar Note', text: <h3>DOLLAR NOTE</h3>, icon: iconImage4 },
-    { id: 'GDL Finance', text: <h3>GDL <br />FINANCE</h3>, icon: iconImage5 },
+    { id: 'High Yield Note', text: <h3>HIGH YIELD<br />NOTE</h3>, icon: iconHighNote },
+    { id: 'Treasury Bills', text: <h3>TREASURY<br />BILLS</h3>, icon: iconTeasuryBills },
+    { id: 'Long Term Note', text: <h3>LONG TERM <br />NOTE</h3>, icon: iconLongTerm },
+    { id: 'Dollar Note', text: <h3>DOLLAR NOTE</h3>, icon: iconDollarNote },
+    { id: 'GDL Finance', text: <h3>GDL <br />FINANCE</h3>, icon: iconGdlFinance },
 ]
 
 

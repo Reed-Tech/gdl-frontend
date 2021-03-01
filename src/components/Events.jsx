@@ -1,11 +1,15 @@
 import React from 'react'
 import Gallery from 'react-grid-gallery'
-import GridImg1 from '../assets/images/event (1).png'
-import GridImg2 from '../assets/images/event (2).png'
-import GridImg3 from '../assets/images/event (3).png'
-import GridImg4 from '../assets/images/event (4).png'
-import GridImg5 from '../assets/images/event (5).png'
-import GridImg6 from '../assets/images/event (6).png'
+import GridImg1 from '../assets/images/event_1.jpg'
+import GridImg2 from '../assets/images/event_2.jpg'
+import GridImg3 from '../assets/images/event_3.jpg'
+import GridImg4 from '../assets/images/event_4.jpg'
+import GridImg5 from '../assets/images/event_5.jpg'
+import GridImg6 from '../assets/images/event_6.jpg'
+import GridImg7 from '../assets/images/event_7.jpg'
+import GridImg8 from '../assets/images/event_8.jpg'
+import GridImg9 from '../assets/images/event_9.jpg'
+import GridImg10 from '../assets/images/event_10.jpg'
 
 
 const IMAGES = [
@@ -14,42 +18,77 @@ const IMAGES = [
         thumbnail: GridImg1,
         // thumbnailWidth: 450,
         // thumbnailHeight: 454,
-        caption: "After Rain (Jeshu John - designerspics.com)"
+        caption: "Generation G Event"
     },
     {
         src: GridImg2,
         thumbnail: GridImg2,
         // thumbnailWidth: 320,
         // thumbnailHeight: 174,
-        caption: "After Rain (Jeshu John - designerspics.com)"
+        caption: "Generation G Event"
     },
     {
         src: GridImg3,
         thumbnail: GridImg3,
         // thumbnailWidth: 320,
         // thumbnailHeight: 474,
-        caption: "After Rain (Jeshu John - designerspics.com)"
+        caption: "Generation G Event"
     },
     {
         src: GridImg4,
         thumbnail: GridImg4,
         // thumbnailWidth: 320,
         // thumbnailHeight: 374,
-        caption: "After Rain (Jeshu John - designerspics.com)"
+        caption: "Generation G Event"
     },
     {
         src: GridImg5,
         thumbnail: GridImg5,
         // thumbnailWidth: 320,
         // thumbnailHeight: 174,
-        caption: "After Rain (Jeshu John - designerspics.com)"
+        caption: "Generation G Event"
     },
     {
         src: GridImg6,
         thumbnail: GridImg6,
         // thumbnailWidth: 320,
         // thumbnailHeight: 174,
-        caption: "After Rain (Jeshu John - designerspics.com)"
+        caption: "Generation G Event"
+    },
+    {
+        src: GridImg7,
+        thumbnail: GridImg7,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 174,
+        caption: "Generation G Event"
+    },
+    {
+        src: GridImg7,
+        thumbnail: GridImg7,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 174,
+        caption: "Generation G Event"
+    },
+    {
+        src: GridImg8,
+        thumbnail: GridImg8,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 174,
+        caption: "Generation G Event"
+    },
+    {
+        src: GridImg9,
+        thumbnail: GridImg9,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 174,
+        caption: "Generation G Event"
+    },
+    {
+        src: GridImg10,
+        thumbnail: GridImg10,
+        // thumbnailWidth: 320,
+        // thumbnailHeight: 174,
+        caption: "Generation G Event"
     },
 ]
 
