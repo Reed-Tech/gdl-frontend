@@ -192,10 +192,6 @@ export const Example = {
 }
 
 
-const error = {
-    about: 'Please complete the About section in the form.',
-}
-
 const navText = Object.keys(Example)
 
 const Events = () => {
