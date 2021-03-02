@@ -50,9 +50,9 @@ const FAQ = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <Accordion
-                            title="What is the Full meaning of GDL
+                            title="What is the Full meaning of Growth and Development Asset Management Limited
                             ?"
-                            content="Growth & Development Asset Management Ltd.
+                            content="Growth and Development Asset Management Limited.
                             "
                         />
                     </div>
@@ -61,7 +61,7 @@ const FAQ = () => {
                             title="Who is GDL
                             ?"
                             content="Growth and Development Asset Management Limited (GDL) is a non-bank financial institution licensed
-                            by the Securities & Exchange Commission (SEC) and Nigerian Stock Exchange (NSE) to serve as
+                            by the Securities and Exchange Commission (SEC) and Nigerian Stock Exchange (NSE) to serve as
                             Broker/Dealer (Stockbroking Services) , Portfolio & Fund Managers"
                         />
                     </div>
