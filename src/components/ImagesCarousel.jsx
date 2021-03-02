@@ -1,11 +1,12 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
-import ImageBG from '../assets/images/VidBG.png'
+import ImageBG1 from '../assets/images/mediaAd1.jpg'
+import ImageBG2 from '../assets/images/mediaAd2.jpg'
 
 
 const ImagesList = [
-    { background:ImageBG},
-    { background:ImageBG},
+    { background:ImageBG1},
+    { background:ImageBG2},
 ]
 
 const ImagesCarousel = () => {
@@ -18,7 +19,7 @@ const ImagesCarousel = () => {
             <Carousel slide={true} fade nextIcon={null} prevIcon={null}>
                 {ImagesList.map((e) =>
                     <Carousel.Item key={e.h1}>
-                        <div className='imagesCarousel_body' style={{ backgroundImage: `url(${e.background})` }}>
+                        <div className='imagesCarousel_body' style={{ backgroundImage: `url(${e.background})`,  Height:"60vh" }}>
                         </div>
                     </Carousel.Item>
                 )}

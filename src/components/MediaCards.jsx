@@ -29,7 +29,7 @@ function MediaCards() {
                                 videos
                             </video>
                         </div>
-                        <h6 className='mediaVideo_card-text text-center'>GDL Christmas Video</h6>
+                        <h6 className='mediaVideo_card-text text-center'>GDL Christmas Vox Pop</h6>
                     </div>
                 </div>
                 <div className="col-md-4">
@@ -39,7 +39,7 @@ function MediaCards() {
                                 videos
                             </video>
                         </div>
-                        <h6 className='mediaVideo_card-text text-center'>GDL Stock Trader(II) </h6>
+                        <h6 className='mediaVideo_card-text text-center'>GDL Stock Trader(I) </h6>
                     </div>
                 </div>
                 <div className="col-md-4">
@@ -49,7 +49,7 @@ function MediaCards() {
                                 videos
                             </video>
                         </div>
-                        <h6 className='mediaVideo_card-text text-center'>GDL Stock Trader(I)</h6>
+                        <h6 className='mediaVideo_card-text text-center'>GDL Stock Trader(II)</h6>
                     </div>
                 </div>
             </div>

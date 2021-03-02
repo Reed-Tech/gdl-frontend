@@ -13,8 +13,8 @@ const Advert = (props) => {
                     </video>
                 </div>
                 <div className='advert_text  col-sm-12 col-lg-6'>
-                    <p>At GDL, we believe that the children are the future and there's no better way to invest in them and their future than the GDL Smart Investment Account which gives you access to loans for all educational expenses.</p>
-                    <Button href='/media' variant='primary' > View Media</Button>
+                    <p>We are a data driven firm with a priority to increase the purchasing power of the Nigerian middle class</p>
+                    <Button href='/media' variant='primary' >Explore GDL</Button>
                 </div>
             </div>
         </section>

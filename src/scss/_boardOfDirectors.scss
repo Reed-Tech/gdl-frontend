@@ -20,15 +20,33 @@
         background-repeat: no-repeat !important;
         background-size: cover;
         box-sizing: border-box;
-        background-position-y: center !important;
+        // background-position-y: center !important;
         border-radius: 50%;
         width: 200px;
         height: 200px;
-        margin: 0 auto;
+        margin: 0 5px;
         margin-bottom: 10px;
         position: relative;
         cursor: pointer;
     }
+
+    
+    &_imageEvent {
+        // padding: 0;
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        box-sizing: border-box;
+        // background-position-y: center !important;
+        width: 200px;
+        height: 100px;
+        margin: 0 auto;
+        // display: inline;
+        margin-bottom: 10px;
+        position: relative;
+        cursor: pointer;
+    }
+
+
 
     ul {
         padding: 0;
@@ -52,6 +70,7 @@
 
                 }
             }
+
 
             &:hover,
             &.active {

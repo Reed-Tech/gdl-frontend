@@ -7,6 +7,7 @@ import Oyekemi from '../assets/images/cropoyeYemi.png'
 import Ofonama from '../assets/images/cropOfonama.png'
 import Perpetual from '../assets/images/CropPerpetual.png'
 import Oluyemi from '../assets/images/cropOluyemi.png'
+import Josephine from '../assets/images/josephinephoto2.jpg'
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 
 const error = {
@@ -57,7 +58,7 @@ export const managementTeamData = {
         name: 'Josephine Ernest-Ikechukwu',
         text:
         ['Josephine joined GDL with over 10 years experience from Ecobank Development Securities EDC, where she served in various department from Client service to Retail marketing and Institutional marketing from 2006 to 2018 November. Josephine is a graduate of Nnamdi Azikwe University from the French department and speaks fluently, she joins GDL with vast knowledge both in Money Market and Capital market dynamics and client winning strategies. Josephine is a student member of the Chartered Institute of Stockbrokers where she has concluded her 1st level to become a Chartered Stockbroker. She has attended various trainings both within the country and outside Nigeria, from Lagos Business School(LBS) and Euromoney Consultant.'],
-        image: Ofonama
+        image: Josephine
     },
 
 }
