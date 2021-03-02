@@ -74,13 +74,6 @@ const IMAGES = [
         caption: "Generation G Event"
     },
     {
-        src: GridImg7,
-        thumbnail: GridImg7,
-        // thumbnailWidth: 320,
-        // thumbnailHeight: 174,
-        caption: "Generation G Event"
-    },
-    {
         src: GridImg8,
         thumbnail: GridImg8,
         // thumbnailWidth: 320,
