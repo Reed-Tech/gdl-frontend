@@ -70,7 +70,7 @@ const FAQ = () => {
                             title="How can I be sure my funds are safe with GDL
                             ?"
                             content="
-                            <p>GDL is regulated by SEC and fully registered under the regulation of the financial institution, We have
+                            <p>GDL is regulated by SEC and fully registered under the regulation of the financial institution. We have
                             professionals managing funds under our management in strict compliance with laid down policies and
                             procedures. </p>
                             <p>We are a conservative institution; we don’t take excessive risk; we carry out proper research before we
@@ -83,7 +83,7 @@ const FAQ = () => {
                             title="Can I have some additional cover or assurance on the safety of my funds
                             ?"
                             content="
-                            <p>We can assure you that your funds are safe, we have grown significantly over the last 5 years and total
+                            <p>We can assure you that your funds are safe, we have grown significantly over the last 5 years and the total
                             funds under our management is over 5 Billion, we also have good corporate governance and risk
                             management framework, with a stable, experienced Board and Management.</p>
                             <p>You can also invest in our Money Market which is as safe as funds in the Bank. All the assets of the Fund
