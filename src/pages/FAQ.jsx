@@ -50,7 +50,7 @@ const FAQ = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <Accordion
-                            title="What is the Full meaning of Growth and Development Asset Management Limited
+                            title="What is the Full meaning of GDL
                             ?"
                             content="Growth and Development Asset Management Limited.
                             "
@@ -62,7 +62,7 @@ const FAQ = () => {
                             ?"
                             content="Growth and Development Asset Management Limited (GDL) is a non-bank financial institution licensed
                             by the Securities and Exchange Commission (SEC) and Nigerian Stock Exchange (NSE) to serve as
-                            Broker/Dealer (Stockbroking Services) , Portfolio & Fund Managers"
+                            Broker/Dealer (Stockbroking Services) , Portfolio and Fund Managers."
                         />
                     </div>
                     <div className="col-md-6">
@@ -72,9 +72,8 @@ const FAQ = () => {
                             content="
                             <p>GDL is regulated by SEC and fully registered under the regulation of the financial institution, We have
                             professionals managing funds under our management in strict compliance with laid down policies and
-                            procedures
-                            </p>
-                            <p>We are a conservative institution we don’t take excessive risk, we carry out proper research before we
+                            procedures. </p>
+                            <p>We are a conservative institution; we don’t take excessive risk; we carry out proper research before we
                             invest in investment instruments. </p>
                             "
                         />
@@ -84,25 +83,25 @@ const FAQ = () => {
                             title="Can I have some additional cover or assurance on the safety of my funds
                             ?"
                             content="
-                            <p>We can assure you that your funds are safe, we have grown significantly over the last 5years and total
-                            funds under management is over 5Billion, we also have good corporate governance and risk
-                            management framework., with a stable, experienced Board and Management.</p>
-                            <p>You can also invest in our money market which is as safe as funds in the Bank, All the assets of the Fund
+                            <p>We can assure you that your funds are safe, we have grown significantly over the last 5 years and total
+                            funds under our management is over 5 Billion, we also have good corporate governance and risk
+                            management framework, with a stable, experienced Board and Management.</p>
+                            <p>You can also invest in our Money Market which is as safe as funds in the Bank. All the assets of the Fund
                             are held by the Custodian, UBA Plc (Global Custodian Services). UBA is a large systemically significant
                             Tier 1 Bank. The custody arrangement completely precludes the Fund Manager and all other parties
                             from access to the assets of the Fund. the fund also has an BBB investment rating from Augusto & Co.
-                            and a Trustees that ensures we do not break the rule the governs the Fund.</p>
+                            and a Trustees that ensures we do not break the rule that governs the Fund.</p>
                             <p>For huge funds, our correspondent banks can issue you a comfort letter pledging to hold your funds till
-                            maturity but interest rates for pledged funds will differ from the usual GDL rates</p>"
+                            maturity but interest rates for pledged funds will differ from the usual GDL rates.</p>"
                         />
                     </div>
                     <div className="col-md-6">
                         <Accordion
-                            title="Are NBFI( Non-Bank Financial Inst) allowed to receive and place funds for investors?"
+                            title="Are NBFI ( Non-Bank Financial Institution) allowed to receive and place funds for investors?"
                             content="
                             <p>We are a licensed and regulated Asset /Fund management Company so by law we can receive
                             funds on behalf of our client and invest same on behalf of our client in very safe and profitable
-                            investment vehicles </p>
+                            investment vehicles. </p>
                             "
                         />
                     </div>
@@ -131,7 +130,7 @@ const FAQ = () => {
                             title="How do I calculate interest earned at maturity of my investment 
                             ?"
                             content="
-                            <p>Principal * rate * tenure divided by 365days</p>
+                            <p>Principal * rate * tenure divided by 365days.</p>
                            "
                         />
                     </div>
@@ -151,7 +150,7 @@ const FAQ = () => {
                             title="Are you a regulated company
                             ?"
                             content="
-                            <p>We are regulated by SEC, NSE and CBN</p>
+                            <p>We are regulated by SEC, NSE and CBN.</p>
                            "
                         />
                     </div>
@@ -160,7 +159,7 @@ const FAQ = () => {
                             title="How much should I have before I can invest with GDL High yield Note
                             ?"
                             content="
-                            <p>Minimum of N100,000.00 you can invest with us</p>
+                            <p>With a minimum of &#x20A6 100,000.00 you can invest with us.</p>
                            "
                         />
                     </div>
