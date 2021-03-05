@@ -159,7 +159,7 @@ const FAQ = () => {
                             title="How much should I have before I can invest with GDL High yield Note
                             ?"
                             content="
-                            <p>With a minimum of &#x20A6 100,000.00 you can invest with us.</p>
+                            <p>With a minimum of &#x20A6 100,000 you can invest with us.</p>
                            "
                         />
                     </div>
