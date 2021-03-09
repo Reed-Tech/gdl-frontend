@@ -43,13 +43,13 @@ export const AssetManagementMobile = (props) => {
             <Card  className='col-12' maxHeight='auto' maxWeight="100%">
                 <p>
                     Money lasts longer when properly managed and knowing how to manage assets to yield maximum profit is an exceptional skill that only a few possess.
-                    That is why we built a skillful team of wealth managers who provide discretionary and non-discretionary investment management to all our customers.
+                    That is why we built a skillful team of WEALTH MANAGERS who provide discretionary and non-discretionary investment management to all our customers.
                         </p>
                 <p>
                     Your money will be put in diverse assets which will in turn gather interest, all for your benefit.
                     </p>
                 <p>
-                    Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
+                    Our services are extra special and designed to meet all your investment needs. From Middle Class to High Net Worth Individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
                 </p>
                 <div className="products--display">
                     <h3 className='text-center mb-3 mt-3'>PRODUCTS</h3>
@@ -90,13 +90,13 @@ const AssetsManagement = (props) => {
                     <Card className='col-12' maxHeight='auto' maxWeight="100%">
                         <p>
                             Money lasts longer when properly managed and knowing how to manage assets to yield maximum profit is an exceptional skill that only a few possess.
-                            That is why we built a skillful team of wealth managers who provide discretionary and non-discretionary investment management to all our customers.
+                            That is why we built a skillful team of WEALTH MANAGERS who provide discretionary and non-discretionary investment management to all our customers.
                         </p>
                         <p>
                             Your money will be put in diverse assets which will in turn gather interest, all for your benefit.
                         </p>
                         <p>
-                            Our services are extra special and designed to meet all your investment needs. From middle class to high net worth individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
+                            Our services are extra special and designed to meet all your investment needs. From Middle Class to High Net Worth Individuals, we offer a distinct type of asset management and advisory that is fully aligned to your personal goals.
                         </p>
                        <div className="products--display">
                             <h3 className='text-center mb-3 mt-3'>PRODUCTS</h3>

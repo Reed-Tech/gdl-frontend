@@ -10,12 +10,11 @@ const ContactUsForm = (props) => {
         <div className='contactUsForm'>
             <p>Send us a message</p>
             <Form>
-                <Form.Group>
+                {/* <Form.Group>
                     <Form.Control as="select">
-                        <option>Buy Shares</option>
                         <option>Make Inquiry</option>
                     </Form.Control>
-                </Form.Group>
+                </Form.Group> */}
                 <Form.Group>
                     <Form.Row>
                         <Col sm='auto'>

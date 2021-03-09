@@ -90,7 +90,7 @@ export const whatWeDoCardTexts = {
         'Our high yield investment product offers competitive interest rates, no maintenance fees, no hidden charges and guaranteed safety. ',
         'The high yield plan is very flexible and you can withdraw all your funds even before the agreed maturity date in case of emergencies.  Interest can be paid monthly or at once depending on preference.',
         'You can sleep with both eyes closed; all your funds are safe with us.',
-        'Our special team of wealth managers work round the clock to ensure all our investors earn the rewards of their investments and even more.',
+        'Our special team of WEALTH MANAGERS work round the clock to ensure all our investors earn the rewards of their investments and even more.',
         'We are regulated and approved by the Securities and Exchanges Commission to invest funds on behalf of our clients.',
     ],
     'TREASURY BILLS': [
@@ -98,7 +98,7 @@ export const whatWeDoCardTexts = {
         'An investment with no hidden transaction charges, untaxed interest and guaranteed safety',
     ],
     'LONG TERM NOTE': [
-        'Our long-term note offers investors a higher interest rate than commercial banks. Invest funds for a long period with better rates than the conventional fixed deposit.',
+        'Our long-term note offers investors a higher interest rate than commercial banks. Invest funds for a long period and you can liquidate your interest twice a year.',
         'The money will be held and invested by us for at least two years. After which you can liquidate with your capital and interest.',
     ],
     'DOLLAR NOTE': [

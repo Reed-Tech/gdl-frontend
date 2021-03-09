@@ -14,7 +14,7 @@ const slideData = [
     {
         image: FaqBG,
         id: 1,
-        h3: 'GDL FAQ    ',
+        h3: "GDL FAQ's",
     },
 ]
 
