@@ -59,10 +59,12 @@ export const whatWeDoCardTexts = {
         'You can open a Smart Investment Account with at least N25,000 and continue with a monthly contribution of not less than N5,000.',
     ],
     'STOCKBROKING': [
-        'Buy shares of profitable Nigerian companies earn great dividends as they increase in value. ',
-        'We can buy and sell shares on your behalf, looking out for favourable trades which will be beneficial to you.',
+        'Buy shares of profitable Nigerian companies earn great dividends as they increase in value.',
+        'Purchase and sale of equities on the floor of the Nigerian Stock Exchange – We execute the buying and selling of all shares quoted on the Stock Exchange.',
+        'Dividend and Shares Recoveries – We recover lost shares and unclaimed dividends',
+        'Certificate Dematerialization- We forward certificates of clients through the Registrars to get recorded into client’s CSCS account',
+        'Transmission to Estate Account - We process transfer of ownership from a deceased account to its new beneficiaries.',
         'With our strong research base and remarkable stockbrokers, we have mastered the art of analyzing, trading and advising on the stock market and other related ventures.',
-        'Our personalized process makes these transactions totally seamless and timely. You do not have to worry about anything. Just say the word and we will execute.',
     ],
     'FINANCIAL ADVISORY': [
         'Making financial decisions without proper consultation is like hunting in the dark, the results are bound to be unpleasant. However, these misfortunes can be avoided if you can see clearly.',
@@ -90,7 +92,7 @@ export const whatWeDoCardTexts = {
         'Our high yield investment product offers competitive interest rates, no maintenance fees, no hidden charges and guaranteed safety. ',
         'The high yield plan is very flexible and you can withdraw all your funds even before the agreed maturity date in case of emergencies.  Interest can be paid monthly or at once depending on preference.',
         'You can sleep with both eyes closed; all your funds are safe with us.',
-        'Our special team of WEALTH MANAGERS work round the clock to ensure all our investors earn the rewards of their investments and even more.',
+        'Our special team of Wealth Managers work round the clock to ensure all our investors earn the rewards of their investments and even more.',
         'We are regulated and approved by the Securities and Exchanges Commission to invest funds on behalf of our clients.',
     ],
     'TREASURY BILLS': [
@@ -98,7 +100,7 @@ export const whatWeDoCardTexts = {
         'An investment with no hidden transaction charges, untaxed interest and guaranteed safety',
     ],
     'LONG TERM NOTE': [
-        'Our long-term note offers investors a higher interest rate than commercial banks. Invest funds for a long period and you can liquidate your interest twice a year.',
+        'Our long-term note offers investors a higher interest rate than commercial banks. Invest your funds for a long period and you can liquidate your interest twice a year',
         'The money will be held and invested by us for at least two years. After which you can liquidate with your capital and interest.',
     ],
     'DOLLAR NOTE': [
