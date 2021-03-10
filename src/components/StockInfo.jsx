@@ -116,7 +116,7 @@ const stockCard = (name, country, amount, rate, color, key) =>
             <p style={{ color: color === 'EQUITY'? 'white': color === 'DEBT'? 'red':'#c0e3c0' }}><strong>{rate}%</strong></p>
         </div>
         <div className='stockInfo_card-body'>
-            <h3>N{amount}</h3>
+            <h3>&#x20A6;{amount}</h3>
         </div>
     </div>
 )
