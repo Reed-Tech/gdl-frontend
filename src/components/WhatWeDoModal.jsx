@@ -178,7 +178,6 @@ const WhatWeDoModal = (props) => {
             header: (
                 <div>
                     <h1>STOCKBROKING</h1>
-                    <h3>Get access to more money when you join the GDL Smart Investors Club</h3>
                 </div>
             ),
             body: (
