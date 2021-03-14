@@ -113,7 +113,7 @@ const stockCard = (name, country, amount, rate, color, key) =>
     <div className='stockInfo_card' key={name}>
         <div className='stockInfo_card-header'>
             <h3><strong>{name}</strong>/{country}</h3>
-            <p style={{ color: color === 'EQUITY'? 'white': color === 'DEBT'? 'red':'#c0e3c0' }}><strong>{rate}%</strong></p>
+            <p style={{ color: color === 'EQUITY' ? 'white' : color === 'DEBT' ? 'red' : '#c0e3c0' }}><strong>{rate}%</strong></p>
         </div>
         <div className='stockInfo_card-body'>
             <h3>&#x20A6;{amount}</h3>
@@ -130,10 +130,10 @@ const StockInfo = () => {
 
     useEffect(() => {
         axios
-            .get('https://marketdataapiv3.nse.com.ng/portal/samples/pricesRT.json')
+            .get('https://gdlnigeria.herokuapp.com/api/v1/stock')
             .then(res => {
-                // console.log(res);
-                setStockInfoData(res.data)
+                console.table(res.data.response);
+                setStockInfoData(res.data.response)
             })
             .catch(err => {
                 console.log(err)
@@ -142,6 +142,7 @@ const StockInfo = () => {
     }, [])
 
     console.log(stockInfoData);
+
     return (
         <div className='stockInfo'>
             <Slider {...sliderSettings}>
