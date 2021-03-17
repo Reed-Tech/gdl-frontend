@@ -19,6 +19,7 @@ const initialState = {
   singleBlogPage:{},
   EventsNav: [],
   EventsActive: "",
+  StockInfoData : [],
 };
 
 export const Store = createContext(initialState);
@@ -45,6 +46,7 @@ export const type = {
   WWD_MOBILE_MODAL_NAV: "WWD_MOBILE_MODAL_NAV",
   SINGLE_BLOG_PAGE: "SINGLE_BLOG_PAGE",
   EVENTS: "EVENTS",
+  STOCK_INFO_DATA: "STOCK_INFO_DATA",
 };
 
 // ----------REDUCER--------------
@@ -146,6 +148,11 @@ function reducer(state, action) {
         ...state,
         EventsNav: action.nav,
         EventsActive: action.active,
+      };
+    case type.STOCK_INFO_DATA:
+      return {
+        ...state,
+        StockInfoData: action.payload,
       };
    
 

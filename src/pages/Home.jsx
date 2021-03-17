@@ -76,8 +76,8 @@ const Home = (props) => {
 
     function assetManagementMobileContent() {
         return (
-            whatWeDoCardTexts[state.WWDMobileModalNav]?.map(e =>
-                <Card className='mb-3' key={e}>
+            whatWeDoCardTexts[state.WWDMobileModalNav]?.map((e, i) =>
+                <Card className='mb-3' key={i}>
                     {e}
                 </Card>
             )
@@ -86,8 +86,8 @@ const Home = (props) => {
 
     function FinanceAndLeasingMobileContent() {
         return (
-            whatWeDoCardTexts[state.WWDMobileModalNav]?.map(e =>
-                <Card className='mb-3' key={e}>
+            whatWeDoCardTexts[state.WWDMobileModalNav]?.map((e, i) =>
+                <Card className='mb-3' key={i}>
                     {e}
                 </Card>
             )
