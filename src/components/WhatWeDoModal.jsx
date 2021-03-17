@@ -120,7 +120,6 @@ export const whatWeDoCardTexts = {
 
 const WhatWeDoModal = (props) => {
     const { state, dispatch } = useContext(Store)
-    console.log(state)
 
     const toggle = () => {
         dispatch({ type: t.MODAL_CLOSE })
