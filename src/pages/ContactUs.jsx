@@ -6,14 +6,24 @@ import FooterMap from '../components/FooterMap'
 import HeaderSocialLinks from '../components/HeaderSocialLinks'
 import Navbar from '../components/Navbar'
 import StockInfo from '../components/StockInfo'
+import {Helmet} from "react-helmet";
+
+import ChatBot from '../components/Chatbot'
 // import PopUp from "../components/PopUp";
 
 
+
+
+
 const ContactUs = () => {
+    <Helmet>
+       <script src={ChatBot} type="text/javascript" />
+    </Helmet>
 
 
     return (
         <section className='contactUs'>
+           
             {/* <PopUp /> */}
             <header>
                 <HeaderSocialLinks customClass='HeaderSocialLinks contactUs_socialLinks' />
@@ -27,6 +37,9 @@ const ContactUs = () => {
             </header>
             <div className='contactUs_form'>
                 <ContactUsForm />
+            </div>
+            <div className="application">
+
             </div>
             <Footer />
             <FooterMap />
